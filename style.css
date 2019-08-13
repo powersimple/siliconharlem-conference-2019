@@ -1148,7 +1148,7 @@ Hero Slider
 
 .session-blurb { font-weight: 600; font-style: italic; padding: 10px; color: #005e92; }
 
-.panel-default > .panel-heading { color: #ccc; padding: 1em; font-size: 150%; background: -webkit-gradient(linear, left bottom, left top, from(#12133c), color-stop(51%, #06296f), to(#005e92)); background: linear-gradient(to top, #12133c 0%, #06296f 51%, #005e92 100%); margin: 3px; border-top-left-radius: 25px; border-top-right-radius: 25px; }
+.panel-default > .panel-heading { color: #ccc; padding: 1em; background: -webkit-gradient(linear, left bottom, left top, from(#12133c), color-stop(51%, #06296f), to(#005e92)); background: linear-gradient(to top, #12133c 0%, #06296f 51%, #005e92 100%); margin: 3px; border-top-left-radius: 25px; border-top-right-radius: 25px; }
 .panel-default > .panel-heading h4 a, .panel-default > .panel-heading h4 a.collapsed, .panel-default > .panel-heading .speaker-name { display: block; width: 100; color: #fff !important; }
 @media (max-width: 768px) { .panel-default > .panel-heading h4 a, .panel-default > .panel-heading h4 a.collapsed, .panel-default > .panel-heading .speaker-name { font-size: 80%; } }
 .panel-default > .panel-heading .speaker-name { color: #ccc; }

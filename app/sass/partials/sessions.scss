@@ -62,7 +62,6 @@
 .panel-default>.panel-heading{
     color:#ccc;
     padding:1em;
-    font-size:150%;
     background: linear-gradient(to top, $darkest_blue 0%,$dark_blue 51%,$blue 100%); 
 
     margin: 3px;
@@ -75,7 +74,7 @@
             @media(max-width:768px){
                 font-size:80%;
             }
-        
+          
     }
     .speaker-name{
         color:#ccc;
