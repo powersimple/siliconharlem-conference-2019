@@ -10,24 +10,17 @@
     left: 0;
     top: 0;
     z-index: 9998;
+ 
   }
-  
+
   .loader {
     position: absolute;
-    /*
-    border-left: 2px solid #ffffff;
-    border-top: 2px solid rgba(255, 255, 255, 0.2);
-    border-right: 2px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    */
-    //background:url(images/loader.png) center center no-repeat;
-    height: 300px;
-    width: 400px;
+    top: 10%;
     left: 50%;
-    top: 50%;
-    margin: -200px 0 0 -150px;
-
-    font-size: 10px;
+    opacity: 0.9;
+    z-index: 1000;
+    width: 38vh;
+    margin-left: -19.5vh;
     z-index: 9999;
    
     svg{

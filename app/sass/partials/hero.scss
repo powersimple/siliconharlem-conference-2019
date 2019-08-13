@@ -179,3 +179,22 @@
     }
   }
 }  
+
+.caption-content a.btn{
+  font-size:1vw;
+  text-shadow: 1px 1px #000;
+  background-color:rgba(18,19,60,0.6);
+  p  
+    {
+      font-weight:700;
+      margin-bottom:0px;
+    span{
+    color:$light_green;
+   
+  }
+}
+  @media(max-width:767px){
+      max-width:90%;
+      word-wrap: break-word;
+  }
+}

@@ -7,8 +7,8 @@
                     if(@$thumbnail != null){
                       
                       ?>
-                      <div class="section-thumbnail col-lg-4"><img src="<?php echo get_stylesheet_directory_uri();?>/images/Orb-01.svg" alt=""></div>
-                      <div class="section-content col-lg-8"><?=wpautop($content);?></div>
+                      <div class="section-thumbnail col-xs-10 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-4"><img src="<?php echo get_stylesheet_directory_uri();?>/images/Orb-01.svg" class="seal" alt=""></div>
+                      <div class="section-content  col-xs-10 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8"><?=wpautop($content);?></div>
                       
                       <?
                     
@@ -23,7 +23,7 @@
             
  <div class="playlist-group" id="accordion">
 <?php
-    $sessions = getSessions(446);
+    $sessions = getSessions(697);
     $speaker_session = array();
     global $speaker_session;
 
@@ -68,10 +68,10 @@
                   </div>
                     </div>
                     
-                    <div class="panel-collapse collapse" id="<?php echo $slug?>">
+                    <div class="panel-collapse collapse session" id="<?php echo $slug?>">
                       <div class="panel-body">
                       <span class="mobile-session-time"><?php echo $session_time; ?></span>  
-                      <p><?php echo wpautop($content)?></p>
+                      <div class="session-blurb"><?php echo wpautop($content)?></div>
                         
                     <?php
                         foreach($speaker_list as $key=>$speaker){
@@ -97,7 +97,7 @@
                         
                         
                     ?>  
-                       
+                        <?php echo registrationButton();?>
                       </div>
                     </div>
                   </div>

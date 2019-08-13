@@ -107,5 +107,9 @@ add_theme_support('post-thumbnails', array(
 			return $start_time." - ".@$end_time;
 		}
 	
-	
+		function registrationButton(){
+			return "<a href='https://www.eventbrite.com/e/sh6-the-silicon-harlem-sixth-annual-next-gen-tech-conference-tickets-68730052437' target='_new' class='register-button'>ORDER TICKETS NOW</a>";
+		}
+
+
 ?>

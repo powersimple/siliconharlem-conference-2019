@@ -12,7 +12,7 @@ DO NOT EDIT IN STYLE.CSS
     PUT YOUR COLOR PALETTE HERE:
 */
 
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,900');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600i,700,900');
 
 @import "partials/colors";
 @import "partials/loader";
@@ -25,7 +25,7 @@ DO NOT EDIT IN STYLE.CSS
 @import "partials/hero";
 @import "partials/sections";
 @import "partials/video";
-@import "partials/schedule";
+@import "partials/sessions";
 @import "partials/speakers";
 @import "partials/sponsors";
 @import "partials/slick";
@@ -53,44 +53,6 @@ h4.section-prime {
 }
 
 
-.caption-content a.btn{
-    font-size:1vw;
-    text-shadow: 1px 1px #000;
-    @media(max-width:767px){
-        max-width:90%;
-        word-wrap: break-word;
-    }
-}
-.panel-group {
-    margin-bottom: 0px;
-    border-color:none;
-}
-.panel-title{
-    font-size:1em;
-}
-.panel-default {
-    border-color:none;
-border-radius:25px !important;
-}
-.session-time, .mobile-sesion.time{
-    float: right;
-    margin-right: 2em;
-    margin-top: -17px;
-    text-transform: none;
-    color:#fff !important;
-    @media(max-width: 767px){
-        display:none;
-    }
-}
-.mobile-session-time{
-    display: block;
-    text-align: center;
-    margin:0px auto;
-    font-weight:900;
-    @media(min-width: 768px){
-        display:none;
-    }
-}
 .module{
     padding-top:70px;
 }
@@ -99,56 +61,6 @@ border-radius:25px !important;
     background: linear-gradient(to top, $darkest_blue 0%,$dark_green 51%,$blue 100%); 
 
   }
-.panel-default>.panel-heading{
-    color:#ccc;
-    padding:2em;
-    font-size:150%;
-    background: linear-gradient(to top, #8c002e 0%,#a90329 51%,#c40327 100%);
-    border-color: #8c002e;
-    h4 a, h4 a.collapsed{
-      
-            color:#fff !important;
-        
-    }
-    .speaker-name{
-        color:#ccc;
-    }
-    a{
-        display:inline;
-
-    }
-    a:hover{
-        text-decoration:underline;
-    }
-}
-
-.panel-default>.panel-heading+.panel-collapse>.panel-body{
-    border-color: #8c002e;
-}
-.panel-body{
-    p{
-        font-size:150%;
-        padding-right:20px;
-        @media(max-width:1280px){
-            clear:left;
-        }
-       }
-}
-.session-sponsors{
-    display:table;
-    padding-left:1%;
-    width: 100%;
-}
-.session-sponsor{
-    display: table-cell;
-    width:20%;
-    padding-right:1%;
-    text-align: center;
-    
-    img{
-        border-radius:50%;
-    }
-}
 
 a.cta{
     
@@ -202,7 +114,7 @@ a.cta:hover{
         font-size:150%;
     }
     td{
-        padding:3px;
+        padding:10px;
     }
     tr td:first-child{
         text-align:left;
@@ -220,15 +132,32 @@ a.cta:hover{
     width: 100%;
     tr.active td{
         font-weight:bold;
+        color:$dark_blue;
     }
     tr.inactive td{
-        color:$light_gray;
+        color:$dark_gray;
     }
     tr.past td{
         text-decoration:line-through;
     }
     tr.even-row{
-        background-color:#ccc;
+        background-color:$light_gray;
     }
 }
+a.register-button{
+    background:$green;
+    text-shadow:3px 3px $dark_green;
+    font-size:200%;
+    color:#fff;
+    font-weight:700;
+    padding:25px;
+    border-radius:25px;
+    border:3px outset $green;
+    width:auto;
+    margin:15px auto;
 
+}
+
+a.register-button:hover{
+    color:#ff0;
+}

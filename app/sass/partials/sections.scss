@@ -1,10 +1,18 @@
 #agenda{
     background: $dark_blue;
     color:#fff;
+    border-bottom:10px solid $darkest_blue;
     h2.module-title{
         color:#b7d547;
     }
 }
+#registration{
+    background: $lightest_gray;
+    h2.module-title{
+        color:$dark_gray;
+    }
+    border-bottom:10px solid $darkest_gray;
+}    
 .section-thumbnail{
     
 }

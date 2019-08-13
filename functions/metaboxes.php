@@ -85,7 +85,7 @@ function setSessionSpeakers( $meta_boxes ) {
 		'post_types' => array('session' ),
 		'context' => 'side',
 		'priority' => 'default',
-		'autosave' => 'false',
+		'autosave' => 'true',
 		'fields' => array(
 			array(
 				'id' => $prefix . 'speakers',
@@ -93,6 +93,7 @@ function setSessionSpeakers( $meta_boxes ) {
 				'name' => esc_html__( 'Speakers', 'metabox-online-generator' ),
 				'post_type' => 'speaker',
 				'field_type' => 'checkbox_list',
+				'parent' => 'true'
 			),
 		),
 	);

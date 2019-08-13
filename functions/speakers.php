@@ -52,13 +52,13 @@
             
 			if($src != ""){
                 print '<div class="speaker-image">';
-                print '<a href="'.$permalink.'">';
-                print '<img src="'.$src.'" alt="'.$speaker_name.'"></a></div>';
+              
+                print '<img src="'.$src.'" alt="'.$speaker_name.'"></div>';
             }
            
             print '<div class="speaker-vitals">';
-            print '<a href="'.$permalink.'">';
-			print '<strong>'.@$speaker_name."</strong></a><br>";
+           
+			print '<strong>'.@$speaker_name."</strong>";
 			if(@$speaker_title && @$context != "speaker-list"){
 				print @$speaker_title.",<br>";
 			}
