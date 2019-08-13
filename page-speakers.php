@@ -5,6 +5,7 @@
                 <h2 class="module-title font-alt"><?php echo $title?></h2>
                 <div class="panel-body"><?php echo wpautop($content);?></div>
               </div>
+              <?php echo registrationButton();?>
             </div>
                 
 

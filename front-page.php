@@ -35,7 +35,7 @@ get_header();
               <div class="titan-caption">
                 <div class="caption-content">
                  <div class="font-alt mb-30 titan-title-size-2"></div>
-                  <div class="font-alt mb-40 titan-title-size-4"><?php echo $title?></div><a class="section-scroll btn btn-border-w btn-round" href="#registration"><?php echo wpautop($desc) ?></a>
+                  <div class="font-alt mb-40 titan-title-size-4"><?php echo $title?></div><a class="section-scroll btn btn-border-w btn-round" href="#about"><?php echo wpautop($desc) ?></a>
 
                 </div>
               </div>
@@ -78,7 +78,7 @@ foreach($pages as $key => $value){
                 <div class="panel-body"><?php echo wpautop($content);?></div>
                
               </div>
-             
+              <?php echo registrationButton();?>
             </div>
             
             <?php 

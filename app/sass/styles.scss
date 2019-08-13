@@ -158,6 +158,17 @@ a.cta:hover{
     display: inline-block;
 
 }
+#speakers .registration-button{
+    background:#fff;
+    color:$green;
+    text-shadow:1px 1px $dark_green;
+}
+#speakers .registration-button:hover{
+    background:#ff0;
+    color:$green;
+    text-shadow:1px 1px $dark_green;
+}
+
 .button-wrap{
     position: relative;
     width:320px;
