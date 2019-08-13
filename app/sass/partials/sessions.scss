@@ -68,10 +68,13 @@
     margin: 3px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    h4 a, h4 a.collapsed{
+    h4 a, h4 a.collapsed, .speaker-name{
             display:block;
             width:100;
             color:#fff !important;
+            @media(max-width:768px){
+                font-size:80%;
+            }
         
     }
     .speaker-name{
@@ -113,4 +116,8 @@
     img{
         border-radius:50%;
     }
+}
+.registration-button{
+    font-size:2em;
+    background:$dark_green;
 }

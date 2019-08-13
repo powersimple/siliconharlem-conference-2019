@@ -7,8 +7,8 @@
                     if(@$thumbnail != null){
                       
                       ?>
-                      <div class="section-thumbnail col-xs-10 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-4"><img src="<?php echo get_stylesheet_directory_uri();?>/images/Orb-01.svg" class="seal" alt=""></div>
-                      <div class="section-content  col-xs-10 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8"><?=wpautop($content);?></div>
+                      <div class="section-thumbnail col-sm-4"><img src="<?php echo get_stylesheet_directory_uri();?>/images/Orb-01.svg" class="seal" alt=""></div>
+                      <div class="section-content   col-sm-8"><?=wpautop($content);?></div>
                       
                       <?
                     
@@ -97,8 +97,9 @@
                         
                         
                     ?>  
-                        <?php echo registrationButton();?>
                       </div>
+                      
+
                     </div>
                   </div>
                  

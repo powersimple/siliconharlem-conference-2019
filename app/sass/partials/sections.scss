@@ -5,6 +5,26 @@
     h2.module-title{
         color:#b7d547;
     }
+    font-size:150%;
+    line-height:150%;
+        @media(max-width:767px){    
+        .seal{
+            width:50%;
+            margin:0px auto;
+            display: block;
+        }
+    }
+
+}
+#speakers {
+    background:$green;
+    border-bottom:10px solid $dark_green;
+    h2.module-title{
+        color:$lightest_gray;
+    }
+    p{
+        color:#fff;
+    }
 }
 #registration{
     background: $lightest_gray;

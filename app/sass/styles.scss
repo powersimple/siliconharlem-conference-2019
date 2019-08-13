@@ -32,8 +32,8 @@ DO NOT EDIT IN STYLE.CSS
 @import "partials/lava";
 @import "partials/particles";
 h2.module-title{
-    font-weight: 900;
-    font-size:400%;
+    font-weight: 700;
+    font-size:300%;
     color:$green
 }
 h3.section-head{
@@ -144,10 +144,10 @@ a.cta:hover{
         background-color:$light_gray;
     }
 }
-a.register-button{
+.registration-button{
     background:$green;
     text-shadow:3px 3px $dark_green;
-    font-size:200%;
+    font-size:150%;
     color:#fff;
     font-weight:700;
     padding:25px;
@@ -155,9 +155,15 @@ a.register-button{
     border:3px outset $green;
     width:auto;
     margin:15px auto;
+    display: inline-block;
 
 }
+.button-wrap{
+    position: relative;
+    width:320px;
+    margin:0px auto;
+}
 
-a.register-button:hover{
+a.registration-button:hover{
     color:#ff0;
 }
