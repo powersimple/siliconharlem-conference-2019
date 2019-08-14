@@ -73,7 +73,7 @@ foreach($pages as $key => $value){
             } else {
             ?>
             <div class="row">
-              <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+              <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                 <h2 class="module-title font-alt"><?php echo $title?></h2>
                 <div class="panel-body"><?php echo wpautop($content);?></div>
                

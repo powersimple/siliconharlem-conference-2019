@@ -56,7 +56,7 @@
 .session-blurb{
     font-weight:600;
     font-style:italic;
-    padding:10px;
+    padding:5px 10px;
     color:$blue;
 }
 .panel-default>.panel-heading{
@@ -69,7 +69,7 @@
     border-top-right-radius: 25px;
     h4 a, h4 a.collapsed, .speaker-name{
             display:block;
-            width:100;
+            width:100%;
             color:#fff !important;
             @media(max-width:768px){
                 font-size:80%;
@@ -93,9 +93,12 @@
 }
 .panel-body{
     p{
-        font-size:150%;
+        font-size:100%;
         padding-right:20px;
         line-height: 150%;
+        strong{
+            font-style: normal;
+        }
         @media(max-width:1280px){
             clear:left;
         }

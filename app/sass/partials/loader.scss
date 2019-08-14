@@ -4,7 +4,8 @@
   --------------------------------------------------------------*/
   .page-loader {
     position: fixed;
-    background: $darkest_blue;
+    background: rgb(0,141,192);
+    background: radial-gradient(circle at top center, $light_blue 0%, $blue 33%, $dark_blue 66% ,$darkest_blue 100%);
     bottom: 0;
     right: 0;
     left: 0;

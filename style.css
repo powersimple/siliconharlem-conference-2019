@@ -32,7 +32,7 @@ DO NOT EDIT IN STYLE.CSS
 */
 /*-------------------------------------------------------------- Preloader
 --------------------------------------------------------------*/
-.page-loader { position: fixed; background: #12133c; bottom: 0; right: 0; left: 0; top: 0; z-index: 9998; }
+.page-loader { position: fixed; background: #008dc0; background: radial-gradient(circle at top center, #008dc0 0%, #005e92 33%, #06296f 66%, #12133c 100%); bottom: 0; right: 0; left: 0; top: 0; z-index: 9998; }
 
 .loader { position: absolute; top: 10%; left: 50%; opacity: 0.9; z-index: 1000; width: 38vh; margin-left: -19.5vh; z-index: 9999; }
 .loader svg { width: 100%; }
@@ -1146,16 +1146,17 @@ Hero Slider
 .mobile-session-time { display: block; text-align: center; margin: 0px auto; font-weight: 600; color: #06296f; font-size: 120%; }
 @media (min-width: 768px) { .mobile-session-time { display: none; } }
 
-.session-blurb { font-weight: 600; font-style: italic; padding: 10px; color: #005e92; }
+.session-blurb { font-weight: 600; font-style: italic; padding: 5px 10px; color: #005e92; }
 
 .panel-default > .panel-heading { color: #ccc; padding: 1em; background: -webkit-gradient(linear, left bottom, left top, from(#12133c), color-stop(51%, #06296f), to(#005e92)); background: linear-gradient(to top, #12133c 0%, #06296f 51%, #005e92 100%); margin: 3px; border-top-left-radius: 25px; border-top-right-radius: 25px; }
-.panel-default > .panel-heading h4 a, .panel-default > .panel-heading h4 a.collapsed, .panel-default > .panel-heading .speaker-name { display: block; width: 100; color: #fff !important; }
+.panel-default > .panel-heading h4 a, .panel-default > .panel-heading h4 a.collapsed, .panel-default > .panel-heading .speaker-name { display: block; width: 100%; color: #fff !important; }
 @media (max-width: 768px) { .panel-default > .panel-heading h4 a, .panel-default > .panel-heading h4 a.collapsed, .panel-default > .panel-heading .speaker-name { font-size: 80%; } }
 .panel-default > .panel-heading .speaker-name { color: #ccc; }
 .panel-default > .panel-heading a { display: inline; }
 .panel-default > .panel-heading a:hover { text-decoration: underline; }
 
-.panel-body p { font-size: 150%; padding-right: 20px; line-height: 150%; }
+.panel-body p { font-size: 100%; padding-right: 20px; line-height: 150%; }
+.panel-body p strong { font-style: normal; }
 @media (max-width: 1280px) { .panel-body p { clear: left; } }
 
 .session-sponsors { display: table; padding-left: 1%; width: 100%; }
