@@ -87,7 +87,7 @@
         <div class="loader"><?php include "images/Orb-01.svg";?></div> 
 
       </div>
-      <?php die()?>
+      <?php //die()?>
       <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
         <div class="container">
           <div class="navbar-header">
