@@ -1,10 +1,12 @@
 
 <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
+              <div class="col-sm-offset-4 col-sm-8">
                 <h2 class="module-title font-alt"><?php echo $title?></h2>
                 <div class="panel-body"><?php echo wpautop($content);?></div>
               </div>
             </div>
+            <div class="row">
+            <div class="col-sm-offset-4 col-sm-8">
 <div class="gallery-wrap">
     <div class="slider slideshow">
     <?php
@@ -24,8 +26,9 @@
 
     </div>
 </div>
-        
-<div class="row">
+          </div>
+          </div>
+
 
 
 </div>

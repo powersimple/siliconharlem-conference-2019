@@ -4,6 +4,9 @@
             $previous_sponsor_parent_id = 686;
             
          ?>
+                     <div class="row">
+
+              <div class="col-sm-offset-4 col-sm-8">
           <h2 class="font-alt module-title">2019 <?php echo $title?></h2>
             <div class="sponsors row multi-columns-row post-columns">
                 <?php
@@ -21,7 +24,10 @@
 
 
             </div>
+    </div>
+</div>
             <div class="row">
+              <div class="col-sm-offset-4 col-sm-8">
             <h3>Silicon Harlem Thanks our 2018 Sponsors.</h3>
                 <?php
                   
@@ -33,5 +39,5 @@
 
 
             </div>
-
+</div>
 

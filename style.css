@@ -34,17 +34,9 @@ DO NOT EDIT IN STYLE.CSS
 --------------------------------------------------------------*/
 .page-loader { position: fixed; background: #008dc0; background: radial-gradient(circle at top center, #008dc0 0%, #005e92 33%, #06296f 66%, #12133c 100%); bottom: 0; right: 0; left: 0; top: 0; z-index: 9998; }
 
-.loader { position: absolute; top: 10%; left: 50%; opacity: 0.9; z-index: 1000; width: 38vh; margin-left: -19.5vh; z-index: 9999; }
+.loader { position: absolute; top: 50%; left: 50%; opacity: 0.9; z-index: 1000; width: 38vh; margin-left: -19.5vh; z-index: 9999; margin-top: -19vh; }
 .loader svg { width: 100%; }
 
-#text-ring { -webkit-animation: load 10s infinite linear; -moz-animation: load 10s infinite linear; ms-animation: load 10s infinite linear; o-animation: load 10s infinite linear; animation: load 10s infinite linear; -webkit-transform-origin: 150px 124px; transform-origin: 150px 124px; }
-
-.loader, .loader:after { width: 300px; height: 400px; }
-
-@-webkit-keyframes load { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
-@keyframes load { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
 /*--------------------------------------------------------------
 	Common
 --------------------------------------------------------------*/
@@ -1010,15 +1002,22 @@ Google map
 @media only screen and (max-width: 480px) { .work-item, .works-grid-3 .work-item, .works-grid-4 .work-item, .works-grid-5 .work-item { width: 100%; } }
 /*-------------------------------------------------------------- Navbar
 --------------------------------------------------------------*/
-.navbar-custom { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06296f), color-stop(61.8%, #005e92), color-stop(75%, #06296f), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06296f 25%, #005e92 61.8%, #06296f 75%, #12133c 100%); border: 0; border-radius: 0; z-index: 1000; font-family: 'Titillium Web', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 11px; -webkit-transition: background, padding 0.4s ease-in-out 0s; transition: background, padding 0.4s ease-in-out 0s; -webkit-transition: all 1s ease-in-out 0s; transition: all 1s ease-in-out 0s; }
+.navbar-custom { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06296f), color-stop(61.8%, #005e92), color-stop(75%, #06296f), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06296f 25%, #005e92 61.8%, #06296f 75%, #12133c 100%); border: 0; border-radius: 0; z-index: 1000; font-family: 'Titillium Web', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 11px; -webkit-transition: background, padding 1s ease-in-out 0s; transition: background, padding 1s ease-in-out 0s; -webkit-transition: all 4s ease-in-out 2s; transition: all 4s ease-in-out 2s; }
+@media (min-width: 768px) { .navbar-custom { height: 100px; } }
+.navbar-custom #orb { width: 38.8vw; margin-left: -19.4vw; left: 50vw; z-index: 9999; -webkit-transform: translateX(-32.5vw) scale(0.618); transform: translateX(-32.5vw) scale(0.618); -webkit-transition: all 2s ease-in-out 1s; transition: all 2s ease-in-out 1s; -webkit-transform-origin: center center; transform-origin: center center; position: absolute; top: 50vh; margin-top: -19.4vw; }
+.navbar-custom #orb svg { width: 100%; }
+@media (max-width: 767px) { .navbar-custom #orb { -webkit-transform: translateX(0) scale(0); transform: translateX(0) scale(0); } }
 
-.navbar-brand { width: 176px; margin-top: -18px; }
+.navbar-brand { width: 30vw; margin-top: -18px; -webkit-transition: all 2s ease-in-out 0s; transition: all 2s ease-in-out 0s; -webkit-transform: translateY(1vh) scale(0.5); transform: translateY(1vh) scale(0.5); }
 
 .nav-bar-nav { padding-top: 20px; }
 
-@media (min-width: 768px) { .navbar-transparent { padding-bottom: 10px; }
-  .navbar-transparent .navbar-brand { -webkit-transform: scale(1.3) translateY(-9px); transform: scale(1.3) translateY(-9px); }
-  .nav-bar-nav { padding-bottom: -15px; } }
+.navbar-transparent { padding-bottom: 10px; }
+.navbar-transparent .navbar-brand { -webkit-transform: translateY(61vh); transform: translateY(61vh); }
+.navbar-transparent #orb { -webkit-transform: translateX(0px) scale(1); transform: translateX(0px) scale(1); opacity: 1; }
+@media (max-width: 767px) { .navbar-transparent #orb { -webkit-transform: translateX(0px) scale(1.2); transform: translateX(0px) scale(1.2); } }
+.navbar-transparent .nav-bar-nav { padding-bottom: -15px; }
+
 .navbar a { -webkit-transition: color 0.125s ease-in-out 0s; transition: color 0.125s ease-in-out 0s; font-weight: bold; }
 
 .navbar-custom .dropdown-menu { background: rgba(26, 26, 26, 0.9); border-radius: 0; border: 0; padding: 0; -webkit-box-shadow: none; box-shadow: none; }
@@ -1044,6 +1043,10 @@ Google map
 .navbar-custom .navbar-toggle .icon-bar { background: #fff; }
 
 .dropdown-menu { min-width: 180px; font-size: 11px; }
+
+#mobile-conf-id { display: none; }
+@media (max-width: 768px) { #mobile-conf-id { display: block; position: absolute; font-size: 1vw; top: 25px; padding: 3px; }
+  #mobile-conf-id span { color: #b3d449; } }
 
 /* Navbar search
 
@@ -1080,6 +1083,8 @@ Hero Slider
 .hero-slider .flex-direction-nav a { width: 15%; }
 
 .hero-slider .slides li { background-size: cover; background-position: center center; background-repeat: no-repeat; height: 100% !important; width: 100%; padding: 0; margin: 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; }
+@media (max-width: 1280px) { .hero-slider .slides li { background-position: bottom left; } }
+@media (orientation: portrait) { .hero-slider .slides li { background-position: bottom left; } }
 
 /* Caption */
 .titan-caption { position: relative; display: table; height: 100%; width: 100%; }
@@ -1098,8 +1103,6 @@ Hero Slider
 
 .titan-title-size-4 { letter-spacing: 24px; font-weight: 900; font-size: 4vw; line-height: 120%; text-shadow: 5px 5px #12133c; }
 
-.hero-slider .orb { position: absolute; top: 10%; left: 50%; opacity: 0.9; z-index: 1000; width: 38vh; margin-left: -19.5vh; }
-
 .caption-content a.btn { font-size: 1vw; text-shadow: 1px 1px #000; background-color: rgba(18, 19, 60, 0.6); }
 .caption-content a.btn p { font-weight: 700; margin-bottom: 0px; }
 .caption-content a.btn p span { color: #b3d449; }
@@ -1108,6 +1111,9 @@ Hero Slider
 #agenda { background: #06296f; color: #fff; border-bottom: 10px solid #12133c; font-size: 150%; line-height: 150%; }
 #agenda h2.module-title { color: #b7d547; }
 @media (max-width: 767px) { #agenda .seal { width: 50%; margin: 0px auto; display: block; } }
+#agenda .schedule-bg { background-color: #E2DFDF; color: #06296f; border-radius: 25px; padding: 15px; }
+#agenda .schedule-bg h3 { font-size: 2vw; font-weight: 600; text-align: center; color: #005e92; }
+@media (max-width: 768px) { #agenda .schedule-bg h3 { font-size: 3vw; } }
 
 #speakers { background: #40a842; border-bottom: 10px solid #10432c; }
 #speakers h2.module-title { color: #E2DFDF; }
@@ -1149,7 +1155,7 @@ Hero Slider
 .session-blurb { font-weight: 600; font-style: italic; padding: 5px 10px; color: #005e92; }
 
 .panel-default > .panel-heading { color: #ccc; padding: 1em; background: -webkit-gradient(linear, left bottom, left top, from(#12133c), color-stop(51%, #06296f), to(#005e92)); background: linear-gradient(to top, #12133c 0%, #06296f 51%, #005e92 100%); margin: 3px; border-top-left-radius: 25px; border-top-right-radius: 25px; }
-.panel-default > .panel-heading h4 a, .panel-default > .panel-heading h4 a.collapsed, .panel-default > .panel-heading .speaker-name { display: block; width: 100%; color: #fff !important; }
+.panel-default > .panel-heading h4 a, .panel-default > .panel-heading h4 a.collapsed, .panel-default > .panel-heading .speaker-name { display: inline-block; width: 100%; margin-left: 3px; color: #fff !important; }
 @media (max-width: 768px) { .panel-default > .panel-heading h4 a, .panel-default > .panel-heading h4 a.collapsed, .panel-default > .panel-heading .speaker-name { font-size: 80%; } }
 .panel-default > .panel-heading .speaker-name { color: #ccc; }
 .panel-default > .panel-heading a { display: inline; }
@@ -1181,6 +1187,7 @@ Hero Slider
 
 .speaker-vitals { line-height: 150%; }
 .speaker-vitals strong { display: block; }
+.speaker-vitals a { margin-right: 10px; }
 .speaker-vitals a:hover { color: blue; }
 
 .speaker-excerpt p { font-size: 100%; }
@@ -1323,16 +1330,17 @@ a.cta:hover { -webkit-transform: scale(1.5); transform: scale(1.5); }
 
 .section-foot { margin: 50px 0px; }
 
-#register { border: 3px dashed #12133c; border-radius: 5px; width: 100%; }
-@media (min-width: 768px) { #register { font-size: 150%; } }
-#register td { padding: 10px; }
-#register tr td:first-child { text-align: left; padding-left: 10px; }
-#register tr td:nth-child(2) { text-align: center; }
-#register tr td:last-child { text-align: right; padding-right: 10px; }
-#register tr.active td { font-weight: bold; color: #06296f; }
-#register tr.inactive td { color: #787373; }
-#register tr.past td { text-decoration: line-through; }
-#register tr.even-row { background-color: #aeaaab; }
+@media (min-width: 768px) { .container { width: auto; max-width: 98%; } }
+#prices { border: 3px dashed #12133c; border-radius: 5px; width: 100%; }
+@media (min-width: 768px) { #prices { font-size: 150%; } }
+#prices td { padding: 10px; }
+#prices tr td:first-child { text-align: left; padding-left: 10px; }
+#prices tr td:nth-child(2) { text-align: center; }
+#prices tr td:last-child { text-align: right; padding-right: 10px; }
+#prices tr.active td { font-weight: bold; color: #06296f; }
+#prices tr.inactive td { color: #787373; }
+#prices tr.past td { text-decoration: line-through; }
+#prices tr.even-row { background-color: #aeaaab; }
 
 .registration-button { background: #40a842; text-shadow: 3px 3px #10432c; font-size: 150%; color: #fff; font-weight: 700; padding: 25px; border-radius: 25px; border: 3px outset #40a842; width: auto; margin: 15px auto; display: inline-block; }
 

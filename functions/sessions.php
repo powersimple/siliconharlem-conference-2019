@@ -1,43 +1,3 @@
-<?php
-  	require_once("functions/sidebars.php");
-
-	  require_once("functions/widgets.php");
-  
-	  require_once("functions/metaboxes.php");
-
-	  require_once("functions/navigation.php");
-
-	  require_once("functions/media.php");
-
-	  require_once("functions/speakers.php");
-
-	  require_once("functions/sponsors.php");
-
-	global $home_id;
-	
-	add_action( 'init', 'add_excerpts_to_pages' );
-	function add_excerpts_to_pages() {
-		add_post_type_support( 'page', 'excerpt' );
-	}
-
-add_theme_support( 'menus' );
-add_theme_support( 'widgets' );
-add_theme_support('post-thumbnails', array(
-'post',
-'page',
-'session',
-'speaker',
-'sponsor'
-));
-
-
-		/* OLD RELIABLE!
-        HASN'T CHANGED IN YEARS
-            RETURNS URL BY ID, AND OPTIONAL SIZE */
-			
-	  function get_slides( $id ) {
-		return get_post_meta($id,"top_slider") ;//from functions.php,
-		}
 
 		function getPastSessions($conference){
 			global $wpdb;
@@ -112,6 +72,3 @@ add_theme_support('post-thumbnails', array(
 		function registrationButton(){
 			return "<div class='button-wrap'><a class='registration-button' href='https://www.eventbrite.com/e/sh6-the-silicon-harlem-sixth-annual-next-gen-tech-conference-tickets-68730052437' target='_new' >REGISTER NOW</a></div>";
 		}
-
-
-?>

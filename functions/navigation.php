@@ -11,6 +11,7 @@
 					"slug"=>$value->post_name,
 					"title"=>$value->post_title,
 					"content"=>$value->post_content,
+					"excerpt"=>$value->post_excerpt,
 					"section_foot"=>get_post_meta($value->ID,"section_foot",true),
 					"thumbnail" => getThumbnail($thumbnail)
 					)

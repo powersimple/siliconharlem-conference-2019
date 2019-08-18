@@ -16,7 +16,7 @@ get_header();
 <section class="home-section home-parallax home-fade home-full-height" id="home">
 <div id="particles-js"></div>
         <div class="hero-slider">
-        <img class="orb" src="<?php echo get_stylesheet_directory_uri();?>/images/Orb-01.svg" alt="">
+       
           <ul class="slides">
           <?php
           
@@ -32,13 +32,14 @@ get_header();
 
           
             <li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo $src[0];?>);">
+              <!--
               <div class="titan-caption">
                 <div class="caption-content">
                  <div class="font-alt mb-30 titan-title-size-2"></div>
                   <div class="font-alt mb-40 titan-title-size-4"><?php echo $title?></div><a class="section-scroll btn btn-border-w btn-round" href="#about"><?php echo wpautop($desc) ?></a>
 
                 </div>
-              </div>
+              </div>-->
             </li>
             <?php
             }
@@ -73,12 +74,15 @@ foreach($pages as $key => $value){
             } else {
             ?>
             <div class="row">
-              <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <div class="section-thumbnail col-sm-4"></div>
+              <div class="section-content   col-sm-8">
+
                 <h2 class="module-title font-alt"><?php echo $title?></h2>
-                <div class="panel-body"><?php echo wpautop($content);?></div>
-               
+                  <?php echo wpautop($content);?>
+                  <?php echo registrationButton();?>
+                </div>
               </div>
-              <?php echo registrationButton();?>
+            
             </div>
             
             <?php 

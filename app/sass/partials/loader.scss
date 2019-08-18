@@ -16,51 +16,16 @@
 
   .loader {
     position: absolute;
-    top: 10%;
+    top: 50%;
     left: 50%;
     opacity: 0.9;
     z-index: 1000;
     width: 38vh;
     margin-left: -19.5vh;
     z-index: 9999;
+    margin-top:-19vh;
    
     svg{
         width:100%;
-    }
-  }
-  #text-ring{
-    -webkit-animation: load 10s infinite linear;
-    -moz-animation: load 10s infinite linear;
-    ms-animation: load 10s infinite linear;
-    o-animation: load 10s infinite linear;
-    animation: load 10s infinite linear;
-    transform-origin: 150px 124px;
-  }
-
-  .loader,
-  .loader:after {
-    //border-radius: 50%;
-    width: 300px;
-    height: 400px;
-  }
-  @-webkit-keyframes load {
-    0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes load {
-    0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
     }
   }

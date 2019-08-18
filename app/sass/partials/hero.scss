@@ -101,6 +101,16 @@
   .hero-slider .slides li {
     background-size: cover;
     background-position: center center;
+
+    @media(max-width:1280px){
+      background-position: bottom left;
+      
+    }
+    @media(orientation:portrait){
+      background-position: bottom left;
+      
+    }
+
     background-repeat: no-repeat;
     height: 100% !important;
     width: 100%;
@@ -171,13 +181,7 @@
     text-shadow: 5px 5px $darkest_blue;
   }
 .hero-slider{
-  .orb{
-     position:absolute; top:10%; left:50%; opacity:0.9; z-index:1000;
-     width:38vh;margin-left:-19.5vh;
-    @media(max-width: 767px){
-
-    }
-  }
+ 
 }  
 
 .caption-content a.btn{

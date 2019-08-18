@@ -13,28 +13,77 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 11px;
-    transition: background, padding 0.4s ease-in-out 0s;
-    transition: all 1s ease-in-out 0s;
+    transition: background, padding 1s ease-in-out 0s;
+    transition: all 4s ease-in-out 2s;
+    @media(min-width:768px){
+      height:100px;
+    }
+    #orb{
+//      position: relative;//mobile first, makes it scroll up
+      width:38.8vw;
+      margin-left:-19.4vw;
+      left:50vw;
+      z-index: 9999;
+      transform:translateX(-32.5vw) scale(0.618);
+      transition: all 2s ease-in-out 1s;
+      transform-origin: center center;
+      
+      position: absolute;
+      top: 50vh;
+      margin-top:-19.4vw;
+
+      svg{
+     
+        width:100%;
+            
+      } 
+      @media(min-width:768px){
+        //position: fixed; // desktop pins it left; 
+      }  
+      @media(max-width:767px){
+        transform:translateX(0) scale(0);
+      
+    } 
+
+    }
+    
   }
   .navbar-brand{
-    width:176px;
+    width:30vw;
     margin-top:-18px;
-   
+    transition: all 2s ease-in-out 0s;
+    transform: translateY(1vh) scale(0.5);
+    
     }
+    
     .nav-bar-nav{
         padding-top:20px;
     }
-  @media(min-width:768px){
+  
   .navbar-transparent{
       padding-bottom:10px;
 
     .navbar-brand{
-
-        transform: scale(1.3) translateY(-9px);
+    
+      transform: translateY(61vh);
+        
     
        
       }
-  } 
+      #orb{
+        transform:translateX(0px) scale(1);
+        opacity:1;
+        @media(max-width:767px){
+          transform:translateX(0px) scale(1.2);
+          
+        
+        } 
+        svg{
+       
+      
+        }
+      }
+
   .nav-bar-nav{
       padding-bottom:-15px;
   }
@@ -132,6 +181,19 @@
   .dropdown-menu {
     min-width: 180px;
     font-size: 11px;
+  }
+  #mobile-conf-id{
+    display:none;
+    @media(max-width:768px){
+      display: block;
+      position: absolute;
+      font-size:1vw;
+      top:25px;
+      padding:3px;
+      span{
+        color:$light_green;
+      }
+    }
   }
   
   /* Navbar search

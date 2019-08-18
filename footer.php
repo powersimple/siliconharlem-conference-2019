@@ -1,35 +1,41 @@
 <?php
-  $bootstrap = "col-sm-12 col-md-6 col-lg-3";
+  $bootstrap = "col-sm-4";
   ?>
         <div class="module-small footer-widgets bg-dark">
           <div class="container">
             <div class="row">
-              <div class="<? echo $bootstrap;?>">
+              <div class="col-sm-offset-4 col-sm-8 ">
+                <div class="<? echo $bootstrap;?>">
+                  
+                  <?php dynamic_sidebar( 'footer-1' ); ?> 
                 
-                 <?php dynamic_sidebar( 'footer-1' ); ?> 
-               
-              </div>
-              <div class="<? echo $bootstrap;?>">
+                </div>
+                <div class="<? echo $bootstrap;?>">
+                  
+                    <?php dynamic_sidebar( 'footer-2' ); ?> 
+                  
+                </div>
+                <div class="<? echo $bootstrap;?>">
+                  
+                  <?php dynamic_sidebar( 'footer-3' ); ?> 
+                  
+                </div>
+                <!--
+                <div class="<? echo $bootstrap;?>">
                 
-                  <?php dynamic_sidebar( 'footer-2' ); ?> 
-                
-              </div>
-              <div class="<? echo $bootstrap;?>">
-                
-                 <?php dynamic_sidebar( 'footer-3' ); ?> 
-                
-              </div>
-              <div class="<? echo $bootstrap;?>">
-               
-                  <?php dynamic_sidebar( 'footer-4' ); ?> 
-                
+                    <?php dynamic_sidebar( 'footer-4' ); ?> 
+                  
+                </div>-->
               </div>
             </div>
           </div>
         </div>
+        <!-- <div class="container chain-of-blocks">
+        <div id="orb" title="IoT | XR | 5G | AI | Blockchain | Quantum Computing"> <?php include "images/chain-of-blocks-01.svg";?></div>
+        </div>-->
         <hr class="divider-d">
         <footer class="footer bg-dark">
-          <div class="container">
+        <div class="container">
             <div class="row">
               <div class="col-sm-6">
                 <p class="copyright font-alt">&copy; <?php  echo date("Y"); ?> <a href="//siliconharlem.net"><?php  bloginfo("name"); ?></a>, All Rights Reserved</p>

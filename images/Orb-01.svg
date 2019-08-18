@@ -29,7 +29,7 @@
 .orbcls-25{fill:#94938d;}
 .orbcls-27{fill:url(#radial-gradient-18);}
 .orbcls-29{fill:url(#radial-gradient-20);}
-.bg{fill:#12133c;stroke:#231f20;stroke-miterlimit:10;opacity:0.6;}
+.bg{fill:#12133c;stroke:#231f20;stroke-miterlimit:10;}
 
   .loader {
     position: absolute;
@@ -61,7 +61,14 @@
     animation: load 20s infinite linear;
     transform-origin: 250px 250px;
   }
-
+  #orb-wrap{
+    -webkit-animation: breathe 10s infinite linear;
+    -moz-animation: breathe 10s infinite linear;
+    ms-animation: breathe 10s infinite linear;
+    o-animation: breathe 10s infinite linear;
+    animation: breathe 10s infinite linear;
+    transform-origin: 250px 250px;
+  }
   .loader,
   .loader:after {
     //border-radius: 50%;
@@ -89,6 +96,36 @@
       transform: rotate(360deg);
     }
   }
+  @-webkit-keyframes breathe {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+     50% {
+     -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes breathe {
+    0% {
+     -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+     50% {
+     -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    100% {
+     -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
 </style><radialGradient id="radial-gradient" cx="70.15" cy="77.4" r="205.81" gradientTransform="translate(212.19 272.81) scale(0.7)" gradientUnits="userSpaceOnUse">
 <stop offset="0.34" stop-color="#0e5028"></stop>
 <stop offset="0.54" stop-color="#0c3f21"></stop>
@@ -111,8 +148,8 @@
 <stop offset="1" stop-color="#005e92"/>
 </radialGradient>
 <radialGradient id="radial-gradient-4" cx="-80.15" cy="-82.87" r="190.08" gradientTransform="translate(212.19 272.81) scale(0.7)" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#fff"></stop>
-<stop offset="0.15" stop-color="#f5e9e4"></stop>
+<stop offset="0" stop-color="#fff"><animate attributeName="stop-color" values="#ffffff; #f5e9e4;" dur="4s" repeatCount="indefinite"></stop>
+<stop offset="0.15" stop-color="#f5e9e4"><animate attributeName="stop-color" values="#ffffff; #f5e9e4;" dur="4s" repeatCount="indefinite"></stop>
 <stop offset="0.69" stop-color="#aeaaab"/>
 </radialGradient>
 <radialGradient id="radial-gradient-5" cx="45.29" cy="14.46" r="276.92" gradientTransform="translate(212.19 272.81) scale(0.7)" gradientUnits="userSpaceOnUse">
@@ -252,6 +289,7 @@
 <circle class="orbcls-3" cx="469.56" cy="302.27" r="8.08"/>
 </g>
 </g>
+<g id="orb-wrap">
 <g id="back-green">
 <path class="orbcls-4" d="M366,337.46c-2.13-4.25.62-7.88,4.4-9.17-15.27-22.15-15.18-39.63-23.17-65.19-7.41-20.39-23.86-22-42.39-14.6-61.15,20.39-89,79.69-118.6,135.28-4.41,8.83-15.85,14.14-26.85,16a173.48,173.48,0,0,0,67.43,23.8c1.16.15,2.34.27,3.51.41,4.83-13.72,19.75-22.79,30-27.19,27.76-11.44,62.72-17.1,89.65-3.06,2.24-1.56,4.44-3.16,6.6-4.82,8.26-6.35,13.09-9.93,20.08-17.62C386.17,363,373.66,346.64,366,337.46Z"/>
 </g>
@@ -329,6 +367,7 @@
 </g>
 <g id="blue-top-bevel-shadow">
 <path class="orbcls-29" d="M349.4,150.57a86.19,86.19,0,0,1,6.65,25.8c-2.94-12.33-9.39-25.47-14.79-33.88a171.81,171.81,0,0,0-46.29-48c-13.08-9.11-30.48-19.53-46.92-19.92,11.49-1.74,24.33-.13,36.6,2.74,11.3,6.62,21.94,14.11,27.43,19.43A168.65,168.65,0,0,1,349.4,150.57Z"/>
+</g>
 </g>
 </g>
 </svg>

@@ -7,8 +7,7 @@
                     if(@$thumbnail != null){
                       
                       ?>
-                      <div class="section-thumbnail col-sm-4"><img src="<?php echo get_stylesheet_directory_uri();?>/images/Orb-01.svg" class="seal" alt=""></div>
-                      <div class="section-content   col-sm-8"><?=wpautop($content);?></div>
+                      <div class="section-content col-sm-offset-4 col-sm-8"><?=wpautop($content);?></div>
                       
                       <?
                     
@@ -20,7 +19,11 @@
 
 
             </div>
-            
+            <div class="row">  
+            <div class="section-thumbnail col-sm-4"></div>
+                      <div class="section-content schedule-bg col-sm-8">
+                      <h3><?=wpautop($excerpt);?></h3>
+
  <div class="playlist-group" id="accordion">
 <?php
     $sessions = getSessions(697);
@@ -109,4 +112,5 @@
     }
 
 ?>
+</div>
 </div>

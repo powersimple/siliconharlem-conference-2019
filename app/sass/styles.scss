@@ -107,7 +107,13 @@ a.cta:hover{
 .section-foot{
     margin:50px 0px;
 }
-#register{
+@media (min-width: 768px){
+    .container {
+        width: auto;
+        max-width:98%;
+    }
+}
+#prices{
     border:3px dashed $darkest_blue;
     border-radius:5px;
     @media(min-width:768px){
