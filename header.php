@@ -84,7 +84,7 @@
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     
       <div class="page-loader">
-        <div class="loader"><?php include "images/Orb-01.svg";?></div> 
+        <div class="loader"><img src="<?php echo get_stylesheet_directory_uri();?>/images/Orb-01.svg" alt=""></div> 
 
       </div>
       <?php //die()?>
@@ -97,7 +97,7 @@
             <ul class="nav navbar-nav navbar-right">
             <?php dynamic_sidebar( 'header-menu' ); ?>
             </ul>
-            <div id="mobile-conf-id">6th Annual Next-Gen Tech Conference: World 4.0 Let's Get Ready!</div>
+            <div id="mobile-conf-id">6th Annual Next-Gen Tech Conference: World 4.0 Let's Get Ready!
           </div>
         </div>
         <div id="orb" title="Silicon Harlem | 6th Annual Next-Gen Tech Conference: World 4.0 Let's Get Ready!"> <?php include "images/Orb-01.svg";?></div>
