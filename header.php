@@ -84,10 +84,10 @@
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     
       <div class="page-loader">
-        <div class="loader"><img src="<?php echo get_stylesheet_directory_uri();?>/images/Orb-01.svg" alt=""></div> 
+        <div class="loader"><?php include "images/Orb-01.svg";?></div> 
 
       </div>
-      <?php //die()?>
+      <?php die()?>
       <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
         <div class="container">
           <div class="navbar-header">
