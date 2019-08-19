@@ -1114,6 +1114,7 @@ Hero Slider
 #agenda { background: #06296f; color: #fff; border-bottom: 10px solid #12133c; font-size: 150%; line-height: 150%; }
 #agenda h2.module-title { color: #b7d547; }
 @media (max-width: 767px) { #agenda .seal { width: 50%; margin: 0px auto; display: block; } }
+#agenda .featured { margin: 25px 0px; padding: 15px; }
 #agenda .schedule-bg { background-color: #E2DFDF; color: #06296f; border-radius: 25px; padding: 15px; }
 #agenda .schedule-bg h3 { font-size: 2vw; font-weight: 600; text-align: center; color: #005e92; }
 @media (max-width: 768px) { #agenda .schedule-bg h3 { font-size: 3vw; } }
