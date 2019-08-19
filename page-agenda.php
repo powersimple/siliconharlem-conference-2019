@@ -7,7 +7,9 @@
                     if(@$thumbnail != null){
                       
                       ?>
-                      <div class="section-content col-sm-offset-4 col-sm-8"><?=wpautop($content);?></div>
+                      <div class="section-content col-sm-offset-4 col-sm-8"><?=wpautop($content);?>
+                      <div class="featured"><img src="<?=$thumbnail?>"></div>
+                    </div>
                       
                       <?
                     
@@ -20,9 +22,10 @@
 
             </div>
             <div class="row">  
-            <div class="section-thumbnail col-sm-4"></div>
+            <div class="section-thumbnail schedule col-sm-4"></div>
                       <div class="section-content schedule-bg col-sm-8">
                       <h3><?=wpautop($excerpt);?></h3>
+                      <h4>SCHEDULE</h4>
 
  <div class="playlist-group" id="accordion">
 <?php

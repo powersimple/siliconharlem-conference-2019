@@ -58,6 +58,10 @@
     font-style:italic;
     padding:5px 10px;
     color:$blue;
+    @media(max-width:540px){
+        font-size:75%;
+        padding:5px 0px;
+    }
 }
 .panel-default>.panel-heading{
     color:#ccc;
@@ -78,6 +82,7 @@
           
     }
     .speaker-name{
+        display:inline-block;
         color:#ccc;
     }
     a{
@@ -88,7 +93,13 @@
         text-decoration:underline;
     }
 }
-
+.schedule{
+    h4{
+        font-weight:600;
+        color:$dark_green;
+        text-align:center;
+    }
+}
 .panel-default>.panel-heading+.panel-collapse>.panel-body{
 
 }

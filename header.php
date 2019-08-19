@@ -63,11 +63,11 @@
     <link href="<?php echo get_stylesheet_directory_uri();?>/style.css" rel="stylesheet">
 
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
+<!-- Latest compiled and minified JavaScript 
+<script src="https://cdn.pannellum.org/2.4/pannellum.js"></script>-->
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css">
+<!-- Latest compiled and minified CSS
+<link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css"> -->
 <script>
     // Wordpress PHP variables to render into JS at outset.
     var active_id = <?php echo $post->ID?>;

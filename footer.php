@@ -1,6 +1,11 @@
 <?php
   $bootstrap = "col-sm-4";
   ?>
+  <div class="container chain-of-blocks">
+    <div class="row">
+        <div id="orb" class=" col-sm-offset-4 col-sm-8" title="IoT | XR | 5G | AI | Blockchain | Quantum Computing"> <?php include "images/chain-of-blocks-01.svg";?></div>
+        </div>
+    </div>
         <div class="module-small footer-widgets bg-dark">
           <div class="container">
             <div class="row">
@@ -30,9 +35,7 @@
             </div>
           </div>
         </div>
-        <!-- <div class="container chain-of-blocks">
-        <div id="orb" title="IoT | XR | 5G | AI | Blockchain | Quantum Computing"> <?php include "images/chain-of-blocks-01.svg";?></div>
-        </div>-->
+        
         <hr class="divider-d">
         <footer class="footer bg-dark">
         <div class="container">

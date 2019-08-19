@@ -20,17 +20,29 @@
     }
     #orb{
 //      position: relative;//mobile first, makes it scroll up
-      width:38.8vw;
-      margin-left:-19.4vw;
-      left:50vw;
       z-index: 9999;
-      transform:translateX(-32.5vw) scale(0.618);
       transition: all 2s ease-in-out 1s;
       transform-origin: center center;
       
       position: absolute;
-      top: 50vh;
-      margin-top:-19.4vw;
+      @media(orientation:landscape){
+        width:38.8vh;
+        top: 50vh;
+        margin-top:-19.4vh;
+        left:50vw;
+        margin-left:-19.4vh;
+        transform:translateX(-32.5vw) scale(0.8);
+
+      }
+      @media(orientation:portrait){
+        width:38.8vw;
+        top: 50vh;
+        margin-top:-19.4vw;
+        left:50vw;
+        margin-left:-19.4vw;     
+        transform:translateX(-32.5vh) scale(0.8);
+
+      }
 
       svg{
      
@@ -49,12 +61,13 @@
     
   }
   .navbar-brand{
-    width:30vw;
+    width:150px;
     margin-top:-18px;
     transition: all 2s ease-in-out 0s;
-    transform: translateY(1vh) scale(0.5);
     
-    }
+      transform: translate(0px,0vh) scale(1);
+    
+  }
     
     .nav-bar-nav{
         padding-top:20px;
@@ -63,12 +76,13 @@
   .navbar-transparent{
       padding-bottom:10px;
 
-    .navbar-brand{
-    
-      transform: translateY(61vh);
-        
-    
-       
+      .navbar-brand{
+        @media(max-width:767px){
+          transform: translate(15px,61vh) scale(1.5);
+        }
+        @media(min-width:768px){
+          transform: translate(30px,61vh) scale(2);
+        }
       }
       #orb{
         transform:translateX(0px) scale(1);
