@@ -3,7 +3,7 @@
   ?>
   <div class="container chain-of-blocks">
     <div class="row">
-        <div id="orb" class=" col-sm-offset-4 col-sm-8" title="IoT | XR | 5G | AI | Blockchain | Quantum Computing"> <?php include "images/chain-of-blocks-01.svg";?></div>
+        <div id="orb" class="col-sm-offset-4 col-sm-8" title="IoT | XR | 5G | AI | Blockchain | Quantum Computing"><img src="<?php echo get_stylesheet_directory_uri();?>/images/chain-of-blocks-01.svg" alt="Blocks or 4th Industrial Revolution Technologies" class="style-svg"></div>
         </div>
     </div>
         <div class="module-small footer-widgets bg-dark">
