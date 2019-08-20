@@ -148,8 +148,8 @@
 <stop offset="1" stop-color="#005e92"/>
 </radialGradient>
 <radialGradient id="radial-gradient-4" cx="-80.15" cy="-82.87" r="190.08" gradientTransform="translate(212.19 272.81) scale(0.7)" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#fff"><animate attributeName="stop-color" values="#ffffff; #f5e9e4;" dur="4s" repeatCount="indefinite"></stop>
-<stop offset="0.15" stop-color="#f5e9e4"><animate attributeName="stop-color" values="#ffffff; #f5e9e4;" dur="4s" repeatCount="indefinite"></stop>
+<stop offset="0" stop-color="#fff"></stop>
+<stop offset="0.15" stop-color="#f5e9e4"></stop>
 <stop offset="0.69" stop-color="#aeaaab"/>
 </radialGradient>
 <radialGradient id="radial-gradient-5" cx="45.29" cy="14.46" r="276.92" gradientTransform="translate(212.19 272.81) scale(0.7)" gradientUnits="userSpaceOnUse">
