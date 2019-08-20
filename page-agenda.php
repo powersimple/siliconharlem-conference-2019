@@ -1,23 +1,17 @@
 
+<?php if(@$thumbnail != ''){?>
+           <div class="featured"><img src="<?=$thumbnail?>"></div>
+<?php } ?>
           <div class="row">
-          <h2 class="font-alt module-title"><?php echo $title?></h2>
-                <?php
-                  
 
-                    if(@$thumbnail != null){
-                      
-                      ?>
+
+          <h2 class="font-alt module-title"><?php echo $title?></h2>
+              
                       <div class="section-content col-sm-offset-4 col-sm-8"><?=wpautop($content);?>
-                      <div class="featured"><img src="<?=$thumbnail?>"></div>
+                     
                     </div>
                       
-                      <?
                     
-                  
-                    } else { 
-                      print wpautop($content);
-                    }
-                    ?>
 
 
             </div>
@@ -53,7 +47,7 @@
                     <div class="panel-speakers">
                       <?php
                       if(count($speaker_list)>0){
-                        print "with ";
+                        print "<span>with </span>";
                       }
 
                     foreach($speaker_list as $key=>$speaker){

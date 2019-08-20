@@ -58,6 +58,26 @@
            
             print '<div class="speaker-vitals">';
            
+			speakerVitals();
+			
+            print "</div>
+            </div>";
+			if(@$context == 'long'){
+                print wpautop($content);
+            } else if(@$context=="speaker-list"){
+				//print '<div style="clear:both;width:100%;"></div>';
+			//	print "SESSION:".$session;
+			} else if(@$context == 'short'){
+				 print '<div class="speaker-excerpt col-sm-12 col-md-6 col-lg-6">';
+			   print wpautop($excerpt);
+			    print '</div>';
+            } else{
+                
+            }
+            print '</div>';
+		}
+		function speakerVitals(){
+			
 			print '<strong>'.@$speaker_name."</strong>";
 			if(@$speaker_title && @$context != "speaker-list"){
 				print @$speaker_title.",<br>";
@@ -90,23 +110,8 @@
 			
 				
 			
-				
-            print "</div>
-            </div>";
-			if(@$context == 'long'){
-                print wpautop($content);
-            } else if(@$context=="speaker-list"){
-				//print '<div style="clear:both;width:100%;"></div>';
-			//	print "SESSION:".$session;
-			} else if(@$context == 'short'){
-				 print '<div class="speaker-excerpt col-sm-12 col-md-6 col-lg-6">';
-			   print wpautop($excerpt);
-			    print '</div>';
-            } else{
-                
-            }
-            print '</div>';
-        }
+		}
+
         function speakerList($speakers){
             $speaker_list = array();
            

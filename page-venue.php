@@ -1,5 +1,12 @@
 
 <div class="row">
+  <div class="col-sm-offset-4 col-sm-8">
+      <h3>Recap of the 2018 Conference "RE/THINK EVERY<>THING"</h3>
+      <div class="video-wrap">
+<iframe id="video-player" src="https://www.youtube.com/embed/2LQiC6_5OXE"></iframe></div>
+  </div>
+</div>
+<div class="row">
               <div class="col-sm-offset-4 col-sm-8">
                 <h2 class="module-title font-alt"><?php echo $title?></h2>
                 <div class="panel-body"><?php echo wpautop($content);?></div>

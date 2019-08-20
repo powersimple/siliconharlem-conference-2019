@@ -1,4 +1,4 @@
-
+<?php
 		function getPastSessions($conference){
 			global $wpdb;
 			$q = $wpdb->get_results("

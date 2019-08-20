@@ -1,5 +1,5 @@
 #agenda{
-    background: $dark_blue;
+    background: linear-gradient(to bottom, $darkest_blue 0%, $dark_blue 25%,$blue 61.8%, $dark_blue 75%, $darkest_blue 100%); 
     color:#fff;
     border-bottom:10px solid $darkest_blue;
     h2.module-title{
@@ -20,6 +20,7 @@
         padding:15px;
     }
     .schedule-bg{
+        max-width:90%;
         background-color:$lightest_gray;
         color:$dark_blue;
         border-radius:25px;

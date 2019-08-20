@@ -72,17 +72,15 @@
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     h4 a, h4 a.collapsed, .speaker-name{
-            display:inline-block;
+            display:inline;
             width:100%;
             margin-left:3px;
             color:#fff !important;
-            @media(max-width:768px){
-                font-size:80%;
-            }
+           
           
     }
     .speaker-name{
-        display:inline-block;
+        display:inline;
         color:#ccc;
     }
     a{

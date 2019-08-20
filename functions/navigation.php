@@ -38,7 +38,7 @@
 			}
 
           
-			print '<li><a class="section-scroll" href="'.$href.'"'.$target.'>'.$value->post_title.'</a>';// if printed, shows this.
+			print '<li><a class="section-scroll" onclick="closeMenu()" href="'.$href.'"'.$target.'><span>'.$value->post_title.'</a>';// if printed, shows this.
             
 		}
 	}

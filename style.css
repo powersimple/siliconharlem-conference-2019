@@ -1003,6 +1003,9 @@ Google map
 /*-------------------------------------------------------------- Navbar
 --------------------------------------------------------------*/
 .navbar-custom { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06296f), color-stop(61.8%, #005e92), color-stop(75%, #06296f), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06296f 25%, #005e92 61.8%, #06296f 75%, #12133c 100%); border: 0; border-radius: 0; z-index: 1000; font-family: 'Titillium Web', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 1.5vw; height: 70px; }
+@media (min-width: 1680px) { .navbar-custom { font-size: 1.5em; } }
+.navbar-custom #custom-collapse.in ul { background-color: #12133c; background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06296f), color-stop(61.8%, #005e92), color-stop(75%, #06296f), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06296f 25%, #005e92 61.8%, #06296f 75%, #12133c 100%); }
+.navbar-custom #custom-collapse.in ul li a { border-bottom: 1px solid #aeaaab !important; cursor: pointer; position: relative; z-index: 10000; padding: 15px; }
 .navbar-custom #orb { z-index: 9999; -webkit-transition: all 2s ease-in-out 1s; transition: all 2s ease-in-out 1s; -webkit-transform-origin: center center; transform-origin: center center; position: absolute; }
 @media (orientation: landscape) { .navbar-custom #orb { width: 38.8vh; top: 50vh; margin-top: -19.4vh; left: 50vw; margin-left: -19.4vh; -webkit-transform: translateX(-32.5vw) scale(0.8); transform: translateX(-32.5vw) scale(0.8); } }
 @media (orientation: portrait) { .navbar-custom #orb { width: 38.8vw; top: 50vh; margin-top: -19.4vw; left: 50vw; margin-left: -19.4vw; -webkit-transform: translateX(-32.5vh) scale(0.8); transform: translateX(-32.5vh) scale(0.8); } }
@@ -1052,8 +1055,10 @@ Google map
 .dropdown-menu { min-width: 180px; font-size: 11px; }
 
 #mobile-conf-id { display: none; }
-@media (max-width: 768px) { #mobile-conf-id { display: block; position: absolute; font-size: 1vw; top: 25px; padding: 3px; }
+@media (max-width: 768px) { #mobile-conf-id { display: block; position: absolute; margin-left: 150px; top: 10px; line-height: 150%; padding: 3px; color: #fff; font-size: 2vw; font-weight: 700; }
   #mobile-conf-id span { color: #b3d449; } }
+
+.navbar-transparent #mobile-conf-id { display: none; }
 
 /* Navbar search
 
@@ -1115,11 +1120,11 @@ Hero Slider
 .caption-content a.btn p span { color: #b3d449; }
 @media (max-width: 767px) { .caption-content a.btn { max-width: 90%; word-wrap: break-word; } }
 
-#agenda { background: #06296f; color: #fff; border-bottom: 10px solid #12133c; font-size: 150%; line-height: 150%; }
+#agenda { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06296f), color-stop(61.8%, #005e92), color-stop(75%, #06296f), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06296f 25%, #005e92 61.8%, #06296f 75%, #12133c 100%); color: #fff; border-bottom: 10px solid #12133c; font-size: 150%; line-height: 150%; }
 #agenda h2.module-title { color: #b7d547; }
 @media (max-width: 767px) { #agenda .seal { width: 50%; margin: 0px auto; display: block; } }
 #agenda .featured { margin: 25px 0px; padding: 15px; }
-#agenda .schedule-bg { background-color: #E2DFDF; color: #06296f; border-radius: 25px; padding: 15px; }
+#agenda .schedule-bg { max-width: 90%; background-color: #E2DFDF; color: #06296f; border-radius: 25px; padding: 15px; }
 #agenda .schedule-bg h3 { font-size: 2vw; font-weight: 600; text-align: center; color: #005e92; }
 @media (max-width: 768px) { #agenda .schedule-bg h3 { font-size: 3vw; } }
 #agenda .schedule-bg h3 h4 { font-weight: 600; color: #10432c; text-align: center; }
@@ -1165,9 +1170,8 @@ Hero Slider
 @media (max-width: 540px) { .session-blurb { font-size: 75%; padding: 5px 0px; } }
 
 .panel-default > .panel-heading { color: #ccc; padding: 1em; background: -webkit-gradient(linear, left bottom, left top, from(#12133c), color-stop(51%, #06296f), to(#005e92)); background: linear-gradient(to top, #12133c 0%, #06296f 51%, #005e92 100%); margin: 3px; border-top-left-radius: 25px; border-top-right-radius: 25px; }
-.panel-default > .panel-heading h4 a, .panel-default > .panel-heading h4 a.collapsed, .panel-default > .panel-heading .speaker-name { display: inline-block; width: 100%; margin-left: 3px; color: #fff !important; }
-@media (max-width: 768px) { .panel-default > .panel-heading h4 a, .panel-default > .panel-heading h4 a.collapsed, .panel-default > .panel-heading .speaker-name { font-size: 80%; } }
-.panel-default > .panel-heading .speaker-name { display: inline-block; color: #ccc; }
+.panel-default > .panel-heading h4 a, .panel-default > .panel-heading h4 a.collapsed, .panel-default > .panel-heading .speaker-name { display: inline; width: 100%; margin-left: 3px; color: #fff !important; }
+.panel-default > .panel-heading .speaker-name { display: inline; color: #ccc; }
 .panel-default > .panel-heading a { display: inline; }
 .panel-default > .panel-heading a:hover { text-decoration: underline; }
 
@@ -1186,7 +1190,7 @@ Hero Slider
 .speaker-listing div { display: inline-block; vertical-align: top; }
 .speaker-listing .speaker-image { width: 150px; height: 150px; }
 
-.speaker-image { border-bottom-left-radius: 25%; overflow: hidden; border-bottom-right-radius: 48%; border: 6px solid #005e92; display: inline-block; width: 150px; height: 150px; display: inline-block; margin: 0px 30px 1em 0px; border-top-left-radius: 29%; border-top-right-radius: 11%; float: left; }
+.speaker-image { overflow: hidden; border: 6px solid #12133c; display: inline-block; width: 150px; height: 150px; display: inline-block; margin: 0px 30px 1em 0px; float: left; border-radius: 50%; }
 
 .speaker-info { font-size: 120%; }
 @media (max-width: 600px) { .speaker-info { width: 100%; } }
@@ -1207,7 +1211,7 @@ Hero Slider
 .speaker-long-bio h2 { margin-top: 70px; margin-bottom: 0px; }
 .speaker-long-bio .speaker-vitals { width: 300px; display: inline-block; text-align: center; margin: 15px 0px; }
 .speaker-long-bio .speaker-vitals strong { display: block; }
-.speaker-long-bio .speaker-image { max-width: 300px; max-height: 300px; margin: 0px auto; width: 300px; height: 300px; }
+.speaker-long-bio .speaker-image { max-width: 300px; max-height: 300px; margin: 0px auto; width: 300px; height: 300px; border: 6px solid #12133c; }
 .speaker-long-bio .speaker-image img { width: 100%; }
 
 .speaker-name { color: #fff; }
@@ -1345,7 +1349,10 @@ a.cta:hover { -webkit-transform: scale(1.5); transform: scale(1.5); }
 
 .section-foot { margin: 50px 0px; }
 
-@media (min-width: 768px) { .container { width: auto; max-width: 98%; } }
+.container { margin: 0px auto; }
+@media (min-width: 768px) and (max-width: 1680px) { .container { width: auto; max-width: 98%; } }
+@media (min-width: 768px) { .container { max-width: 1680px; } }
+
 #prices { border: 3px dashed #12133c; border-radius: 5px; width: 100%; }
 @media (min-width: 768px) { #prices { font-size: 150%; } }
 #prices td { padding: 10px; }

@@ -76,6 +76,13 @@
 
   gtag('config', 'UA-127399448-1');
 </script>
+<script>
+  function closeMenu(){
+    
+    jQuery("#custom-collapse").removeClass('in');
+  }
+ 
+</script>
 
 
 </body>
