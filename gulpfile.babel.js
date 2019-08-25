@@ -1,6 +1,6 @@
-//var localhost = 'http://siliconharlemconf.192.168.1.245.xip.io:8886' // SET local dev url here
-//var localhost = 'http://siliconharlemconf.172.20.10.4.xip.io:8886'
-var localhost = 'http://siliconharlemconf:8886'
+var localhost = 'http://siliconharlemconf.192.168.1.11.xip.io:8886' // SET local dev url here
+    //var localhost = 'http://siliconharlemconf.172.20.10.4.xip.io:8886'
+    //var localhost = 'http://siliconharlemconf:8886'
 
 let gulp = require('gulp'),
     babel = require('gulp-babel'),
@@ -22,31 +22,31 @@ let gulp = require('gulp'),
     del = require('del')
 
 // Styles
-gulp.task('styles', function () {
-    return sass('app/sass/styles.scss', { style: 'compact' }).on('error', function (err) {
-      console.log(err.toString())
-  
-      this.emit('end')
+gulp.task('styles', function() {
+    return sass('app/sass/styles.scss', { style: 'compact' }).on('error', function(err) {
+        console.log(err.toString())
+
+        this.emit('end')
     })
-  
-      .pipe(autoprefixer({
-        browsers: ['last 2 versions'],
-  
-        cascade: false
-      }))
-      .pipe(concat('style.css'))
-      .pipe(sourcemaps.init({ loadMaps: true }))
-      //  .pipe(identityMap()) // .js and .css files will get a generated sourcemap
-  
-      .pipe(sourcemaps.write({ includeContent: false }))
-  
-      .pipe(gulp.dest('./'))
-      .pipe(rename({ suffix: '.min' }))
-      .pipe(cssnano())
-      .pipe(gulp.dest('./'))
-      .pipe(notify({ message: 'SCSS converted to SCSS ' }))
-      .pipe(browserSync.stream())
-  })
+
+    .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+
+            cascade: false
+        }))
+        .pipe(concat('style.css'))
+        .pipe(sourcemaps.init({ loadMaps: true }))
+        //  .pipe(identityMap()) // .js and .css files will get a generated sourcemap
+
+    .pipe(sourcemaps.write({ includeContent: false }))
+
+    .pipe(gulp.dest('./'))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(cssnano())
+        .pipe(gulp.dest('./'))
+        .pipe(notify({ message: 'SCSS converted to SCSS ' }))
+        .pipe(browserSync.stream())
+})
 
 
 

@@ -1000,15 +1000,15 @@ Google map
   .align-center-sm { text-align: center; }
   .align-left-sm { text-align: left; } }
 @media only screen and (max-width: 480px) { .work-item, .works-grid-3 .work-item, .works-grid-4 .work-item, .works-grid-5 .work-item { width: 100%; } }
-/*-------------------------------------------------------------- Navbar
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Navbar --------------------------------------------------------------*/
 .navbar-custom { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06296f), color-stop(61.8%, #005e92), color-stop(75%, #06296f), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06296f 25%, #005e92 61.8%, #06296f 75%, #12133c 100%); border: 0; border-radius: 0; z-index: 1000; font-family: 'Titillium Web', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 1.5vw; height: 70px; }
 @media (min-width: 1680px) { .navbar-custom { font-size: 1.5em; } }
 .navbar-custom #custom-collapse.in ul { background-color: #12133c; background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06296f), color-stop(61.8%, #005e92), color-stop(75%, #06296f), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06296f 25%, #005e92 61.8%, #06296f 75%, #12133c 100%); }
 .navbar-custom #custom-collapse.in ul li a { border-bottom: 1px solid #aeaaab !important; cursor: pointer; position: relative; z-index: 10000; padding: 15px; }
 .navbar-custom #orb { z-index: 9999; -webkit-transition: all 2s ease-in-out 1s; transition: all 2s ease-in-out 1s; -webkit-transform-origin: center center; transform-origin: center center; position: absolute; }
-@media (orientation: landscape) { .navbar-custom #orb { width: 38.8vh; top: 50vh; margin-top: -19.4vh; left: 50vw; margin-left: -19.4vh; -webkit-transform: translateX(-32.5vw) scale(0.8); transform: translateX(-32.5vw) scale(0.8); } }
-@media (orientation: portrait) { .navbar-custom #orb { width: 38.8vw; top: 50vh; margin-top: -19.4vw; left: 50vw; margin-left: -19.4vw; -webkit-transform: translateX(-32.5vh) scale(0.8); transform: translateX(-32.5vh) scale(0.8); } }
+@media (orientation: landscape) and (max-width: 1679px) { .navbar-custom #orb { width: 38.8vh; top: 50vh; margin-top: -19.4vh; left: 50vw; margin-left: -19.4vh; -webkit-transform: translateX(-32.5vw) scale(0.8); transform: translateX(-32.5vw) scale(0.8); } }
+@media (orientation: landscape) and (min-width: 1680px) { .navbar-custom #orb { width: 38.8vh; top: 50vh; margin-top: -19.4vh; left: 50vw; margin-left: -19.4vh; -webkit-transform: translateX(-480px) scale(0.8); transform: translateX(-480px) scale(0.8); } }
+@media (orientation: portrait) { .navbar-custom #orb { width: 38.8vw; top: 50vh; margin-top: -19.4vw; left: 50vw; margin-left: -19.4vw; -webkit-transform: translateX(-560px) scale(0.7); transform: translateX(-560px) scale(0.7); } }
 .navbar-custom #orb svg { width: 100%; }
 @media (max-width: 767px) { .navbar-custom #orb { -webkit-transform: translateX(0) scale(0); transform: translateX(0) scale(0); } }
 
@@ -1060,16 +1060,7 @@ Google map
 
 .navbar-transparent #mobile-conf-id { display: none; }
 
-/* Navbar search
-
-.dropdown-search { position: relative; padding: 5px;
-}
-
-.dropdown-search .form-control { -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; text-transform: uppercase; letter-spacing: 2px; font-size: 11px;
-}
-
-.search-btn { position: absolute; background: transparent; border: none; overflow: hidden; top: 50%; right: 1px; width: 42px; height: 40px; line-height: 38px; font-size: 14px; outline: none; color: #999; margin-top: -20px;
-}*/
+/* Navbar search  .dropdown-search { position: relative; padding: 5px; }  .dropdown-search .form-control { -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; text-transform: uppercase; letter-spacing: 2px; font-size: 11px; }  .search-btn { position: absolute; background: transparent; border: none; overflow: hidden; top: 50%; right: 1px; width: 42px; height: 40px; line-height: 38px; font-size: 14px; outline: none; color: #999; margin-top: -20px; }*/
 /* Dark background */
 .bg-dark, .bg-dark-30, .bg-dark-60, .bg-dark-90, .bg-dark .module-title, .bg-dark-30 .module-title, .bg-dark-60 .module-title, .bg-dark-90 .module-title, .bg-dark .module-subtitle, .bg-dark-30 .module-subtitle, .bg-dark-60 .module-subtitle, .bg-dark-90 .module-subtitle, .bg-dark .alt-module-subtitle h5, .bg-dark-30 .alt-module-subtitle h5, .bg-dark-60 .alt-module-subtitle h5, .bg-dark-90 .alt-module-subtitle h5 { color: #fff; }
 
