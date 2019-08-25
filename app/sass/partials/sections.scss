@@ -1,69 +1,68 @@
-#agenda{
-    background: linear-gradient(to bottom, $darkest_blue 0%, $dark_blue 25%,$blue 61.8%, $dark_blue 75%, $darkest_blue 100%); 
-    color:#fff;
-    border-bottom:10px solid $darkest_blue;
-    h2.module-title{
-        color:#b7d547;
+#agenda {
+    background: linear-gradient(to bottom, $darkest_blue 0%, $dark_blue 25%, $blue 61.8%, $dark_blue 75%, $darkest_blue 100%);
+    color: #fff;
+    border-bottom: 10px solid $darkest_blue;
+    h2.module-title {
+        color: #b7d547;
     }
     font-size:150%;
     line-height:150%;
-        @media(max-width:767px){    
-        .seal{
-            width:50%;
-            margin:0px auto;
+    @media(max-width:767px) {
+        .seal {
+            width: 50%;
+            margin: 0px auto;
             display: block;
         }
-       
     }
-    .featured{
-        margin:25px 0px;
-        padding:15px;
+    .featured {
+        margin: 25px 0px;
+        padding: 15px;
     }
-    .schedule-bg{
-        max-width:90%;
-        background-color:$lightest_gray;
-        color:$dark_blue;
-        border-radius:25px;
-        padding:15px;
-        h3{
-            font-size: 2vw;
+    .schedule-bg {
+        max-width: 90%;
+        background-color: $lightest_gray;
+        color: $dark_blue;
+        border-radius: 25px;
+        padding: 15px;
+        h3 {
+            font-size: 1.5vw;
             font-weight: 600;
             text-align: center;
-            color:$blue;
-            @media(max-width:768px){
-                font-size:3vw;
+            color: $blue;
+            @media(max-width: 768px) {
+                font-size: 3vw;
             }
-            h4{
-                font-weight:600;
-                color:$dark_green;
-                text-align:center;
+            @media(min-width:1681px) {
+                font-size: 1.5em;
+            }
+            h4 {
+                font-weight: 600;
+                color: $dark_green;
+                text-align: center;
             }
         }
-
-
     }
-
 }
+
 #speakers {
-    background:$green;
-    border-bottom:10px solid $dark_green;
-    h2.module-title{
-        color:$lightest_gray;
+    background: $green;
+    border-bottom: 10px solid $dark_green;
+    h2.module-title {
+        color: $lightest_gray;
     }
-    p{
-        color:#fff;
+    p {
+        color: #fff;
     }
 }
-#registration{
+
+#registration {
     background: $lightest_gray;
-    h2.module-title{
-        color:$dark_gray;
+    h2.module-title {
+        color: $dark_gray;
     }
     border-bottom:10px solid $darkest_gray;
-}    
-.section-thumbnail{
-    
 }
-.section-content{
-    
-}
+
+.section-thumbnail {}
+
+.section-content {}

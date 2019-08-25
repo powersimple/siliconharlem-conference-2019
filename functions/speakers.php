@@ -58,7 +58,7 @@
            
             print '<div class="speaker-vitals">';
            
-			speakerVitals();
+			speakerVitals($speaker_data);
 			
             print "</div>
             </div>";
@@ -76,8 +76,8 @@
             }
             print '</div>';
 		}
-		function speakerVitals(){
-			
+		function speakerVitals($speaker_data){
+				extract($speaker_data);
 			print '<strong>'.@$speaker_name."</strong>";
 			if(@$speaker_title && @$context != "speaker-list"){
 				print @$speaker_title.",<br>";
