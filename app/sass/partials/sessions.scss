@@ -1,131 +1,137 @@
-#accordion{
-    .session{
-        color:$darkest_blue;
+#accordion {
+    .session {
+        color: $darkest_blue;
     }
 }
-.session-thumbnail{
-    width:150px;
-    height:auto;
-    float:left;
-    margin-right:10px;
+
+.session-thumbnail {
+    width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
 }
+
 .panel-group {
     margin-bottom: 0px;
-    border-color:none;
+    border-color: none;
 }
-.panel-title{
-    font-size:1em;
+
+.panel-title {
+    font-size: 1em;
     position: relative;
     padding: 5px 0px;
-    @media(max-width: 767px){
-        font-size:80%;
+    @media(max-width: 767px) {
+        font-size: 80%;
     }
-
 }
+
 .panel-default {
-    
-    border-radius:25px !important;
+    border-radius: 25px !important;
     margin-bottom: -20px;
     padding-bottom: 5px;
 }
-.session-time, .mobile-sesion.time{
+
+.session-time,
+.mobile-sesion.time {
     float: right;
     margin-right: 2em;
     margin-top: -17px;
     text-transform: none;
-    color:#fff !important;
-    @media(max-width: 767px){
-        display:none;
+    color: #fff !important;
+    @media(max-width: 767px) {
+        display: none;
     }
     position: absolute;
     top: 0px;
     right: 0px;
     font-size: 80%;
 }
-.mobile-session-time{
+
+.mobile-session-time {
     display: block;
     text-align: center;
-    margin:0px auto;
-    font-weight:600;
-    color:$dark_blue;
-    font-size:120%;
-    @media(min-width: 768px){
-        display:none;
+    margin: 0px auto;
+    font-weight: 600;
+    color: $dark_blue;
+    font-size: 120%;
+    @media(min-width: 768px) {
+        display: none;
     }
 }
-.session-blurb{
-    font-weight:600;
-    font-style:italic;
-    padding:5px 10px;
-    color:$blue;
-    @media(max-width:540px){
-        font-size:75%;
-        padding:5px 0px;
-    }
-}
-.panel-default>.panel-heading{
-    color:#ccc;
-    padding:1em;
-    background: linear-gradient(to top, $darkest_blue 0%,$dark_blue 51%,$blue 100%); 
 
+.session-blurb {
+    font-weight: 600;
+    font-style: italic;
+    padding: 5px 10px;
+    color: $blue;
+    @media(max-width: 540px) {
+        font-size: 75%;
+        padding: 5px 0px;
+    }
+}
+
+.panel-default>.panel-heading {
+    color: #ccc;
+    padding: 1em;
+    background: linear-gradient(to top, $darkest_blue 0%, $dark_blue 51%, $blue 100%);
     margin: 3px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    h4 a, h4 a.collapsed, .speaker-name{
-            display:inline;
-            width:100%;
-            margin-left:3px;
-            color:#fff !important;
-           
-          
+    h4 a,
+    h4 a.collapsed,
+    .speaker-name {
+        display: block;
+        width: 100%;
+        margin-left: 3px;
+        color: #fff !important;
     }
-    .speaker-name{
-        display:inline;
-        color:#ccc;
+    .speaker-name {
+        display: inline;
+        color: #ccc;
     }
-    a{
-        display:inline;
+    a {
+        display: inline;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
 
-    }
-    a:hover{
-        text-decoration:underline;
-    }
-}
-.schedule{
-    
-}
-.panel-default>.panel-heading+.panel-collapse>.panel-body{
+.schedule {}
 
-}
-.panel-body{
-    p{
-        font-size:100%;
-        padding-right:20px;
+.panel-default>.panel-heading+.panel-collapse>.panel-body {}
+
+.panel-body {
+    p {
+        font-size: 100%;
+        padding-right: 20px;
         line-height: 150%;
-        strong{
+        strong {
             font-style: normal;
         }
-        @media(max-width:1280px){
-            clear:left;
+        @media(max-width:1280px) {
+            clear: left;
         }
-       }
-}
-.session-sponsors{
-    display:table;
-    padding-left:1%;
-    width: 100%;
-}
-.session-sponsor{
-    display: table-cell;
-    width:20%;
-    padding-right:1%;
-    text-align: center;
-    
-    img{
-        border-radius:50%;
     }
 }
-.registration-button{
-    font-size:2em;
-    background:$dark_green;
+
+.session-sponsors {
+    display: table;
+    padding-left: 1%;
+    width: 100%;
+}
+
+.session-sponsor {
+    display: table-cell;
+    width: 20%;
+    padding-right: 1%;
+    text-align: center;
+    img {
+        border-radius: 50%;
+    }
+}
+
+.registration-button {
+    font-size: 2em;
+    background: $dark_green;
 }

@@ -120,7 +120,7 @@ a, .btn { -webkit-transition: all 0.125s ease-in-out 0s; transition: all 0.125s 
 
 .bg-dark-90:before { position: absolute; background: rgba(34, 34, 34, 0.9); content: " "; height: 100%; width: 100%; left: 0; top: 0; }
 
-.bg-gradient:before { position: absolute; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjk1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(40, 115, 113, 0.57)), color-stop(75%, rgba(115, 54, 31, 0.67))); background: linear-gradient(to bottom, rgba(40, 115, 113, 0.57) 25%, rgba(115, 54, 31, 0.67) 75%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-8 */ content: " "; height: 100%; width: 100%; left: 0; top: 0; }
+.bg-gradient:before { position: absolute; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjk1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(40, 115, 113, 0.57)), color-stop(75%, rgba(115, 54, 31, 0.67))); background: linear-gradient(to bottom, rgba(40, 115, 113, 0.57) 25%, rgba(115, 54, 31, 0.67) 75%); /* W3C */ /* IE6-8 */ content: " "; height: 100%; width: 100%; left: 0; top: 0; }
 
 .bg-light { background: #f6f6f6; }
 
@@ -256,8 +256,7 @@ a, .btn { -webkit-transition: all 0.125s ease-in-out 0s; transition: all 0.125s 
 
 .alert i { margin-right: 5px; }
 
-/*-------------------------------------------------------------- Buttons
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Buttons --------------------------------------------------------------*/
 .btn { border-radius: 0; font-family: 'Titillium Web', sans-serif; text-transform: uppercase; letter-spacing: 2px; font-size: 11px; padding: 8px 37px; }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus { outline: 0; }
@@ -307,8 +306,7 @@ a, .btn { -webkit-transition: all 0.125s ease-in-out 0s; transition: all 0.125s 
 
 .image-button { margin: 0px 5px; }
 
-/*-------------------------------------------------------------- Forms
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Forms --------------------------------------------------------------*/
 /* Selection */
 ::-moz-selection { background: #000; color: #fff; }
 
@@ -332,8 +330,7 @@ a, .btn { -webkit-transition: all 0.125s ease-in-out 0s; transition: all 0.125s 
 
 .input-group-addon { border: 1px solid #e4e4e4 !important; }
 
-/*-------------------------------------------------------------- Typography
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Typography --------------------------------------------------------------*/
 a { color: #111; }
 
 a:hover, a:focus { text-decoration: none; color: #aaa; outline: 0; }
@@ -388,11 +385,8 @@ blockquote { border: 0; font-style: italic; font-size: 15px; padding: 0; }
 /*  Special Portfolio Page  */
 .special-portfolio-header-title { border: 1px solid rgba(255, 255, 255, 0.7); font-size: 50px; padding: 40px 0px; letter-spacing: 8px; }
 
-/*-------------------------------------------------------------- Slider & Carousel
---------------------------------------------------------------*/
-/* -------------------------------------------------------------------
-General Styles - FlexSlider
-------------------------------------------------------------------- */
+/*-------------------------------------------------------------- Slider & Carousel --------------------------------------------------------------*/
+/* ------------------------------------------------------------------- General Styles - FlexSlider ------------------------------------------------------------------- */
 .flex-direction-nav a, .flex-control-nav > li > a { -webkit-transition: all 0.3s ease-in-out 0s; transition: all 0.3s ease-in-out 0s; }
 
 .flex-direction-nav a { position: absolute; display: block; height: 100%; width: 50%; top: 0; z-index: 10; overflow: hidden; opacity: 0; margin: 0; }
@@ -409,18 +403,14 @@ General Styles - FlexSlider
 
 .flex-control-nav > li > a:hover, .flex-control-nav > li > a.flex-active { background: #fff; }
 
-/*
-Photography Page Slider
-*/
+/* Photography Page Slider */
 .photography-page .image-caption { bottom: 20px; position: absolute; width: 35%; }
 
 .photography-page .image-caption .caption-text { font-size: 24px; text-transform: capitalize; letter-spacing: 1px; }
 
 .photography-page .flex-control-nav { left: 80%; bottom: 20px; z-index: 11; }
 
-/* -------------------------------------------------------------------
-General Styles - Owlcarousel
-------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- General Styles - Owlcarousel ------------------------------------------------------------------- */
 .owl-controls { margin-top: 40px; }
 
 .owl-pagination div { display: inline-block; }
@@ -431,8 +421,7 @@ General Styles - Owlcarousel
 
 .owl-controls .owl-buttons > div { display: inline-block; margin: 5px; font-size: 14px; color: #111; }
 
-  /*-------------------------------------------------------------- Header
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Header --------------------------------------------------------------*/
 .home-section { position: relative; background-color: #fff; background-repeat: no-repeat; background-position: center center; width: 100%; z-index: 0; background-size: cover; }
 
 /* Agency Page Header */
@@ -486,8 +475,7 @@ General Styles - Owlcarousel
 
 .shop-page-header:before { background: rgba(34, 34, 34, 0.3); }
 
-/*-------------------------------------------------------------- Footer
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Footer --------------------------------------------------------------*/
 .footer { padding: 10px 0; }
 
 .footer .copyright { margin: 0; }
@@ -496,17 +484,14 @@ General Styles - Owlcarousel
 
 .footer .footer-social-links a { display: inline-block; padding: 0 6px; }
 
-/* -------------------------------------------------------------
-Google map
-------------------------------------------------------------- */
+/* ------------------------------------------------------------- Google map ------------------------------------------------------------- */
 #map-section { position: relative; height: 450px; width: 100%; }
 
 #map { height: 100%; width: 100%; }
 
 #map img { max-width: none; }
 
-/*-------------------------------------------------------------- Services & Features
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Services & Features --------------------------------------------------------------*/
 .features-item { margin: 20px 0; text-align: center; }
 
 .features-icon, .alt-features-icon { line-height: 1.2; font-size: 42px; color: #111; }
@@ -524,8 +509,7 @@ Google map
 
 .content-box-title { font-weight: 400; font-size: 18px; color: #111; margin: 16px 0 15px; }
 
-/*-------------------------------------------------------------- Team
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Team --------------------------------------------------------------*/
 .team-item { position: relative; text-align: center; }
 
 .team-image { position: relative; overflow: hidden; }
@@ -554,16 +538,14 @@ Google map
 
 .team-item:hover .team-detail { opacity: 1; bottom: 50%; -webkit-transform: translateY(50%); transform: translateY(50%); }
 
-/*-------------------------------------------------------------- Restaurant Menu
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Restaurant Menu --------------------------------------------------------------*/
 .menu { border-bottom: 1px dotted #e5e5e5; padding: 0 0 10px; margin: 0 0 20px; }
 
 .menu-title, .menu-price { margin: 0 0 10px; font-size: 14px; color: #111; }
 
 .menu-price-detail { position: relative; text-align: right; }
 
-/*-------------------------------------------------------------- Price Table
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Price Table --------------------------------------------------------------*/
 .price-table { background: #fff; border: 1px solid #eaeaea; padding: 25px 20px; margin: 15px 0 30px; border-radius: 2px; text-align: center; }
 
 .price-table:hover { border-color: #CACACA; }
@@ -590,14 +572,12 @@ Google map
 
 .price-details li > span { text-decoration: line-through; color: #aaa; }
 
-/*-------------------------------------------------------------- Fun fact
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Fun fact --------------------------------------------------------------*/
 .count-item { text-align: center; }
 
 .count-icon { line-height: 1.2; font-size: 42px; }
 
-/*-------------------------------------------------------------- Video Box
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Video Box --------------------------------------------------------------*/
 .video-box { text-align: center; padding: 40px 0; }
 
 .video-box-icon > a > i, .video-box-icon > a > span { line-height: 1.8; font-size: 40px; color: #fff; }
@@ -606,8 +586,7 @@ Google map
 
 .video-subtitle { color: rgba(255, 255, 255, 0.5); }
 
-/*-------------------------------------------------------------- Portfolio
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Portfolio --------------------------------------------------------------*/
 /* Portfolio filter */
 .filter { text-align: center; list-style: none; padding: 0; margin: 0 0 70px; }
 
@@ -660,12 +639,11 @@ Google map
 
 .works-grid.works-hover-g .work-descr { color: #fff; }
 
-.works-grid.works-hover-g .work-item:hover .work-image:after { background: #6fe29e; background: linear-gradient(135deg, rgba(111, 226, 158, 0.8) 0%, rgba(91, 218, 209, 0.8) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fe29e', endColorstr='#5bdad1',GradientType=1 ); opacity: 1; }
+.works-grid.works-hover-g .work-item:hover .work-image:after { background: #6fe29e; background: linear-gradient(135deg, rgba(111, 226, 158, 0.8) 0%, rgba(91, 218, 209, 0.8) 100%); opacity: 1; }
 
 .sliding-portfolio .work-item { width: 100%; }
 
-/*-------------------------------------------------------------- Single Portfolio
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Single Portfolio --------------------------------------------------------------*/
 .work-details { margin: 0 0 20px; }
 
 .work-details-title { color: #111; margin: 0 0 20px; }
@@ -674,8 +652,7 @@ Google map
 
 .work-details ul > li { border-bottom: 1px dotted #c2c2c2; padding: 0 0 5px; margin: 0 0 5px; }
 
-/*-------------------------------------------------------------- Call to action
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Call to action --------------------------------------------------------------*/
 .callout-text { color: rgba(255, 255, 255, 0.6); }
 
 .callout-title { font-weight: 400; font-size: 16px; color: #fff; margin: 0; }
@@ -684,8 +661,7 @@ Google map
 
 .request-cta { padding: 50px 0px; }
 
-/*-------------------------------------------------------------- Testimonial
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Testimonial --------------------------------------------------------------*/
 .testimonial:before { background: rgba(2, 2, 2, 0.4); }
 
 .testimonials-slider { position: relative; }
@@ -698,8 +674,7 @@ Google map
 
 .testimonial-descr { color: rgba(255, 255, 255, 0.5); font-size: 11px; }
 
-/*-------------------------------------------------------------- Gallery
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Gallery --------------------------------------------------------------*/
 .gallery-item { position: relative; text-align: center; margin: 0 0 20px; }
 
 .gallery-image { position: relative; overflow: hidden; }
@@ -721,8 +696,7 @@ Google map
 
 .gallery-item:hover .gallery-caption { opacity: 1; bottom: 50%; -webkit-transform: translateY(50%); transform: translateY(50%); }
 
-/*-------------------------------------------------------------- Blog Post
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Blog Post --------------------------------------------------------------*/
 .post { margin: 0 0 80px; }
 
 .post-title { line-height: 1.4; font-size: 22px; color: #111; margin: 0; }
@@ -760,8 +734,7 @@ Google map
 
 .pagination a.active { border-color: #CACACA; }
 
-/*-------------------------------------------------------------- Widgets
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Widgets --------------------------------------------------------------*/
 /* Progress bars */
 .progress { overflow: visible; height: 4px; }
 
@@ -781,7 +754,7 @@ Google map
 
 .panel-heading a { position: relative; display: block; }
 
-.panel-heading a:after { position: absolute; content: "\f106"; top: 50%; right: 0px; font-family: "FontAwesome"; line-height: 1; font-size: 14px; margin-top: -7px; }
+.panel-heading a:after { position: absolute; content: "\f106"; top: 50%; right: 0px; font-family: "FontAwesome"; line-height: 1; font-size: 24px; margin-top: -12px; }
 
 .panel-heading a.collapsed:after { content: "\f107"; }
 
@@ -829,8 +802,7 @@ Google map
 
 .tags a:hover { background: rgba(17, 17, 17, 0.8); }
 
-/*-------------------------------------------------------------- Comment Box in Blog
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Comment Box in Blog --------------------------------------------------------------*/
 .comments, .comment-form { margin: 80px 0 0; }
 
 .comments .comment-title, .comment-form .comment-form-title { border-bottom: 1px dotted #c2c2c2; font-size: 16px; color: #111; padding-bottom: 15px; margin: 0 0 20px; }
@@ -844,14 +816,12 @@ Google map
 .comment-content { padding-top: 5px; margin-left: 75px; margin-bottom: 30px; }
 
 @media (min-width: 768px) { .comment .comment { margin-left: 75px; } }
-/*-------------------------------------------------------------- Client
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Client --------------------------------------------------------------*/
 .client-logo { opacity: .5; }
 
 .client-logo:hover { opacity: 1; }
 
-/*-------------------------------------------------------------- Shop Items
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Shop Items --------------------------------------------------------------*/
 .shop-item { text-align: center; margin: 0 0 40px; }
 
 .shop-item-image { position: relative; overflow: hidden; }
@@ -871,14 +841,12 @@ Google map
 
 .shop-item:hover .shop-item-detail { opacity: 1; bottom: 50%; -webkit-transform: translateY(50%); transform: translateY(50%); }
 
-/* ------------------------------------------------------------------- Exclusive products
-------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- Exclusive products ------------------------------------------------------------------- */
 .ex-product { opacity: .7; -webkit-transition: all 0.4s ease-in-out 0s; transition: all 0.4s ease-in-out 0s; }
 
 .ex-product:hover { opacity: 1; }
 
-/*-------------------------------------------------------------- Shop Single Product
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Shop Single Product --------------------------------------------------------------*/
 .product-gallery { list-style: none; padding: 0; width: 100%; margin: 10px 0 0; }
 
 .product-gallery li { display: inline-block; width: 15%; margin: 0 5px; }
@@ -895,8 +863,7 @@ Google map
 
 .reviews { margin: 0; }
 
-/*-------------------------------------------------------------- Showcase Page
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Showcase Page --------------------------------------------------------------*/
 .showcase-page .showcase-page-header { background-color: rgba(2, 2, 2, 0.7); }
 
 .showcase-page .content-box { display: block; margin-bottom: 45px; }
@@ -905,8 +872,7 @@ Google map
 
 .showcase-page .content-box .content-box-image:hover { transform: translate3d(0, -10px, 0); -webkit-transform: translate3d(0, -10px, 0); -webkit-box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2); box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2); }
 
-/*-------------------------------------------------------------- Documentation Page
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Documentation Page --------------------------------------------------------------*/
 .documentation-page { font-size: 14px; }
 
 .documentation-page .pln { color: #000; }
@@ -937,8 +903,7 @@ Google map
 
 .documentation-page a:hover { color: #1C92C9; }
 
-/*-------------------------------------------------------------- Responsive Styles - Media Queries
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- Responsive Styles - Media Queries --------------------------------------------------------------*/
 @media (min-width: 768px) { .navbar-transparent { background: transparent; padding-bottom: 15px; padding-top: 15px; }
   .navbar-custom .dropdown-menu { position: absolute; display: block; visibility: hidden; opacity: 0; }
   .navbar-custom .open > .dropdown-menu { visibility: visible; opacity: 1; }
@@ -1162,7 +1127,7 @@ Hero Slider
 @media (max-width: 540px) { .session-blurb { font-size: 75%; padding: 5px 0px; } }
 
 .panel-default > .panel-heading { color: #ccc; padding: 1em; background: -webkit-gradient(linear, left bottom, left top, from(#12133c), color-stop(51%, #06296f), to(#005e92)); background: linear-gradient(to top, #12133c 0%, #06296f 51%, #005e92 100%); margin: 3px; border-top-left-radius: 25px; border-top-right-radius: 25px; }
-.panel-default > .panel-heading h4 a, .panel-default > .panel-heading h4 a.collapsed, .panel-default > .panel-heading .speaker-name { display: inline; width: 100%; margin-left: 3px; color: #fff !important; }
+.panel-default > .panel-heading h4 a, .panel-default > .panel-heading h4 a.collapsed, .panel-default > .panel-heading .speaker-name { display: block; width: 100%; margin-left: 3px; color: #fff !important; }
 .panel-default > .panel-heading .speaker-name { display: inline; color: #ccc; }
 .panel-default > .panel-heading a { display: inline; }
 .panel-default > .panel-heading a:hover { text-decoration: underline; }
@@ -1196,7 +1161,7 @@ Hero Slider
 .speaker-vitals a { margin-right: 10px; }
 .speaker-vitals a:hover { color: blue; }
 
-.speaker-excerpt p { font-size: 100%; }
+.speaker-excerpt p { font-size: 80%; }
 @media (max-width: 1280px) { .speaker-excerpt { font-size: 75%; } }
 
 .speaker-long-bio { margin: 70px auto; max-width: 1680px; }
