@@ -4,40 +4,35 @@
             $previous_sponsor_parent_id = 686;
             
          ?>
-                     <div class="row">
+<div class="row">
 
               <div class="col-sm-offset-4 col-sm-8">
           <h2 class="font-alt module-title">2019 <?php echo $title?></h2>
-            <div class="sponsors row multi-columns-row post-columns">
-                <?php
-                 print wpautop($content);
+          <?php
 
-                    displaySponsors(getSponsorLevel($current_sponsor_parent_id,'Terrabit'));
-                    displaySponsors(getSponsorLevel($current_sponsor_parent_id,'Gigabit'));
-                    displaySponsors(getSponsorLevel($current_sponsor_parent_id,'Megabit'));
-                    displaySponsors(getSponsorLevel($current_sponsor_parent_id,'Community'));
+                    
+displaySponsors($current_sponsor_parent_id,'Terrabit');
+displaySponsors($current_sponsor_parent_id,'Gigabit');
+displaySponsors($current_sponsor_parent_id,'Megabit');
+displaySponsors($current_sponsor_parent_id,'Community');
                  
 
 
 
                 ?>
+                </div>
+</div>
+<div class="row">
+        <div class="col-sm-offset-4 col-sm-8">
+            <h3>Become a Sponsor</h3>
+            <div class="sponsors row multi-columns-row post-columns">
+                <?php
+                 print wpautop($content);
+                 ?>
+                
+                
+        </div>
 
-
-            </div>
     </div>
 </div>
-            <div class="row">
-              <div class="col-sm-offset-4 col-sm-8">
-            <h3>Silicon Harlem Thanks our 2018 Sponsors.</h3>
-                <?php
-                  
-
-                    
-                   
-                    displaySponsors(getSponsorLevel($previous_sponsor_parent_id,'Previous'));
-                    ?>
-
-
-            </div>
-</div>
-
+            

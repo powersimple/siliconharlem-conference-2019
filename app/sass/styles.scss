@@ -48,12 +48,12 @@ h2.module-title{
     font-size:300%;
     color:$green
 }
-h3.section-head{
-    font-weight:bold;
-    color:#a057a2;
-    text-align:center;
-    font-size:150%;
+h3, h4{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 70px;
 }
+
 h4.section-prime {
     font-weight: bold;
     border-bottom:3px dashed #f58669;
@@ -128,7 +128,7 @@ a.cta:hover{
         width: auto;
         max-width:98%;
     }
-    @media (min-width: 768px){
+    @media (min-width: 1680px){
         max-width:1680px;
     }
 

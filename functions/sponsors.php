@@ -1,29 +1,79 @@
 <?php
 
-    function sponsorGridLevel($sponsor_level){
-        if($sponsor_level == 'Terrabit' || $sponsor_level == 'Gigabit'){
-            return "col-xs-12 col-sm-5 col-sm-offset-1";
-        } else if($sponsor_level == 'Megabit'){
-             return 'col-sm-6 col-md-4 col-lg-4';
-        } else if($sponsor_level == 'Previous'){
-                return 'col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1';
-   
+    function sponsorGridLevel($sponsor_level,$sponsor_count){
+        $bootstrap= 'col-sm-6 col-md-3 col-lg-3';//default
+        $max_per_level = 6;//default
+        if($sponsor_count){ 
+            $grid_lock = (12/$sponsor_count);
+            if($grid_lock != intval($grid_lock)){
+              //  print $grid_lock;
+            }
 
-        } else{
-            return 'col-sm-6 col-md-3 col-lg-3';
+            
+           
+            if($sponsor_level == 'Terrabit'){
+                $max_per_level = 1;
+            } else if($sponsor_level == 'Gigabit'){
+                $max_per_level = 2;
+                //return "col-xs-12 col-sm-5 col-sm-offset-1";
+            } else if($sponsor_level == 'Megabit'){
+                $max_per_level = 4;
+            } else {
+                //$sponsor_level == 'Community'){   
+                //return 'col-sm-6 col-md-4 col-lg-4';
+                $max_per_level = 6;
+            } /*else if($sponsor_level == 'Previous'){
+                  //  return 'col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1';
+    
+
+            } else{
+                //return 'col-sm-6 col-md-3 col-lg-3';
+            }*/
+           // print $sponsor_level ." ".$sponsor_count." ".$max_per_level."<br>";
+            if($max_per_level == 1){
+                $bootstrap = "col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3";
+              //  print "terrabit";
+            }
+            if($max_per_level == 2){
+            //    print "gigabit";
+
+                if($sponsor_count == 1){
+                    $bootstrap = "col-xs-8 col-xs-offset-2";
+
+                } else if ($sponsor_count == 2){
+                    $bootstrap = "col-xs-4 col-xs-offset-1";
+
+                } else if ($sponsor_count){
+                    $bootstrap = "col-xs-4 col-xs-offset-1";
+
+                } 
+
+            } if($max_per_level == 6){
+                if($sponsor_count == 3){
+                    $bootstrap = "col-xs-4 col-sm-3 col-sm-offset-1 col-md-2 offset-2";
+                } else {
+
+                }
+            }
+            
+
+
+
+            return $bootstrap;
         }
     }
+    
 
 
-    function displaySponsors($sponsors){
-        
-
-
+    function displaySponsors($parent,$sponsor_level){
+       $sponsors = getSponsorLevel($parent,$sponsor_level);
+      
+        $bootstrap = sponsorGridLevel($sponsor_level,count($sponsors)); //calculates grid based on level and sponsors per
 
         foreach($sponsors as $key => $sponsor){
             extract( $sponsor);
             //var_dump($sponsor);
-            print '<div class="'.sponsorGridLevel($sponsor_level).' sponsor '.strtolower($sponsor_level).'">';
+            print '<div class="'.$bootstrap.' sponsor '.strtolower($sponsor_level).'">';
             $src= getThumbnail($thumbnail,"Full");
             print '<a href="'.$sponsor_url.'">';
             if($src == ''){
@@ -52,6 +102,7 @@
             order by menu_order
         ");
         $sponsors = array();
+        
         foreach($q as $key => $value){
             extract((array) $value);
 

@@ -101,6 +101,6 @@
             </ul>
          
         </div>
-        <div id="orb" title="Silicon Harlem | 6th Annual Next-Gen Tech Conference: World 4.0 Let's Get Ready!"> <?php include "images/Orb-01.svg";?></div>
+        <div id="orb" title="Silicon Harlem | 6th Annual Next-Gen Tech Conference: World 4.0 Let's Get Ready!"><?php include "images/Orb-01.svg";?></div>
       </nav>
     
