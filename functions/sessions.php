@@ -52,7 +52,7 @@
 					"slug" => $post_name,
 					"start"=>get_post_meta($ID,"session_start",true),
 					"end"=>get_post_meta($ID,"session_end",true),
-					
+					"thumbnail" => get_post_thumbnail_id($ID),
 					"sponsors" => get_post_meta($ID,"sponsors"),
 					"speakers" => get_post_meta($ID,"speakers")
 				));

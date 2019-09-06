@@ -749,15 +749,6 @@ blockquote { border: 0; font-style: italic; font-size: 15px; padding: 0; }
 /* Tabs */
 .tab-content .tab-pane { padding: 20px 0; }
 
-/* Accordion */
-.panel-title { font-size: 14px; }
-
-.panel-heading a { position: relative; display: block; }
-
-.panel-heading a:after { position: absolute; content: "\f106"; top: 50%; right: 0px; font-family: "FontAwesome"; line-height: 1; font-size: 24px; margin-top: -12px; }
-
-.panel-heading a.collapsed:after { content: "\f107"; }
-
 /* Tables */
 .table-border > tbody > tr > td, .table-border > tbody > tr > th, .table-border > tfoot > tr > td, .table-border > tfoot > tr > th, .table-border > thead > tr > td, .table-border > thead > tr > th { border-color: #e5e5e5; }
 
@@ -1112,9 +1103,6 @@ Hero Slider
 
 .panel-group { margin-bottom: 0px; border-color: none; }
 
-.panel-title { font-size: 1em; position: relative; padding: 5px 0px; }
-@media (max-width: 767px) { .panel-title { font-size: 80%; } }
-
 .panel-default { border-radius: 25px !important; margin-bottom: -20px; padding-bottom: 5px; }
 
 .session-time, .mobile-sesion.time { float: right; margin-right: 2em; margin-top: -17px; text-transform: none; color: #fff !important; position: absolute; top: 0px; right: 0px; font-size: 80%; }
@@ -1125,6 +1113,22 @@ Hero Slider
 
 .session-blurb { font-weight: 600; font-style: italic; padding: 5px 10px; color: #005e92; }
 @media (max-width: 540px) { .session-blurb { font-size: 75%; padding: 5px 0px; } }
+
+/* Accordion */
+.panel-title { font-size: 14px; }
+
+.panel-heading a { position: relative; display: block; }
+
+.panel-heading a:after { position: absolute; content: "\f106"; top: 50%; right: 0px; font-family: "FontAwesome"; line-height: 1; font-size: 100%; margin-top: -12px; }
+
+.panel-heading a.collapsed:after { content: "\f107"; }
+
+.session-info { display: table; margin-bottom: 25px; }
+
+.session-listing { font-size: 80%; }
+@media (max-width: 956px) { .session-listing { text-align: center; } }
+
+.session-thumbnail img { margin-top: 1em; }
 
 .panel-default > .panel-heading { color: #ccc; padding: 1em; background: -webkit-gradient(linear, left bottom, left top, from(#12133c), color-stop(51%, #06173b), to(#005e92)); background: linear-gradient(to top, #12133c 0%, #06173b 51%, #005e92 100%); margin: 3px; border-top-left-radius: 25px; border-top-right-radius: 25px; }
 .panel-default > .panel-heading h4 a, .panel-default > .panel-heading h4 a.collapsed, .panel-default > .panel-heading .speaker-name { display: block; width: 100%; margin-left: 3px; color: #fff !important; }
@@ -1147,22 +1151,29 @@ Hero Slider
 .speaker-listing div { display: inline-block; vertical-align: top; }
 .speaker-listing .speaker-image { width: 150px; height: 150px; }
 
-.speaker-image { overflow: hidden; border: 6px solid #12133c; display: inline-block; width: 150px; height: 150px; display: inline-block; margin: 0px 30px 1em 0px; float: left; border-radius: 50%; }
+@media (max-width: 539px) { .panel-body p { font-size: 3vw; } }
+@media (min-width: 540px) and (max-width: 767px) { .panel-body p { font-size: 2vw; } }
+@media (min-width: 768px) and (max-width: 1280px) { .panel-body p { font-size: 1.5vw; } }
+@media (min-width: 1281px) and (max-width: 1680px) { .panel-body p { font-size: 1.2vw; } }
+@media (min-width: 1681px) { .panel-body p { font-size: 80%; } }
+
+.speaker-image { overflow: hidden; border: 6px solid #12133c; display: inline-block; width: 150px; height: 150px; display: inline-block; float: left; border-radius: 50%; padding: 0px; }
+
+.affiliation { font-size: 70%; line-height: 120%; }
+@media (max-width: 768px) { .affiliation { margin-bottom: 2em; margin-right: 1em; } }
 
 .speaker-info { font-size: 120%; }
 @media (max-width: 600px) { .speaker-info { width: 100%; } }
 .speaker-info strong { font-weight: 700; font-size: 150%; line-height: 150%; border-bottom: 1px solid #333; color: #12133c; }
-.speaker-info .fa { border-radius: 50%; text-align: center; width: 20px; height: 20px; margin-right: 5px; padding: 3px 4px; }
+.speaker-info .fa { border-radius: 50%; text-align: center; width: 20px; height: 20px; margin-right: 5px; padding: 3px 4px; color: #555; }
 .speaker-info a.fa:hover { color: #000; }
 .speaker-info p, .speaker-info li { width: 57%; font-size: 120%; }
 
-.speaker-vitals { line-height: 150%; font-size: 80%; }
+.speaker-vitals { line-height: 150%; font-size: 80%; padding: 0px; }
 .speaker-vitals strong { display: block; }
 .speaker-vitals a { margin-right: 10px; }
 .speaker-vitals a:hover { color: blue; }
-
-.speaker-excerpt p { font-size: 80%; }
-@media (max-width: 1280px) { .speaker-excerpt { font-size: 75%; } }
+.speaker-vitals .social listing a { color: #555; }
 
 .speaker-long-bio { margin: 70px auto; max-width: 1680px; }
 .speaker-long-bio h2 { margin-top: 70px; margin-bottom: 0px; }
@@ -1310,7 +1321,7 @@ a.cta:hover { -webkit-transform: scale(1.5); transform: scale(1.5); }
 
 .container { margin: 0px auto; }
 @media (min-width: 768px) and (max-width: 1680px) { .container { width: auto; max-width: 98%; } }
-@media (min-width: 1680px) { .container { max-width: 1680px; } }
+@media (min-width: 1680px) { .container { width: 1680px; } }
 
 #prices { border: 3px dashed #12133c; border-radius: 5px; width: 100%; }
 @media (min-width: 768px) { #prices { font-size: 150%; } }

@@ -16,14 +16,7 @@
     border-color: none;
 }
 
-.panel-title {
-    font-size: 1em;
-    position: relative;
-    padding: 5px 0px;
-    @media(max-width: 767px) {
-        font-size: 80%;
-    }
-}
+
 
 .panel-default {
     border-radius: 25px !important;
@@ -69,7 +62,48 @@
         padding: 5px 0px;
     }
 }
+/* Accordion */
 
+.panel-title {
+    font-size: 14px;
+}
+
+.panel-heading a {
+    position: relative;
+    display: block;
+}
+
+.panel-heading a:after {
+    position: absolute;
+    content: "\f106";
+    top: 50%;
+    right: 0px;
+    font-family: "FontAwesome";
+    line-height: 1;
+    font-size: 100%;
+    margin-top: -12px;
+}
+
+.panel-heading a.collapsed:after {
+    content: "\f107";
+}
+.session-info{
+    display: table;
+    margin-bottom: 25px;
+}
+.session-listing{
+    font-size:80%;
+        @media(max-width:956px){
+            
+            text-align: center;
+    
+    }
+}
+.session-thumbnail{
+    img{
+        margin-top:1em;
+    }
+}
 .panel-default>.panel-heading {
     color: #ccc;
     padding: 1em;
@@ -84,13 +118,14 @@
         width: 100%;
         margin-left: 3px;
         color: #fff !important;
+       
     }
     .speaker-name {
         display: inline;
         color: #ccc;
     }
     a {
-        display: inline;
+        display:inline;
     }
     a:hover {
         text-decoration: underline;

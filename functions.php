@@ -64,7 +64,7 @@ add_theme_support('post-thumbnails', array(
 					"video_embed_url" => get_post_meta($ID,"video_embed_url",true),
 					"sponsors" => get_post_meta($ID,"sponsors"),
 					"speakers" => get_post_meta($ID,"speakers"),
-					"thumbnail" => get_post_thumbnail_id($ID),
+					"thumbnail_data" => get_media_data(get_post_thumbnail_id($ID)),
 				));
 
 			}
@@ -92,7 +92,9 @@ add_theme_support('post-thumbnails', array(
 					"slug" => $post_name,
 					"start"=>get_post_meta($ID,"session_start",true),
 					"end"=>get_post_meta($ID,"session_end",true),
-					
+					"thumbnail_id" => get_post_thumbnail_id($ID),
+					"thumbnail_src" => getThumbnail(get_post_thumbnail_id($ID)),
+					"thumbnail_data" => get_media_data(get_post_thumbnail_id($ID)),
 					"sponsors" => get_post_meta($ID,"sponsors"),
 					"speakers" => get_post_meta($ID,"speakers")
 				));

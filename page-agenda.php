@@ -30,6 +30,7 @@
         
 
     foreach ($sessions as $key => $value) {
+      //var_dump($value);
         extract((array) $value);
         $speaker_list = speakerList($speakers);
         $sponsor_list = sponsorList($sponsors);
@@ -70,9 +71,29 @@
                     
                     <div class="panel-collapse collapse session" id="<?php echo $slug?>">
                       <div class="panel-body">
+                        <div class="session-info">
                       <span class="mobile-session-time"><?php echo $session_time; ?></span>  
-                      <div class="session-blurb"><?php echo wpautop($content)?></div>
-                        
+
+                      <?php
+                        if($thumbnail_id !=''){
+                         ?>
+                        <div class="session-hero col-xs-12 col-lg-6">
+                        <img src="<?=$thumbnail_src?>" alt="<?=$thumbnail_data['alt']?>">
+                      </div>
+                      <div class="col-xs-12 col-lg-6">
+                         <?php
+                        } else {
+                          ?>
+                          <div class="col-xs-12">
+                        <?php }
+                      ?>
+
+
+                      
+                      
+                        <div class="session-blurb"><?php echo wpautop($content)?></div>
+                      </div>
+                        </div>
                     <?php
                         foreach($speaker_list as $key=>$speaker){
                            ?>
