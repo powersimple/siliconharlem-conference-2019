@@ -66,6 +66,7 @@
             //position: fixed; // desktop pins it left; 
         }
         @media(max-width:767px) {
+            font-size: 3vw;
             transform: translateX(0) scale(0);
         }
     }

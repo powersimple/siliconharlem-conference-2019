@@ -2136,7 +2136,6 @@ blockquote {
 }
 
 
-
 /* Tables */
 
 .table-border>tbody>tr>td,
@@ -2662,6 +2661,7 @@ blockquote {
         letter-spacing: 3px;
         margin-top: 1px;
         margin-bottom: 0;
+        font-size: 3vw;
     }
     .navbar-custom li>a:hover {
         background: rgba(255, 255, 255, 0.1) !important;

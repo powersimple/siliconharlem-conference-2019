@@ -8,18 +8,25 @@
 
               <div class="col-sm-offset-4 col-sm-8">
           <h2 class="font-alt module-title">2019 <?php echo $title?></h2>
-          <?php
 
-                    
+          
+ <div class="row"><?php
+
 displaySponsors($current_sponsor_parent_id,'Terrabit');
+?>
+ <div class="row"><?php
 displaySponsors($current_sponsor_parent_id,'Gigabit');
+?></div>
+ <div class="row"><?php
 displaySponsors($current_sponsor_parent_id,'Megabit');
+?></div>
+ <div class="row"><?php
 displaySponsors($current_sponsor_parent_id,'Community');
-                 
+       ?></div>          
+</div>
 
 
-
-                ?>
+               
                 </div>
 </div>
 <div class="row">

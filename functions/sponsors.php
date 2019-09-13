@@ -48,7 +48,21 @@
 
                 } 
 
-            } if($max_per_level == 6){
+            } 
+             if($max_per_level == 4){
+               if($sponsor_count == 1){
+                    $bootstrap = "col-xs-offset-4 col-xs-4";
+
+                } else if ($sponsor_count == 2){
+                    $bootstrap = "col-xs-4 col-xs-offset-1";
+
+                } else if ($sponsor_count){
+                    $bootstrap = "col-xs-4 col-xs-offset-1";
+
+                } 
+              //  print "terrabit";
+            }
+            if($max_per_level == 6){
                 if($sponsor_count == 3){
                     $bootstrap = "col-xs-4 col-sm-3 col-sm-offset-1 col-md-2 offset-2";
                 } else {

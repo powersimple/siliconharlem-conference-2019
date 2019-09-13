@@ -16,8 +16,6 @@
     border-color: none;
 }
 
-
-
 .panel-default {
     border-radius: 25px !important;
     margin-bottom: -20px;
@@ -34,7 +32,6 @@
     @media(max-width: 767px) {
         display: none;
     }
-    position: absolute;
     top: 0px;
     right: 0px;
     font-size: 80%;
@@ -62,10 +59,15 @@
         padding: 5px 0px;
     }
 }
+
+
 /* Accordion */
 
 .panel-title {
     font-size: 14px;
+    @media(max-width: 1100px) {
+        text-align: left !important;
+    }
 }
 
 .panel-heading a {
@@ -87,23 +89,25 @@
 .panel-heading a.collapsed:after {
     content: "\f107";
 }
-.session-info{
+
+.session-info {
     display: table;
     margin-bottom: 25px;
 }
-.session-listing{
-    font-size:80%;
-        @media(max-width:956px){
-            
-            text-align: center;
-    
+
+.session-listing {
+    font-size: 80%;
+    @media(max-width: 956px) {
+        text-align: center;
     }
 }
-.session-thumbnail{
-    img{
-        margin-top:1em;
+
+.session-thumbnail {
+    img {
+        margin-top: 1em;
     }
 }
+
 .panel-default>.panel-heading {
     color: #ccc;
     padding: 1em;
@@ -118,14 +122,13 @@
         width: 100%;
         margin-left: 3px;
         color: #fff !important;
-       
     }
     .speaker-name {
         display: inline;
         color: #ccc;
     }
     a {
-        display:inline;
+        display: inline;
     }
     a:hover {
         text-decoration: underline;
