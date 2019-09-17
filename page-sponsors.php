@@ -31,7 +31,7 @@ displaySponsors($current_sponsor_parent_id,'Community');
 </div>
 <div class="row">
         <div class="col-sm-offset-4 col-sm-8">
-            <h3>Become a Sponsor</h3>
+            <h3><a href="/wp-content/uploads/2019/09/SH6-Sponshorship.pdf" target="_new">Download Our Sponsorship Presentation</a></h3>
             <div class="sponsors row multi-columns-row post-columns">
                 <?php
                  print wpautop($content);
