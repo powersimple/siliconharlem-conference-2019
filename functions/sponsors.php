@@ -90,7 +90,7 @@
             //var_dump($sponsor);
             print '<div class="'.$bootstrap.' sponsor '.strtolower($sponsor_level).'">';
             $src= getThumbnail($thumbnail,"Full");
-            print '<a href="'.$sponsor_url.'">';
+            print '<a href="'.$sponsor_url.'" target="_blank">';
             if($src == ''){
                 print "<strong>$sponsor_name</strong>";
             } else {
