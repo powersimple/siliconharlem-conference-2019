@@ -75,7 +75,7 @@ foreach($pages as $key => $value){
             ?>
             <div class="row">
               <div class="section-thumbnail col-sm-4"></div>
-              <div class="section-content   col-sm-8">
+              <div class="section-content  col-sm-8">
 
                 <h2 class="module-title font-alt"><?php echo $title?></h2>
                   <?php echo wpautop($content);?>
