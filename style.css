@@ -1085,7 +1085,7 @@ Hero Slider
 
 #venue { background: #E2DFDF; }
 
-#volunteer input[type=submit] { color: #06173b; }
+#volunteer input[type=text], #volunteer input[type=submit], #volunteer textarea { color: #06173b; }
 
 #registration { background: #008dc0; border-bottom: 10px solid #635F5F; }
 #registration h2.module-title { color: #06173b; }
