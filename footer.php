@@ -1,9 +1,10 @@
 <?php
   $bootstrap = "col-sm-4";
   ?>
-  <div class="container chain-of-blocks">
+
    
-        <div class="module-small footer-widgets bg-dark">
+<!--
+        <div class="module-small footer-widgets ">
           <div class="container">
             <div class="row">
               <div class="col-sm-offset-4 col-sm-8 ">
@@ -22,22 +23,17 @@
                   <?php dynamic_sidebar( 'footer-3' ); ?> 
                   
                 </div>
-                <!--
-                <div class="<? echo $bootstrap;?>">
-                
-                    <?php dynamic_sidebar( 'footer-4' ); ?> 
-                  
-                </div>-->
+              
               </div>
             </div>
           </div>
         </div>
-        
-        <hr class="divider-d">
-        <div class="row bg-dark">
-        <div class="col-xs-offset-1 col-xs-10" title="IoT | XR | 5G | AI | Blockchain | Quantum Computing"><img src="<?php echo get_stylesheet_directory_uri();?>/images/chain-of-blocks-01.svg" alt="Blocks or 4th Industrial Revolution Technologies" class="style-svg"></div>
-        </div>
-    </div>
+    </div>    
+
+-->
+       
+
+    
         <footer class="footer bg-dark">
         <div class="container">
             <div class="row">

@@ -25,7 +25,7 @@
 		$children = get_children( array("post_parent"=>$home_id,'post_type'=>'page','orderby' => 'menu_order ASC','order' => 'ASC') );
 		$child_list = array();
 		foreach ($children as $key => $value) {
-		
+		 if($value->post_name != 'slideshow'){//rude hack
 			if(get_post_meta($value->ID,"redirect",true)){
 				$href=get_post_meta($value->ID,"redirect",true);
 				$target=' target="_blank"';
@@ -39,7 +39,7 @@
 
           
 			print '<li><a class="section-scroll" onclick="closeMenu()" href="'.$href.'"'.$target.'><span>'.$value->post_title.'</a>';// if printed, shows this.
-            
+            }
 		}
 	}
 

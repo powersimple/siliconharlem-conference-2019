@@ -76,6 +76,33 @@ function setSessionDetails( $meta_boxes ) {
 add_filter( 'rwmb_meta_boxes', 'setSessionDetails' );
 
 
+function setSessionSpeakerz( $meta_boxes ) {
+	$prefix = '';
+
+	$meta_boxes[] = array(
+		'id' => 'session-speakers',
+		'title' => esc_html__( 'Speakerz', 'metabox-online-generator' ),
+		'post_types' => array('session' ),
+		'context' => 'side',
+		'priority' => 'default',
+		'autosave' => 'false',
+		'fields' => array(
+			array(
+				'id' => $prefix . 'speakers',
+				'type' => 'post',
+				'name' => esc_html__( 'Speakerz', 'metabox-online-generator' ),
+				'post_type' => 'speaker',
+				'field_type' => 'checkbox_list',
+			),
+		),
+	);
+
+	return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'setSessionSpeakerz' );
+
+
+/*
 function setSessionSpeakers( $meta_boxes ) {
 	$prefix = '';
 
@@ -101,7 +128,7 @@ function setSessionSpeakers( $meta_boxes ) {
 	return $meta_boxes;
 }
 add_filter( 'rwmb_meta_boxes', 'setSessionSpeakers' );
-
+*/
 function setSessionSponsors( $meta_boxes ) {
 	$prefix = '';
 

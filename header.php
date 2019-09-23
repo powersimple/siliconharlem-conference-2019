@@ -50,17 +50,48 @@
     var json_path = "<?php echo get_stylesheet_directory_uri();?>/data/";
     var uploads_path =  "<?php echo $url['baseurl']?>/";
 
+    var hero_slides = [
+      <?php 
+      
+       $slides = get_slides($post->ID);
+       $slide_version_list = array();
+    foreach ($slides as $key => $media_id) {
+       $src= wp_get_attachment_image_src( $media_id,"Full");
+       //var_dump($src);//var_dump(get_media_data($media_id));
+      $media_data = get_media_data($media_id);
+    //  var_dump($media_data);
+      $versions = getThumbnailVersions($media_id);
+      $version_list = array();
+      foreach($versions as $v => $version){
+          array_push($version_list,$v.": '".$version."'");
+
+      }
+       array_push($slide_version_list,"{".implode($version_list,",")."}
+       ");
+      
+     
+     // print "<BR>";
+      // var_dump($versions);
+        extract((array) get_media_data($media_id));
+    }
+    print implode($slide_version_list,",
+      ");
+     ?>
+    ]
+    
+
+
 
 </script>
 
   </head>
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
-    
+
       <div class="page-loader">
         <div class="loader"><img src="<?php echo get_stylesheet_directory_uri();?>/images/Orb-01.svg" alt="" class="style-svg"></div> 
 
       </div>
-      <?php //die()?>
+    
       <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent one-page" role="navigation" id="nav">
         <div class="container">
           <div class="navbar-header">

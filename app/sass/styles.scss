@@ -8,20 +8,19 @@ Text Domain: siliconharlemconf
 
 DO NOT EDIT IN STYLE.CSS
 */
+
+
 /*
     PUT YOUR COLOR PALETTE HERE:
 */
 
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600i,700,900');
-
 @import "partials/colors";
 @import "partials/loader";
 @import "partials/template";
 @import "partials/nav";
-
 @import "partials/header";
 @import "partials/main";
-
 @import "partials/hero";
 @import "partials/sections";
 @import "partials/video";
@@ -31,24 +30,26 @@ DO NOT EDIT IN STYLE.CSS
 @import "partials/slick";
 @import "partials/lava";
 @import "partials/particles";
-body{
-    @media(max-width:355px){
-        min-width:355px;
-      }
-
-}
-
-p{
-    @media(max-width:540px){
-        font-size:70%;
+body {
+    @media(max-width: 355px) {
+        min-width: 355px;
     }
 }
-h2.module-title{
-    font-weight: 700;
-    font-size:300%;
-    color:$green
+
+p {
+    @media(max-width: 540px) {
+        font-size: 70%;
+    }
 }
-h3, h4{
+
+h2.module-title {
+    font-weight: 700;
+    font-size: 300%;
+    color: $green
+}
+
+h3,
+h4 {
     text-align: center;
     font-weight: 600;
     margin-top: 70px;
@@ -56,55 +57,49 @@ h3, h4{
 
 h4.section-prime {
     font-weight: bold;
-    border-bottom:3px dashed #f58669;
-    padding-bottom:1em;
-    margin-bottom:1em;
-    text-align:center;
-    font-size:120%;
-    color:#419B4E;
+    border-bottom: 3px dashed #f58669;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 120%;
+    color: #419B4E;
 }
 
-
-.module{
-    padding-top:70px;
+.module {
+    padding-top: 70px;
 }
+
 .bg-dark {
-
-    background: linear-gradient(to top, $darkest_blue 0%,$dark_green 51%,$blue 100%); 
-
-  }
-
-a.cta{
-    
-    text-align:center;
-    margin:3em auto 1em;
-    color:#fff;
-    font-weight:900;
-    display:block; 
-        display: block;
-        background-size: cover;
-        
-        
-        line-height: 150%;
-        transition: all .2s ease-in-out;
-        
+    background: linear-gradient(to top, $darkest_blue 0%, $dark_green 51%, $blue 100%);
 }
+
+a.cta {
+    text-align: center;
+    margin: 3em auto 1em;
+    color: #fff;
+    font-weight: 900;
+    display: block;
+    display: block;
+    background-size: cover;
+    line-height: 150%;
+    transition: all .2s ease-in-out;
+}
+
 a.register {
     background: url(/wp-content/uploads/2018/10/blue-aqua.png) center center no-repeat;
     width: 303px;
     height: 199px;
     padding: 2em 0px;
-font-size: 200%;
+    font-size: 200%;
 }
 
 a.sponsor {
     background: url(/wp-content/uploads/2018/10/red-pink.png) center center no-repeat;
     width: 539px;
     height: 387px;
-    padding:9em 1em 0px;
+    padding: 9em 1em 0px;
     font-size: 150%;
     max-width: 100%;
-
     span {
         font-size: 150%;
         display: block;
@@ -112,96 +107,99 @@ a.sponsor {
         margin-bottom: 0.5em;
     }
 }
-a.cta:hover{
-    
-        transform: scale(1.5);
+
+a.cta:hover {
+    transform: scale(1.5);
 }
-.section-foot{
-    margin:50px 0px;
+
+.section-foot {
+    margin: 50px 0px;
 }
 
 .container {
-    margin:0px auto;
-
-    @media (min-width: 768px) and (max-width:1680px){
-    
+    margin: 0px auto;
+    @media (min-width: 768px) and (max-width: 1680px) {
         width: auto;
-        max-width:98%;
+        max-width: 98%;
     }
-    @media (min-width: 1680px){
-        width:1680px;
-        
+    @media (min-width: 1680px) {
+        width: 1680px;
     }
-
 }
-#prices{
-    border:3px dashed $darkest_blue;
-    border-radius:5px;
-    @media(min-width:768px){
-        font-size:150%;
-    }
-    td{
-        padding:10px;
-    }
-    tr td:first-child{
-        text-align:left;
-        padding-left:10px;
-    }
-    tr td:nth-child(2){
-        text-align:center;
-    }
-    tr td:last-child{
-        text-align:right;
-        padding-right:10px;
 
+#prices {
+    border: 3px dashed $darkest_blue;
+    border-radius: 5px;
+    @media(min-width: 768px) {
+        font-size: 150%;
     }
-
+    td {
+        padding: 10px;
+    }
+    tr td:first-child {
+        text-align: left;
+        padding-left: 10px;
+    }
+    tr td:nth-child(2) {
+        text-align: center;
+    }
+    tr td:last-child {
+        text-align: right;
+        padding-right: 10px;
+    }
     width: 100%;
-    tr.active td{
-        font-weight:bold;
-        color:$dark_blue;
+    tr.active td {
+        font-weight: bold;
+        color: $dark_blue;
     }
-    tr.inactive td{
-        color:$dark_gray;
+    tr.inactive td {
+        color: $dark_gray;
     }
-    tr.past td{
-        text-decoration:line-through;
+    tr.past td {
+        text-decoration: line-through;
     }
-    tr.even-row{
-        background-color:$light_gray;
+    tr.even-row {
+        background-color: $light_gray;
     }
 }
-.registration-button{
-    background:$green;
-    text-shadow:3px 3px $dark_green;
-    font-size:150%;
-    color:#fff;
-    font-weight:700;
-    padding:25px;
-    border-radius:25px;
-    border:3px outset $green;
-    width:auto;
-    margin:15px auto;
+
+.registration-button {
+    background: $green;
+    text-shadow: 3px 3px $dark_green;
+    font-size: 150%;
+    color: #fff;
+    font-weight: 700;
+    padding: 25px;
+    border-radius: 25px;
+    border: 3px outset $green;
+    width: auto;
+    margin: 15px auto;
     display: inline-block;
-
-}
-#speakers .registration-button{
-    background:#fff;
-    color:$green;
-    text-shadow:1px 1px $dark_green;
-}
-#speakers .registration-button:hover{
-    background:#ff0;
-    color:$green;
-    text-shadow:1px 1px $dark_green;
 }
 
-.button-wrap{
+#speakers .registration-button {
+    background: #fff;
+    color: $green;
+    text-shadow: 1px 1px $dark_green;
+}
+
+#speakers .registration-button:hover {
+    background: #ff0;
+    color: $green;
+    text-shadow: 1px 1px $dark_green;
+}
+
+.button-wrap {
     position: relative;
-    width:320px;
-    margin:0px auto;
+    width: 320px;
+    margin: 0px auto;
 }
 
-a.registration-button:hover{
-    color:#ff0;
+a.registration-button:hover {
+    color: #ff0;
+}
+
+#volunteer {
+    background-color: $dark_green;
+    color: #fff;
 }

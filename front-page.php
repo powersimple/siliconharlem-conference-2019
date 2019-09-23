@@ -31,7 +31,7 @@ get_header();
         ?>
 
           
-            <li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo $src[0];?>);">
+            <li id="slide-<?=$key?>" class="bg-dark-30 bg-dark">
               <!--
               <div class="titan-caption">
                 <div class="caption-content">
@@ -73,7 +73,7 @@ foreach($pages as $key => $value){
               require_once(get_stylesheet_directory()."/page-$slug.php"); // includes page-slug.php if it exists
             } else {
             ?>
-            <div class="row">
+            <div class="row cols-sm-8 col-sm-offset-4">
               <div class="section-thumbnail col-sm-4"></div>
               <div class="section-content  col-sm-8">
 

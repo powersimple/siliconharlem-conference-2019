@@ -133,14 +133,15 @@
 
 		function getSpeakers($parent=0){
 			global $wpdb;
-			$q = $wpdb->get_results("
+			$sql ="
 			select ID
 			from wp_posts
 			where post_status = 'publish' 
 			and post_type = 'speaker'
-			and post_name = $parent
+			and post_parent = $parent
 			order by menu_order
-				");
+				";
+		$q = $wpdb->get_results($sql);
 			$speaker_list = array();
 			foreach($q as $key=>$value){
 				array_push($speaker_list,getSpeaker($value->ID));

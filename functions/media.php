@@ -22,6 +22,7 @@
 		function getThumbnailVersions($id){
 				global $post;
 				$thumbnail_versions = array(); //creates the array of size by url
+				$thumbnail_versions['original'] = getThumbnail($id);
 				foreach(get_intermediate_image_sizes() as $key => $size){//loop through sizes
 					$img = wp_get_attachment_image_src($id,$size);//get the url 
 					
@@ -57,7 +58,7 @@
 		
 		}
 		add_shortcode( 'embed_video', 'video_shortcode' );
-
+//
 		function get_media_data( $id ) { //this function builds the data for a lean json packet of media
 			$data = array();   
 			$url = wp_upload_dir();
@@ -68,10 +69,9 @@
 			$mime = get_post_mime_type( $id );
 			$meta  = (array) wp_get_attachment_metadata( $id,true);
 			$meta_data = array();
-			/*
 			
-				The meta data properties are only accessible inside a loop for some dumb reason.
-			*/
+			//	The meta data properties are only accessible inside a loop for some dumb reason.
+		
 			if(strpos($mime,'mage/') && !strpos($mime,'svg')){ // the i is left of so the strpos returns a postive value
 				$meta_data = array();
 				foreach($meta as $key => $value){

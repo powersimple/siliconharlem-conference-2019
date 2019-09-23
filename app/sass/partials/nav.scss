@@ -35,29 +35,31 @@
         transition: all 2s ease-in-out 1s;
         transform-origin: center center;
         position: absolute;
-        @media(orientation: landscape) and (max-width: 1679px) {
-            width: 38.8vh;
+        @media(orientation: landscape) and (min-width: 1680px) {
+            width: 25vw;
             top: 50vh;
-            margin-top: -19.4vh;
+            margin-top: -12.5vw;
             left: 50vw;
-            margin-left: -19.4vh;
-            transform: translateX(-32.5vw) scale(0.8);
+            margin-left: -12.5vw;
+            -webkit-transform: translateX(-19.4vw) scale(0.5);
+            transform: translateX(-32vw) scale(0.5);
         }
-        @media(orientation: landscape) and (min-width:1680px) {
-            width: 38.8vh;
+        @media(orientation: landscape) and (max-width: 1679px) {
+            width: 38.8vw;
             top: 50vh;
-            margin-top: -19.4vh;
+            margin-top: -19.4vw;
             left: 50vw;
-            margin-left: -19.4vh;
-            transform: translateX(-480px) scale(0.8);
+            margin-left: -19.4vw;
+            -webkit-transform: translateX(-19.4vw) scale(0.5);
+            transform: translateX(-32vw) scale(0.5);
         }
         @media(orientation:portrait) {
             width: 38.8vw;
             top: 50vh;
             margin-top: -19.4vw;
             left: 50vw;
-            margin-left: -19.4vw;
-            transform: translateX(-560px) scale(0.7);
+            margin-left: -25vw;
+            transform: translateX(-25vw) scale(0.618);
         }
         svg {
             width: 100%;

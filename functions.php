@@ -1,5 +1,14 @@
 <?php
-  	require_once("functions/sidebars.php");
+	 
+	 
+	 
+	 
+	 
+	require_once("functions/functions-rest-endpoints.php");
+	require_once("functions/functions-rest-register.php");
+	require_once("functions/functions-rest-menus.php");
+	 
+	require_once("functions/sidebars.php");
 
 	  require_once("functions/widgets.php");
   

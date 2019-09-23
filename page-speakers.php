@@ -8,19 +8,22 @@
                 <h2 class="module-title font-alt"><?php echo $title?></h2>
 
                 <div class="panel-body"><?php echo wpautop($content);?></div>
-                <?php echo registrationButton();?>
+                <?php //echo registrationButton();?>
 
               </div>
             </div>
                 
 
             
-            <div class="row speakers-page">
+            <div class="row speakers-page col-sm-offset-4 col-sm-8">
               <?php
-    $speakers = getSpeakers(434);
+              if(@$_GET['with']){
+    $speakers = getSpeakers(410);
+   
     foreach($speakers as $key => $speaker){
         
         displaySpeaker($speaker,"thumbnail","speaker-list");
+    }
     }
               ?>
 

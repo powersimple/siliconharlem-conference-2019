@@ -2,7 +2,7 @@
 <?php if(@$thumbnail != ''){?>
            <div class="featured"><img src="<?=$thumbnail?>"></div>
 <?php } ?>
-          <div class="row">
+          <div class="row cols-sm-8 col-sm-offset-4"">
 
 
           <h2 class="font-alt module-title"><?php echo $title?></h2>
@@ -15,7 +15,7 @@
 
 
             </div>
-            <div class="row">  
+            <div class="row cols-sm-8 col-sm-offset-4">  
             <div class="section-thumbnail schedule col-sm-4"></div>
                       <div class="section-content schedule-bg col-sm-8">
                       <h3><?=wpautop($excerpt);?></h3>
@@ -44,7 +44,10 @@
                     <div class="panel-heading">
                       <h4 class="panel-title font-alt"><a data-toggle="collapse" data-parent="#accordion" href="#<?php echo $slug?>"><?php echo $title?></a><span class="session-time"><?php echo $session_time; ?></span></h4>
                        <div class="session-listing">
-                       
+                       <?php
+                        if(@$_GET['with']){
+                          ?>
+                        
                     <div class="panel-speakers">
                       <?php
                       if(count($speaker_list)>0){
@@ -66,6 +69,9 @@
                     }
                   ?>
                     </div>
+                      <?php
+                        }
+                          ?>
                   </div>
                     </div>
                     
@@ -95,6 +101,7 @@
                       </div>
                         </div>
                     <?php
+                     if(@$_GET['with']){
                         foreach($speaker_list as $key=>$speaker){
                            ?>
                             <div class="speaker-listing">
@@ -103,6 +110,7 @@
                             displaySpeaker($speaker,"thumbnail","short");
                               print "</div>";
                         }
+                      }
                         if(count($sponsors)){
                           print '<div class="session-sponsors">';
                           foreach($sponsor_list as $key=>$sponsor){

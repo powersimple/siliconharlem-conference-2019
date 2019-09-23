@@ -24,6 +24,7 @@
         color: $dark_blue;
         border-radius: 25px;
         padding: 15px;
+        margin: 0px aut0;
         h3 {
             font-size: 1.5vw;
             font-weight: 600;
@@ -44,25 +45,47 @@
     }
 }
 
+#slideshow {
+    padding-bottom: 0px;
+}
+
 #speakers {
-    background: $green;
+    background: $lightest_gray;
     border-bottom: 10px solid $dark_green;
     h2.module-title {
-        color: $lightest_gray;
+        color: $dark_blue;
     }
-    p {
-        color: #fff;
+    p,
+    li {
+        color: $darkest_blue;
+    }
+}
+
+#venue {
+    background: $lightest_gray;
+}
+
+#volunteer {
+    input[type=submit] {
+        color: $dark_blue;
     }
 }
 
 #registration {
-    background: $lightest_gray;
+    background: $light_blue;
     h2.module-title {
-        color: $dark_gray;
+        color: $dark_blue;
+    }
+    p,
+    li {
+        color: #fff;
     }
     border-bottom:10px solid $darkest_gray;
 }
 
 .section-thumbnail {}
 
-.section-content {}
+.section-content {
+    width: 90%;
+    margin: 0px auto;
+}
