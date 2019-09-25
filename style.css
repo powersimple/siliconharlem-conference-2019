@@ -767,7 +767,9 @@ blockquote { border: 0; font-style: italic; font-size: 15px; padding: 0; }
 
 .sidebar .widget-title { color: #111; }
 
-.widget .widget-title { border-bottom: 1px dotted #c2c2c2; font-size: 14px; padding: 0 0 10px; margin: 0 0 15px; }
+.widget .widget-title { border-bottom: 1px dotted #c2c2c2; font-size: 14px; padding: 0 0 10px; margin: 0px; }
+
+.widget_text { margin-bottom: 15px; }
 
 .widget ul { list-style: none; padding: 0; margin: 0; }
 
@@ -1067,7 +1069,7 @@ Hero Slider
 .caption-content a.btn p span { color: #b3d449; }
 @media (max-width: 767px) { .caption-content a.btn { max-width: 90%; word-wrap: break-word; } }
 
-#agenda { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(61.8%, #005e92), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #005e92 61.8%, #06173b 75%, #12133c 100%); color: #fff; border-bottom: 10px solid #12133c; font-size: 150%; line-height: 150%; }
+#agenda { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #06173b 75%, #12133c 100%); color: #fff; border-bottom: 10px solid #12133c; font-size: 150%; line-height: 150%; }
 #agenda h2.module-title { color: #b7d547; }
 @media (max-width: 767px) { #agenda .seal { width: 50%; margin: 0px auto; display: block; } }
 #agenda .featured { margin: 25px 0px; padding: 15px; }
@@ -1077,7 +1079,7 @@ Hero Slider
 @media (min-width: 1681px) { #agenda .schedule-bg h3 { font-size: 1.5em; } }
 #agenda .schedule-bg h3 h4 { font-weight: 600; color: #10432c; text-align: center; }
 
-#slideshow { padding-bottom: 0px; }
+#slideshow { padding-bottom: 0px; background: #000; }
 
 #speakers { background: #E2DFDF; border-bottom: 10px solid #10432c; }
 #speakers h2.module-title { color: #06173b; }
@@ -1090,6 +1092,8 @@ Hero Slider
 #registration { background: #008dc0; border-bottom: 10px solid #635F5F; }
 #registration h2.module-title { color: #06173b; }
 #registration p, #registration li { color: #fff; }
+
+#widgets { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(61.8%, #005e92), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #005e92 61.8%, #06173b 75%, #12133c 100%); color: #aeaaab; }
 
 .section-content { width: 90%; margin: 0px auto; }
 
@@ -1207,10 +1211,9 @@ Hero Slider
 #gallery { padding: 75px 0px; position: relative; z-index: 100; position: relative; }
 #gallery .skyline { position: absolute; right: 10%; bottom: -20px; width: 20%; max-width: 250px; }
 
-#carousel { background: #000; }
 #carousel h3 { color: #fff; }
 
-.gallery-wrap { width: 100%; margin: 30vh auto 0px; }
+.gallery-wrap { width: 100%; }
 @media (max-width: 767px) { .gallery-wrap { width: auto; } }
 .gallery-wrap .slider { margin: 0px auto; }
 

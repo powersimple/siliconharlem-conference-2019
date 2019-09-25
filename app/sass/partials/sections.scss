@@ -1,5 +1,5 @@
 #agenda {
-    background: linear-gradient(to bottom, $darkest_blue 0%, $dark_blue 25%, $blue 61.8%, $dark_blue 75%, $darkest_blue 100%);
+    background: linear-gradient(to bottom, $darkest_blue 0%, $dark_blue 25%, $dark_blue 75%, $darkest_blue 100%);
     color: #fff;
     border-bottom: 10px solid $darkest_blue;
     h2.module-title {
@@ -47,6 +47,7 @@
 
 #slideshow {
     padding-bottom: 0px;
+    background: #000;
 }
 
 #speakers {
@@ -83,6 +84,11 @@
         color: #fff;
     }
     border-bottom:10px solid $darkest_gray;
+}
+
+#widgets {
+    background: linear-gradient(to bottom, $darkest_blue 0%, $dark_blue 25%, $blue 61.8%, $dark_blue 75%, $darkest_blue 100%);
+    color: $light_gray;
 }
 
 .section-thumbnail {}

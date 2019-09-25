@@ -14,7 +14,6 @@
 }
 
 #carousel {
-    background: #000;
     h3 {
         color: #fff;
     }
@@ -22,7 +21,6 @@
 
 .gallery-wrap {
     width: 100%;
-    margin: 30vh auto 0px;
     @media(max-width: 767px) {
         width: auto;
     }

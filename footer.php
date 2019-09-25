@@ -2,35 +2,34 @@
   $bootstrap = "col-sm-4";
   ?>
 
-   
-<!--
+<section id="widgets">
         <div class="module-small footer-widgets ">
           <div class="container">
             <div class="row">
               <div class="col-sm-offset-4 col-sm-8 ">
-                <div class="<? echo $bootstrap;?>">
+                <div class="col-sm-4">
                   
                   <?php dynamic_sidebar( 'footer-1' ); ?> 
                 
                 </div>
-                <div class="<? echo $bootstrap;?>">
+                <div class="col-sm-8">
                   
                     <?php dynamic_sidebar( 'footer-2' ); ?> 
                   
                 </div>
-                <div class="<? echo $bootstrap;?>">
+             <!--   <div class="<? echo $bootstrap;?>">
                   
                   <?php dynamic_sidebar( 'footer-3' ); ?> 
                   
-                </div>
+                </div>-->
               
               </div>
             </div>
           </div>
         </div>
     </div>    
+</section>
 
--->
        
 
     
