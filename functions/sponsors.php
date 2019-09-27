@@ -21,6 +21,9 @@
                 
             } else if($sponsor_level == 'Production'){
                 $max_per_level = 1;
+            } else if($sponsor_level == 'Community'){
+                $max_per_level = 4;
+                
             }else if($sponsor_level == 'Streaming'){
                 $max_per_level = 1;
             } else {
@@ -68,7 +71,7 @@
                     $bootstrap = "col-xs-4 col-xs-offset-1";
 
                 } else if ($sponsor_count){
-                    $bootstrap = "col-xs-4 col-xs-offset-1";
+                    $bootstrap = "col-xs-2 col-xs-offset-2";
 
                 } 
               //  print "terrabit";
