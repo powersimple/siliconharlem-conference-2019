@@ -37,7 +37,7 @@
             if($max_per_level == 1){
                 $bootstrap = "col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-2";
                  if($sponsor_level == 'Streaming'){
-                         $bootstrap = "col-xs-4 col-xs-offset-3";
+                         $bootstrap = "col-xs-4 col-xs-offset-4";
                     }
               //  print "terrabit";
             }
@@ -94,7 +94,7 @@
             } else if($sponsor_level == 'Production'){
                 return "<h3>Production Partner</h3>";
             }else if($sponsor_level == 'Streaming'){
-                    return "<h3>Livestream By</h3>";
+                    return "<h3>Livestream</h3>";
 
             }else if($sponsor_level == 'Community'){
                   //  return "<h3>Community Partners</h3>";
