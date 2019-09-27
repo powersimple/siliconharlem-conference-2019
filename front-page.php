@@ -79,8 +79,9 @@ foreach($pages as $key => $value){
 
                 <h2 class="module-title font-alt"><?php echo $title?></h2>
                   <?php echo wpautop($content);?>
-                  <?php echo registrationButton();?>
-                </div>
+                  
+
+                </div> <img  src="<?=$thumbnail?>">
               </div>
             
             </div>

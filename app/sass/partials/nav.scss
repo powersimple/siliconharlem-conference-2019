@@ -43,6 +43,9 @@
             margin-left: -250px;
             -webkit-transform: translateX(-19.4vw) scale(0.5);
             transform: translateX(-32vw) scale(0.5);
+            .button-wrap {
+                font-size: 1.5em;
+            }
         }
         @media(orientation: landscape) and (max-width: 1679px) {
             width: 25vw;
@@ -225,15 +228,38 @@
         line-height: 150%;
         padding: 3px;
         color: #fff;
-        font-size: 2vw;
+        font-size: 1.5vw;
         font-weight: 700;
         span {
             color: $light_green;
         }
+        .registration-button {
+            width: 100%;
+            border-radius: 0px;
+        }
     }
 }
 
-.navbar-transparent #mobile-conf-id {
+#mobile-registration-button {
+    display: none;
+    position: relative;
+    @media(max-width: 768px) {
+        display: block;
+        width: 100%;
+        margin-top: -15px;
+        span {
+            color: $light_green;
+        }
+        .registration-button {
+            width: 100%;
+            border-radius: 0px;
+            padding: 10px;
+        }
+    }
+}
+
+.navbar-transparent #mobile-conf-id,
+.navbar-transparent #mobile-registration-button {
     display: none;
 }
 

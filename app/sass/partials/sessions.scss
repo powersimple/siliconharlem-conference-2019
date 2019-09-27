@@ -99,6 +99,9 @@
     font-size: 80%;
     @media(max-width: 956px) {
         text-align: center;
+        .panel-speakers {
+            font-size: 70%;
+        }
     }
 }
 

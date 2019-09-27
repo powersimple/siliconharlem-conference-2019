@@ -964,7 +964,8 @@ blockquote { border: 0; font-style: italic; font-size: 15px; padding: 0; }
 .navbar-custom #custom-collapse.in ul { background-color: #12133c; background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(61.8%, #005e92), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #005e92 61.8%, #06173b 75%, #12133c 100%); }
 .navbar-custom #custom-collapse.in ul li a { border-bottom: 1px solid #aeaaab !important; cursor: pointer; position: relative; z-index: 10000; padding: 15px; }
 .navbar-custom #orb { z-index: 9999; -webkit-transition: all 2s ease-in-out 1s; transition: all 2s ease-in-out 1s; -webkit-transform-origin: center center; transform-origin: center center; position: absolute; }
-@media (orientation: landscape) and (min-width: 1680px) { .navbar-custom #orb { width: 500px; top: 50vh; margin-top: -250px; left: 50vw; margin-left: -250px; -webkit-transform: translateX(-19.4vw) scale(0.5); transform: translateX(-32vw) scale(0.5); } }
+@media (orientation: landscape) and (min-width: 1680px) { .navbar-custom #orb { width: 500px; top: 50vh; margin-top: -250px; left: 50vw; margin-left: -250px; -webkit-transform: translateX(-19.4vw) scale(0.5); transform: translateX(-32vw) scale(0.5); }
+  .navbar-custom #orb .button-wrap { font-size: 1.5em; } }
 @media (orientation: landscape) and (max-width: 1679px) { .navbar-custom #orb { width: 25vw; top: 50vh; margin-top: -12.5vw; left: 50vw; margin-left: -12.5vw; -webkit-transform: translateX(-19.4vw) scale(0.5); transform: translateX(-32vw) scale(0.5); } }
 @media (orientation: portrait) { .navbar-custom #orb { width: 25vw; top: 50vh; margin-top: -12.5vw; left: 50vw; margin-left: -12.5vw; -webkit-transform: translateX(-25vw) scale(0.618); transform: translateX(-25vw) scale(0.618); } }
 .navbar-custom #orb svg { width: 100%; }
@@ -1013,10 +1014,16 @@ blockquote { border: 0; font-style: italic; font-size: 15px; padding: 0; }
 .dropdown-menu { min-width: 180px; font-size: 11px; }
 
 #mobile-conf-id { display: none; }
-@media (max-width: 768px) { #mobile-conf-id { display: block; position: absolute; margin-left: 150px; top: 10px; line-height: 150%; padding: 3px; color: #fff; font-size: 2vw; font-weight: 700; }
-  #mobile-conf-id span { color: #b3d449; } }
+@media (max-width: 768px) { #mobile-conf-id { display: block; position: absolute; margin-left: 150px; top: 10px; line-height: 150%; padding: 3px; color: #fff; font-size: 1.5vw; font-weight: 700; }
+  #mobile-conf-id span { color: #b3d449; }
+  #mobile-conf-id .registration-button { width: 100%; border-radius: 0px; } }
 
-.navbar-transparent #mobile-conf-id { display: none; }
+#mobile-registration-button { display: none; position: relative; }
+@media (max-width: 768px) { #mobile-registration-button { display: block; width: 100%; margin-top: -15px; }
+  #mobile-registration-button span { color: #b3d449; }
+  #mobile-registration-button .registration-button { width: 100%; border-radius: 0px; padding: 10px; } }
+
+.navbar-transparent #mobile-conf-id, .navbar-transparent #mobile-registration-button { display: none; }
 
 /* Navbar search  .dropdown-search { position: relative; padding: 5px; }  .dropdown-search .form-control { -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; text-transform: uppercase; letter-spacing: 2px; font-size: 11px; }  .search-btn { position: absolute; background: transparent; border: none; overflow: hidden; top: 50%; right: 1px; width: 42px; height: 40px; line-height: 38px; font-size: 14px; outline: none; color: #999; margin-top: -20px; }*/
 /* Dark background */
@@ -1096,6 +1103,7 @@ Hero Slider
 #widgets { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(61.8%, #005e92), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #005e92 61.8%, #06173b 75%, #12133c 100%); color: #aeaaab; }
 
 .section-content { width: 90%; margin: 0px auto; }
+.section-content img { width: 100% !important; }
 
 .video-wrap { position: relative; padding-bottom: 56.25%; height: 0; background: #f00; }
 .video-wrap iframe { height: 100%; width: 100%; position: absolute; top: 0; left: 0; }
@@ -1140,7 +1148,8 @@ Hero Slider
 .session-info { display: table; margin-bottom: 25px; }
 
 .session-listing { font-size: 80%; }
-@media (max-width: 956px) { .session-listing { text-align: center; } }
+@media (max-width: 956px) { .session-listing { text-align: center; }
+  .session-listing .panel-speakers { font-size: 70%; } }
 
 .session-thumbnail img { margin-top: 1em; }
 
@@ -1171,14 +1180,14 @@ Hero Slider
 @media (min-width: 1281px) and (max-width: 1680px) { .panel-body p { font-size: 1.2vw; } }
 @media (min-width: 1681px) { .panel-body p { font-size: 80%; } }
 
-.speaker-image { overflow: hidden; border: 6px solid #12133c; display: inline-block; width: 150px; height: 150px; display: inline-block; float: left; border-radius: 50%; padding: 0px; }
+.speaker-image { overflow: hidden; background: #06173b; border: 6px solid #06173b; display: inline-block; width: 150px; height: 150px; display: inline-block; float: left; border-radius: 38.8%; padding: 0px; }
 
-.affiliation { font-size: 70%; line-height: 120%; }
+.affiliation { font-size: 70%; line-height: 120%; display: block !important; }
 @media (max-width: 768px) { .affiliation { margin-bottom: 2em; margin-right: 1em; } }
 
-.speaker-info { font-size: 120%; }
+.speaker-info { font-size: 120%; margin-bottom: 50px; }
 @media (max-width: 600px) { .speaker-info { width: 100%; } }
-.speaker-info strong { font-weight: 700; font-size: 150%; line-height: 150%; border-bottom: 1px solid #333; color: #12133c; }
+.speaker-info strong { font-weight: 700; font-size: 120%; line-height: 120%; color: #12133c; }
 .speaker-info .fa { border-radius: 50%; text-align: center; width: 20px; height: 20px; margin-right: 5px; padding: 3px 4px; color: #555; }
 .speaker-info a.fa:hover { color: #000; }
 .speaker-info p, .speaker-info li { width: 57%; font-size: 120%; }
@@ -1198,15 +1207,17 @@ Hero Slider
 
 .speaker-name { color: #fff; }
 
-#speakers .speaker-info { width: 100%; height: 325px; margin-bottom: 10px; }
+#speakers .speaker-info { width: 100%; height: 250px; margin-bottom: 25px; }
 #speakers .speaker-image { margin: 0px auto; float: none; display: block; }
-#speakers .speaker-vitals { text-align: center; width: auto; }
+#speakers .speaker-vitals { text-align: center; width: 100%; }
 
+.sponsor { margin-bottom: 1em; }
 .sponsor a { display: block; max-width: 50vw; margin: 0px auto; }
 
 .sponsors { margin-bottom: 140px; }
 
-#sponsor-deck { width: 100%; /*  @media (min-width: 1680px){ width:800px; height:644px; }*/ }
+#sponsor-deck { width: 100%; /*  @media (min-width: 1680px){ width:800px; height:644px;
+}*/ }
 
 #gallery { padding: 75px 0px; position: relative; z-index: 100; position: relative; }
 #gallery .skyline { position: absolute; right: 10%; bottom: -20px; width: 20%; max-width: 250px; }
@@ -1350,13 +1361,13 @@ a.cta:hover { -webkit-transform: scale(1.5); transform: scale(1.5); }
 #prices tr.past td { text-decoration: line-through; }
 #prices tr.even-row { background-color: #aeaaab; }
 
-.registration-button { background: #40a842; text-shadow: 3px 3px #10432c; font-size: 150%; color: #fff; font-weight: 700; padding: 25px; border-radius: 25px; border: 3px outset #40a842; width: auto; margin: 15px auto; display: inline-block; }
+.registration-button { background: #40a842; text-shadow: 2px 2px #10432c; font-size: 150%; color: #fff; font-weight: 700; /* padding: 25px; */ border-radius: 25px; border: 1px outset #40a842; width: auto; margin: 15px auto; display: block; text-align: center; padding: 25px; }
 
 #speakers .registration-button { background: #fff; color: #40a842; text-shadow: 1px 1px #10432c; }
 
 #speakers .registration-button:hover { background: #ff0; color: #40a842; text-shadow: 1px 1px #10432c; }
 
-.button-wrap { position: relative; width: 320px; margin: 0px auto; }
+.button-wrap { position: absolute; width: 100%; margin: 0px auto; font-size: 1.5vw; }
 
 a.registration-button:hover { color: #ff0; }
 

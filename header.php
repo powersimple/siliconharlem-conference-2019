@@ -93,18 +93,21 @@
       </div>
     
       <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent one-page" role="navigation" id="nav">
-        <div class="container">
+        <div class="contained">
           <div class="navbar-header">
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a title="Silicon Harlem" class="navbar-brand header-logo" href="/"><?php include "images/SH-Logo-3D-white.svg";?></a>
           </div>
-          <div id="mobile-conf-id">6th Annual Next-Gen<br>Tech Conference:<br><span>World 4.0 Let's Get Ready!</span>
+          <div id="mobile-conf-id">6th Annual Next-Gen Tech Conference:<br><span>World 4.0 Let's Get Ready!</span>
           </div>
+           <div id="mobile-registration-button"><a class="registration-button" href="https://www.eventbrite.com/e/sh6-the-silicon-harlem-sixth-annual-next-gen-tech-conference-tickets-68730052437" target="_new">REGISTER NOW</a></div>
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
             <?php dynamic_sidebar( 'header-menu' ); ?>
             </ul>
          
+          </div>
+        <div id="orb" title="Silicon Harlem | 6th Annual Next-Gen Tech Conference: World 4.0 Let's Get Ready!"><?php include "images/Orb-01.svg";?>
+        <div id="persistent-register"> <?php echo registrationButton();?></div>
         </div>
-        <div id="orb" title="Silicon Harlem | 6th Annual Next-Gen Tech Conference: World 4.0 Let's Get Ready!"><?php include "images/Orb-01.svg";?></div>
       </nav>
     

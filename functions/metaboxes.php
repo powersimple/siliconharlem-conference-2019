@@ -249,6 +249,8 @@ function setSponsors( $meta_boxes ) {
 					'Megabit' => 'Megabit Sponsor',
 					'Community' => 'Community Stakeholder',
 					'After Party' => 'After Party',
+					'Production' => 'Production',
+					'Streaming' => 'Streaming',
 					'Previous' => 'Previous Sponsor',
 					
 				),

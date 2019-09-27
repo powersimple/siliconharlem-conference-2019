@@ -20,11 +20,24 @@ displaySponsors($current_sponsor_parent_id,'Gigabit');
  <div class="row"><?php
 displaySponsors($current_sponsor_parent_id,'Megabit');
 ?></div>
- <div class="row"><?php
-displaySponsors($current_sponsor_parent_id,'Community');
-       ?></div>          
-</div>
 
+
+ <div class="row">
+  
+ <?php
+displaySponsors($current_sponsor_parent_id,'Community');
+       ?></div> 
+        <div class="row">
+
+ <?php
+displaySponsors($current_sponsor_parent_id,'Production');
+       ?></div>   
+ <?php
+displaySponsors($current_sponsor_parent_id,'Streaming');
+       ?></div>   
+
+
+</div>
 
                
                 </div>

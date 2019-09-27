@@ -18,6 +18,10 @@
                 //return "col-xs-12 col-sm-5 col-sm-offset-1";
             } else if($sponsor_level == 'Megabit'){
                 $max_per_level = 4;
+            } else if($sponsor_level == 'Production'){
+                $max_per_level = 1;
+            }else if($sponsor_level == 'Streaming'){
+                $max_per_level = 1;
             } else {
                 //$sponsor_level == 'Community'){   
                 //return 'col-sm-6 col-md-4 col-lg-4';
@@ -32,7 +36,9 @@
            // print $sponsor_level ." ".$sponsor_count." ".$max_per_level."<br>";
             if($max_per_level == 1){
                 $bootstrap = "col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-2";
-                
+                 if($sponsor_level == 'Streaming'){
+                         $bootstrap = "col-xs-4 col-xs-offset-3";
+                    }
               //  print "terrabit";
             }
             if($max_per_level == 2){
@@ -40,6 +46,9 @@
 
                 if($sponsor_count == 1){
                     $bootstrap = "col-xs-8 col-xs-offset-2";
+
+                   
+
 
                 } else if ($sponsor_count == 2){
                     $bootstrap = "col-xs-4 col-xs-offset-1";
@@ -78,17 +87,34 @@
         }
     }
     
+    function sponsorLevelHeader($sponsor_level){
+            if($sponsor_level == 'Terrabit'){
+            } else if($sponsor_level == 'Gigabit'){
+            } else if($sponsor_level == 'Megabit'){
+            } else if($sponsor_level == 'Production'){
+                return "<h3>Production Partner</h3>";
+            }else if($sponsor_level == 'Streaming'){
+                    return "<h3>Livestream By</h3>";
 
+            }else if($sponsor_level == 'Community'){
+                  //  return "<h3>Community Partners</h3>";
+            } else {
+
+            }
+    }
 
     function displaySponsors($parent,$sponsor_level){
        $sponsors = getSponsorLevel($parent,$sponsor_level);
       
         $bootstrap = sponsorGridLevel($sponsor_level,count($sponsors)); //calculates grid based on level and sponsors per
-
+       
         foreach($sponsors as $key => $sponsor){
             extract( $sponsor);
             //var_dump($sponsor);
+
+
             print '<div class="'.$bootstrap.' sponsor '.strtolower($sponsor_level).'">';
+             print sponsorLevelHeader($sponsor_level);
             $src= getThumbnail($thumbnail,"Full");
             print '<a href="'.$sponsor_url.'" target="_blank">';
             if($src == ''){
