@@ -964,9 +964,9 @@ blockquote { border: 0; font-style: italic; font-size: 15px; padding: 0; }
 .navbar-custom #custom-collapse.in ul { background-color: #12133c; background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(61.8%, #005e92), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #005e92 61.8%, #06173b 75%, #12133c 100%); }
 .navbar-custom #custom-collapse.in ul li a { border-bottom: 1px solid #aeaaab !important; cursor: pointer; position: relative; z-index: 10000; padding: 15px; }
 .navbar-custom #orb { z-index: 9999; -webkit-transition: all 2s ease-in-out 1s; transition: all 2s ease-in-out 1s; -webkit-transform-origin: center center; transform-origin: center center; position: absolute; }
-@media (orientation: landscape) and (min-width: 1680px) { .navbar-custom #orb { width: 25vw; top: 50vh; margin-top: -12.5vw; left: 50vw; margin-left: -12.5vw; -webkit-transform: translateX(-19.4vw) scale(0.5); transform: translateX(-32vw) scale(0.5); } }
-@media (orientation: landscape) and (max-width: 1679px) { .navbar-custom #orb { width: 38.8vw; top: 50vh; margin-top: -19.4vw; left: 50vw; margin-left: -19.4vw; -webkit-transform: translateX(-19.4vw) scale(0.5); transform: translateX(-32vw) scale(0.5); } }
-@media (orientation: portrait) { .navbar-custom #orb { width: 38.8vw; top: 50vh; margin-top: -19.4vw; left: 50vw; margin-left: -25vw; -webkit-transform: translateX(-25vw) scale(0.618); transform: translateX(-25vw) scale(0.618); } }
+@media (orientation: landscape) and (min-width: 1680px) { .navbar-custom #orb { width: 500px; top: 50vh; margin-top: -250px; left: 50vw; margin-left: -250px; -webkit-transform: translateX(-19.4vw) scale(0.5); transform: translateX(-32vw) scale(0.5); } }
+@media (orientation: landscape) and (max-width: 1679px) { .navbar-custom #orb { width: 25vw; top: 50vh; margin-top: -12.5vw; left: 50vw; margin-left: -12.5vw; -webkit-transform: translateX(-19.4vw) scale(0.5); transform: translateX(-32vw) scale(0.5); } }
+@media (orientation: portrait) { .navbar-custom #orb { width: 25vw; top: 50vh; margin-top: -12.5vw; left: 50vw; margin-left: -12.5vw; -webkit-transform: translateX(-25vw) scale(0.618); transform: translateX(-25vw) scale(0.618); } }
 .navbar-custom #orb svg { width: 100%; }
 @media (max-width: 767px) { .navbar-custom #orb { font-size: 3vw; -webkit-transform: translateX(0) scale(0); transform: translateX(0) scale(0); } }
 

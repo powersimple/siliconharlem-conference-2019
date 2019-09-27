@@ -23,7 +23,7 @@
 					"end"=>get_post_meta($ID,"session_end",true),
 					"video_embed_url" => get_post_meta($ID,"video_embed_url",true),
 					"sponsors" => get_post_meta($ID,"sponsors"),
-					"speakers" => get_post_meta($ID,"speakers"),
+					"speakers" => get_post_meta($ID,"mobile"),
 					"thumbnail" => get_post_thumbnail_id($ID),
 				));
 

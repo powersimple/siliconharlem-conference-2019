@@ -36,6 +36,15 @@
         transform-origin: center center;
         position: absolute;
         @media(orientation: landscape) and (min-width: 1680px) {
+            width: 500px;
+            top: 50vh;
+            margin-top: -250px;
+            left: 50vw;
+            margin-left: -250px;
+            -webkit-transform: translateX(-19.4vw) scale(0.5);
+            transform: translateX(-32vw) scale(0.5);
+        }
+        @media(orientation: landscape) and (max-width: 1679px) {
             width: 25vw;
             top: 50vh;
             margin-top: -12.5vw;
@@ -44,21 +53,12 @@
             -webkit-transform: translateX(-19.4vw) scale(0.5);
             transform: translateX(-32vw) scale(0.5);
         }
-        @media(orientation: landscape) and (max-width: 1679px) {
-            width: 38.8vw;
-            top: 50vh;
-            margin-top: -19.4vw;
-            left: 50vw;
-            margin-left: -19.4vw;
-            -webkit-transform: translateX(-19.4vw) scale(0.5);
-            transform: translateX(-32vw) scale(0.5);
-        }
         @media(orientation:portrait) {
-            width: 38.8vw;
+            width: 25vw;
             top: 50vh;
-            margin-top: -19.4vw;
+            margin-top: -12.5vw;
             left: 50vw;
-            margin-left: -25vw;
+            margin-left: -12.5vw;
             transform: translateX(-25vw) scale(0.618);
         }
         svg {
