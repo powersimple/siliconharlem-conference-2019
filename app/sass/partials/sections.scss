@@ -5,8 +5,8 @@
     h2.module-title {
         color: #b7d547;
     }
-    font-size:150%;
-    line-height:150%;
+    font-size:120%;
+    line-height:120%;
     @media(max-width:767px) {
         .seal {
             width: 50%;
@@ -48,6 +48,10 @@
 #slideshow {
     padding-bottom: 0px;
     background: #000;
+}
+
+.panel-speaker {
+    line-height: 120%;
 }
 
 #speakers {

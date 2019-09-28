@@ -1076,7 +1076,7 @@ Hero Slider
 .caption-content a.btn p span { color: #b3d449; }
 @media (max-width: 767px) { .caption-content a.btn { max-width: 90%; word-wrap: break-word; } }
 
-#agenda { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #06173b 75%, #12133c 100%); color: #fff; border-bottom: 10px solid #12133c; font-size: 150%; line-height: 150%; }
+#agenda { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #06173b 75%, #12133c 100%); color: #fff; border-bottom: 10px solid #12133c; font-size: 120%; line-height: 120%; }
 #agenda h2.module-title { color: #b7d547; }
 @media (max-width: 767px) { #agenda .seal { width: 50%; margin: 0px auto; display: block; } }
 #agenda .featured { margin: 25px 0px; padding: 15px; }
@@ -1087,6 +1087,8 @@ Hero Slider
 #agenda .schedule-bg h3 h4 { font-weight: 600; color: #10432c; text-align: center; }
 
 #slideshow { padding-bottom: 0px; background: #000; }
+
+.panel-speaker { line-height: 120%; }
 
 #speakers { background: #E2DFDF; border-bottom: 10px solid #10432c; }
 #speakers h2.module-title { color: #06173b; }
