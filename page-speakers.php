@@ -17,14 +17,14 @@
             
             <div class="row speakers-page col-sm-offset-4 col-sm-8">
               <?php
-              if(@$_GET['with']){
+          //    if(@$_GET['with']){
     $speakers = getSpeakers(410);
    
     foreach($speakers as $key => $speaker){
         
         displaySpeaker($speaker,"thumbnail","speaker-list");
     }
-    }
+    //}
               ?>
 
 
