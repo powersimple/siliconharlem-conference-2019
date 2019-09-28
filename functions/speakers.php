@@ -40,22 +40,24 @@
 			
 			if($context=="long"){
 				print '<div class="speaker-long-bio">';
-				
+				 print '<div class="speaker-info col-xs-12  ">';
 			} else if($context=="speaker-list"){
-				print '<div class="speaker-list col-sm-6 col-md-3 col-lg-3">';
+				print '<div class="speaker-list col-sm-6 col-md-4 col-lg-3">';
+				 print '<div class="speaker-info col-xs-12 col-sm-6 col-md-5 col-lg-4">';
 				
 			} else {
 				print '<div class="speaker-short-bio">';
+				 print '<div class="speaker-info col-xs-12 col-sm-6 col-md-5 col-lg-4">';
 				
 			}
 			
-            print '<div class="speaker-info col-xs-12 col-sm-6 col-md-5 col-lg-4">';
            
-            
+           
 			if($src != ""){
                 print '<div class="speaker-image  col-xs-offset-4 col-xs-4 col-sm-offset-2 col-sm-8">';
-              
-                print '<img src="'.$src.'" alt="'.$speaker_name.'"></div>';
+				
+				print '<img src="'.$src.'" alt="'.$speaker_name.'"></div>';
+				print '</a>';
             }
            
             print '<div class="speaker-vitals col-xs-12 col-sm-12">';
@@ -65,7 +67,9 @@
             print "</div>
             </div>";
 			if(@$context == 'long'){
-                print wpautop($content);
+				 print '<div class="speaker-excerpt col-xs-12  col-lg-12 ">';
+				print wpautop($content);
+				 print '</div">';
             } else if(@$context=="speaker-list"){
 				//print '<div style="clear:both;width:100%;"></div>';
 			//	print "SESSION:".$session;
@@ -80,8 +84,11 @@
 		}
 		function speakerVitals($speaker_data){
 				extract($speaker_data);
-			print '<strong>'.@$speaker_name."</strong>";
-			print "<div class='affiliation'>";
+			print '<strong>';
+			print '<a href="'.$permalink.'">';
+			print $speaker_name;
+			print "</strong>";
+			 print "<div class='affiliation'>";
 			if(@$speaker_title && @$context != "speaker-list"){
 				print @$speaker_title.",<br>";
 			}
