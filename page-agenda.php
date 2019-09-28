@@ -45,7 +45,7 @@
                       <h4 class="panel-title font-alt"><a data-toggle="collapse" data-parent="#accordion" href="#<?php echo $slug?>"><?php echo $title?></a><span class="session-time"><?php echo $session_time; ?></span></h4>
                        <div class="session-listing">
                        <?php
-                        if(@$_GET['with']){
+                        //if(@$_GET['with']){
                           ?>
                         
                     <div class="panel-speakers">
@@ -70,7 +70,7 @@
                   ?>
                     </div>
                       <?php
-                        }
+                      //  }
                           ?>
                   </div>
                     </div>
@@ -101,7 +101,7 @@
                       </div>
                         </div>
                     <?php
-                     if(@$_GET['with']){
+                    // if(@$_GET['with']){
                         foreach($speaker_list as $key=>$speaker){
                            ?>
                             <div class="speaker-listing">
@@ -110,7 +110,7 @@
                             displaySpeaker($speaker,"thumbnail","short");
                               print "</div>";
                         }
-                      }
+                   //   }
                         if(count($sponsors)){
                           print '<div class="session-sponsors">';
                           foreach($sponsor_list as $key=>$sponsor){
