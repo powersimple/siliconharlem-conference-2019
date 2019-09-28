@@ -1174,8 +1174,6 @@ Hero Slider
 .speaker-listing div { display: inline-block; vertical-align: top; }
 .speaker-listing .speaker-image { width: 150px; height: 150px; }
 
-.speakers-page .speaker-info { margin-bottom: 50px; }
-
 @media (max-width: 539px) { .panel-body p { font-size: 3vw; } }
 @media (min-width: 540px) and (max-width: 767px) { .panel-body p { font-size: 2.5vw; } }
 @media (min-width: 768px) and (max-width: 1280px) { .panel-body p { font-size: 1em; } }
@@ -1192,6 +1190,8 @@ Hero Slider
 .speaker-info .fa { border-radius: 50%; text-align: center; width: 20px; height: 20px; margin-right: 5px; padding: 3px 4px; color: #555; }
 .speaker-info a.fa:hover { color: #000; }
 .speaker-info p, .speaker-info li { width: 57%; font-size: 120%; }
+
+.speakers-page .speaker-info { margin-bottom: 50px !important; }
 
 .speaker-vitals { line-height: 150%; padding: 0px; text-align: center; }
 @media (max-width: 1280px) { .speaker-vitals { font-size: 80%; } }
