@@ -81,7 +81,7 @@ function setSessionSpeakerz( $meta_boxes ) {
 
 	$meta_boxes[] = array(
 		'id' => 'session-speakers',
-		'title' => esc_html__( 'Speakerz', 'metabox-online-generator' ),
+		'title' => esc_html__( 'Speaker', 'metabox-online-generator' ),
 		'post_types' => array('session' ),
 		'context' => 'side',
 		'priority' => 'default',
@@ -247,6 +247,7 @@ function setSponsors( $meta_boxes ) {
 					'Terrabit' => 'Terrabyte Sponsor',
 					'Gigabit' => 'Gigabit Sponsor',
 					'Megabit' => 'Megabit Sponsor',
+					'Partner' => 'Partnership Sponsor',
 					'Community' => 'Community Stakeholder',
 					'After Party' => 'After Party',
 					'Production' => 'Production',
