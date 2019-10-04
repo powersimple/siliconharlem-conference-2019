@@ -68,14 +68,14 @@
             </div>";
 			if(@$context == 'long'){
 				 print '<div class="speaker-excerpt col-xs-12  col-lg-12 ">';
-				print wpautop($content);
+				print do_blocks($content);
 				 print '</div">';
             } else if(@$context=="speaker-list"){
 				//print '<div style="clear:both;width:100%;"></div>';
 			//	print "SESSION:".$session;
 			} else if(@$context == 'short'){
 				 print '<div class="speaker-excerpt col-xs-12 col-sm-6 col-md-7 col-lg-8">';
-			   print wpautop($excerpt);
+			   print do_blocks($excerpt);
 			    print '</div>';
             } else{
                 
