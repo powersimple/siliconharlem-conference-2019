@@ -84,19 +84,7 @@
 		}
 		function speakerVitals($speaker_data){
 				extract($speaker_data);
-			print '<strong>';
-			print '<a href="'.$permalink.'">';
-			print $speaker_name;
-			print "</strong>";
-			 print "<div class='affiliation'>";
-			if(@$speaker_title && @$context != "speaker-list"){
-				print @$speaker_title.",<br>";
-			}
-			if(@$speaker_company){
-				print @$speaker_company."<br>";
-			}
-			print "</div>
-			<div class='social'>
+							print "<div class='social'>
 			";
 
 			if(@$speaker_website){
@@ -124,6 +112,19 @@
 			
 			print "</div>";//social
 				
+
+			print '<strong>';
+			print '<a href="'.$permalink.'">';
+			print $speaker_name;
+			print "</strong>";
+			 print "<div class='affiliation'>";
+			if(@$speaker_title && @$context != "speaker-list"){
+				print @$speaker_title.",<br>";
+			}
+			if(@$speaker_company){
+				print @$speaker_company."<br>";
+			}
+			print "</div>";
 			
 		}
 

@@ -19,7 +19,7 @@
             } else if($sponsor_level == 'Megabit'){
                 $max_per_level = 4;
              } else if($sponsor_level == 'Partner'){
-                $max_per_level = 3;    
+                $max_per_level = 4;    
             } else if($sponsor_level == 'Production'){
                 $max_per_level = 1;
             } else if($sponsor_level == 'Community'){
@@ -40,9 +40,11 @@
             }*/
            // print $sponsor_level ." ".$sponsor_count." ".$max_per_level."<br>";
             if($max_per_level == 1){
-                $bootstrap = "col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-2";
+                $bootstrap = "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4";
                  if($sponsor_level == 'Streaming'){
-                         $bootstrap = "col-xs-3 col-xs-offset-3";
+                         $bootstrap = "col-xs-4 col-xs-offset-4 ol-sm-4 col-sm-offset-4 ";
+                    } else if($sponsor_level == 'Production'){
+                      $bootstrap = "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4";
                     }
               //  print "terrabit";
             }
@@ -56,7 +58,7 @@
 
 
                 } else if ($sponsor_count == 2){
-                    $bootstrap = "col-xs-4 col-xs-offset-1";
+                    $bootstrap = "col-xs-3 col-xs-offset-2";
 
                 } else if ($sponsor_count){
                     $bootstrap = "col-xs-4 col-xs-offset-1";
