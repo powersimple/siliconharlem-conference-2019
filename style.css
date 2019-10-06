@@ -1196,10 +1196,14 @@ Hero Slider
 .speakers-page .speaker-info .social { bottom: 0px; display: table; width: auto; margin: 0px auto; padding: 10px 0px 5px; }
 .speakers-page .speaker-info .social a { display: table-cell; text-align: center; }
 
+a.read-more { color: #06173b; text-decoration: underline; }
+
+a.read-more:hover { color: #40a842; text-decoration: underline; }
+
 .speaker-vitals { line-height: 150%; display: table-cell; height: 125px; padding: 0px; text-align: center; }
 @media (max-width: 1280px) { .speaker-vitals { font-size: 80%; } }
 .speaker-vitals strong { display: block; }
-.speaker-vitals a { margin-right: 8px; color: #12133c; }
+.speaker-vitals a { margin-right: 8px; color: #12133c; text-decoration: underline; }
 .speaker-vitals a:hover { color: #06173b; }
 .speaker-vitals .social listing a { color: #555; }
 

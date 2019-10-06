@@ -76,6 +76,7 @@
 			} else if(@$context == 'short'){
 				 print '<div class="speaker-excerpt col-xs-12 col-sm-6 col-md-7 col-lg-8">';
 			   print do_blocks($excerpt);
+			   print '<br><a href="'.$permalink.'" class="read-more">Read More</a>';
 			    print '</div>';
             } else{
                 

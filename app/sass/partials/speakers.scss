@@ -102,6 +102,16 @@
     }
 }
 
+a.read-more {
+    color: $dark_blue;
+    text-decoration: underline;
+}
+
+a.read-more:hover {
+    color: $green;
+    text-decoration: underline;
+}
+
 .speaker-vitals {
     line-height: 150%;
     display: table-cell;
@@ -117,6 +127,7 @@
     a {
         margin-right: 8px;
         color: $darkest_blue;
+        text-decoration: underline;
     }
     a:hover {
         color: $dark_blue;
