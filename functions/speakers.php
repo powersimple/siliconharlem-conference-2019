@@ -117,6 +117,8 @@
 			print '<a href="'.$permalink.'">';
 			print $speaker_name;
 			print "</strong>";
+			print "</a>";
+			
 			 print "<div class='affiliation'>";
 			if(@$speaker_title && @$context != "speaker-list"){
 				print @$speaker_title.",<br>";
