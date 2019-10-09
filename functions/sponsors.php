@@ -40,7 +40,7 @@
             }*/
            // print $sponsor_level ." ".$sponsor_count." ".$max_per_level."<br>";
             if($max_per_level == 1){
-                $bootstrap = "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4";
+                $bootstrap = "col-xs-12 col-sm-6 col-sm-offset-3";
                  if($sponsor_level == 'Streaming'){
                          $bootstrap = "col-xs-4 col-xs-offset-4 ol-sm-4 col-sm-offset-4 ";
                     } else if($sponsor_level == 'Production'){
