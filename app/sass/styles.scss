@@ -55,6 +55,13 @@ h4 {
     margin-top: 70px;
 }
 
+h4.panel-title {
+    text-align: left;
+    @media(min-width: 1500px) {
+        text-align: center;
+    }
+}
+
 h4.section-prime {
     font-weight: bold;
     border-bottom: 3px dashed #f58669;
