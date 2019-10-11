@@ -248,10 +248,13 @@ function setSponsors( $meta_boxes ) {
 					'Gigabit' => 'Gigabit Sponsor',
 					'Megabit' => 'Megabit Sponsor',
 					'Partner' => 'Partnership Sponsor',
+					'Community Partner' => 'Community Partner',// a hack for mastercard.
 					'Community' => 'Community Stakeholder',
 					'After Party' => 'After Party',
 					'Production' => 'Production',
 					'Streaming' => 'Streaming',
+					'Printing' => 'Printing',
+					
 					'Previous' => 'Previous Sponsor',
 					
 				),

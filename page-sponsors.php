@@ -23,7 +23,9 @@ displaySponsors($current_sponsor_parent_id,'Megabit');
  <div class="row"><?php
 displaySponsors($current_sponsor_parent_id,'Partner');
 ?></div>
-
+ <div class="row"><?php
+displaySponsors($current_sponsor_parent_id,'Community Partner');
+?></div>
 
  <div class="row">
   
@@ -38,7 +40,9 @@ displaySponsors($current_sponsor_parent_id,'Production');
  <?php
 displaySponsors($current_sponsor_parent_id,'Streaming');
        ?></div>   
-
+ <?php
+displaySponsors($current_sponsor_parent_id,'Printing');
+       ?></div>   
 
 </div>
 

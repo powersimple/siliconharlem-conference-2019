@@ -22,10 +22,15 @@
                 $max_per_level = 4;    
             } else if($sponsor_level == 'Production'){
                 $max_per_level = 1;
+            } else if($sponsor_level == 'Community Partner'){
+                $max_per_level = 1;
+                
             } else if($sponsor_level == 'Community'){
                 $max_per_level = 4;
                 
-            }else if($sponsor_level == 'Streaming'){
+            } else if($sponsor_level == 'Printing'){
+                $max_per_level = 1;
+            } else if($sponsor_level == 'Streaming'){
                 $max_per_level = 1;
             } else {
                 //$sponsor_level == 'Community'){   
@@ -46,6 +51,12 @@
                     } else if($sponsor_level == 'Production'){
                       $bootstrap = "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4";
                     }
+                    else if($sponsor_level == 'Community Partner'){
+                      $bootstrap = "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4";
+                    }
+                    else if($sponsor_level == 'Printing'){
+                      $bootstrap = "col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 col-md-3 col-md-offset-5";
+                    }
               //  print "terrabit";
             }
             if($max_per_level == 2){
@@ -53,9 +64,6 @@
 
                 if($sponsor_count == 1){
                     $bootstrap = "col-xs-8 col-xs-offset-2";
-
-                   
-
 
                 } else if ($sponsor_count == 2){
                     $bootstrap = "col-xs-3 col-xs-offset-2";
@@ -77,7 +85,7 @@
                     $bootstrap = "col-xs-offset-4 col-xs-4";
 
                 } else if ($sponsor_count == 2){
-                    $bootstrap = "col-xs-4 col-xs-offset-1";
+                    $bootstrap = "col-xs-3 col-xs-offset-2";
 
                 } else if ($sponsor_count){
                     $bootstrap = "col-xs-2 col-xs-offset-1";
@@ -105,9 +113,12 @@
             } else if($sponsor_level == 'Gigabit'){
             } else if($sponsor_level == 'Megabit'){
             } else if($sponsor_level == 'Production'){
-                return "<h3>Production Partner</h3>";
-            }else if($sponsor_level == 'Streaming'){
-                    return "<h3>Livestream</h3>";
+                return "<h4>Production Partner</h4>";
+            }else if($sponsor_level == 'Printing'){
+                    return "<h4>Printing</h4>";
+
+            } else if($sponsor_level == 'Streaming'){
+                    return "<h4>Livestream by</h4>";
 
             }else if($sponsor_level == 'Community'){
                   //  return "<h3>Community Partners</h3>";

@@ -993,6 +993,8 @@ blockquote { border: 0; font-style: italic; font-size: 15px; padding: 0; }
 
 .navbar-custom .navbar-brand { letter-spacing: 4px; font-weight: 400; color: #fff; }
 
+@media (min-width: 768px) and (max-width: 960px) { .nav > li > a { padding: 10px 5px !important; } }
+
 .navbar-custom .nav li > a { position: relative; color: white; font-weight: 700; text-shadow: 2px 2px #12133c; }
 
 .navbar-custom .nav li > a:hover { position: relative; color: #008dc0; }
@@ -1224,6 +1226,7 @@ a.read-more:hover { color: #40a842; text-decoration: underline; }
 .sponsor a { display: block; max-width: 50vw; margin: 0px auto; }
 
 .sponsors { margin-bottom: 140px; }
+.sponsors h4 { margin-top: 20px; }
 
 #sponsor-deck { width: 100%; /*  @media (min-width: 1680px){ width:800px; height:644px;
 }*/ }
