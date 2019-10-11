@@ -97,7 +97,7 @@
 
                       
                       
-                        <div class="session-blurb"><?php echo wpautop($content)?></div>
+                        <div class="session-blurb"><?php echo do_blocks($content)?></div>
                       </div>
                         </div>
                     <?php
