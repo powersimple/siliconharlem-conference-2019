@@ -7,7 +7,7 @@
 
           <h2 class="font-alt module-title"><?php echo $title?></h2>
               
-                      <div class="section-content col-sm-offset-4 col-sm-8"><?=wpautop($content);?>
+                      <div class="section-content col-sm-offset-4 col-sm-8"><?=do_blocks($content);?>
                      
                     </div>
                       
