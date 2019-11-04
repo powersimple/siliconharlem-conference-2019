@@ -90,11 +90,6 @@
     content: "\f107";
 }
 
-.session-info {
-    display: table;
-    margin-bottom: 25px;
-}
-
 .session-listing {
     font-size: 80%;
     @media(max-width: 956px) {
@@ -179,6 +174,7 @@
 
 #session-content {
     margin: 140px auto;
+    border-top: 10px solid #fff;
     img {
         width: 100% !important;
     }
@@ -226,7 +222,32 @@
     }
 }
 
+.session-info {
+    //don't confuse the class with the id
+    display: table;
+    margin: 25px 0px;
+    width: 100%;
+}
+
 #session-info {
+    //don't confuse the id with the class
     overflow: hidden;
-    .gallery-wrap {}
+}
+
+#speaker-vitals {
+    background: $light_gray;
+    border-radius: 10px;
+    color: #11233c;
+    width: 70%;
+    div {
+        padding: 15px;
+    }
+    h5 {
+        font-weight: 700;
+        font-size: 120%;
+    }
+    a {
+        color: $dark_blue;
+        margin-right: 5px;
+    }
 }

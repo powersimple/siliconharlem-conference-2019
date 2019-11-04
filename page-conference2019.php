@@ -62,10 +62,12 @@
     </div>
 </div>
 
-<div class="row recap">
 <?php
   foreach(get_parent_children($ID) as $key=> $value){
     extract((array)$value);
+    print "<div class='row recap $post_name'>";
+
+
     $media_id=get_post_meta($ID,"_thumbnail_id",true);
     if(file_exists (get_stylesheet_directory()."/page-$post_name.php") ){
     //     var_dump($value);
@@ -74,15 +76,14 @@
       else{
         ?>
 <div class="row">
-  <div class="col-sm-4"><div class="col-xs-offset-1 col-xs-10"><img  src="<?php echo getThumbnail($media_id,"Full");?>"></div></div>
+  <div class="col-sm-4"><img  src="<?php echo getThumbnail($media_id,"Full");?>"></div>
   <div class="col-sm-8">
-      <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-6">
+    
 
       <h3 class="font-alt module-title"><?=$post_title?></h3>
           
       <?=do_blocks($post_content);?></div>
-      </div>
-                  
+      
 
 
 
@@ -92,9 +93,10 @@
 
 <?php
       }
+      print '</div>';
   }
 ?>
-</div>
+
 
 
 

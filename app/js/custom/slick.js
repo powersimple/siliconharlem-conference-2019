@@ -59,7 +59,7 @@ function setSlick() {
         autoplaySpeed: 3000,
         slidesToShow: 4,
         slidesToScroll: 4,
-        adaptiveHeight: true,
+
 
         variableWidth: true,
 

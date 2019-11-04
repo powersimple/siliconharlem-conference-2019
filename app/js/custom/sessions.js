@@ -16,6 +16,7 @@ function setSessionList() {
 
 }
 
+
 function setSessionSlides(slides) {
     var slide = {}
     var slide_wrap = ''
@@ -52,6 +53,7 @@ function setSession(key) {
     jQuery(loc + " .context").html(session.content)
     jQuery(loc + " .speaker-list").html(speakerList(session.speakers))
     jQuery(loc + " .slideshow").html(setSessionSlides(session.slides))
+    setSpeaker(0)
     setSlick();
     console.log("session", session)
     showVideo(session.video_embed_url, "#session-video")
@@ -70,6 +72,7 @@ function speakerList(speakers_list) {
     }
     speakers += '</ul></div>'
     speakers += '<div class="col-sm-9" id="speaker-vitals">'
+
     speakers += '</div>'
     console.log(speakers)
     return speakers
@@ -120,8 +123,9 @@ function getSpeakerInfo(speaker) {
 
 function setSpeaker(id) {
     var speaker = current_speakers[id]
-    var slide = '<div class="col-xs-9">' + getSpeakerInfo(speaker) + '</div>'
-    slide += '<div class="col-xs-3">' + getSlidePath(speaker.featured_image) + '</div>'
+    var slide = '<div class="col-xs-3">' + getSlidePath(speaker.featured_image) + '</div>'
+    slide += '<div class="col-xs-9">' + getSpeakerInfo(speaker) + '</div>'
+
 
     console.log(slide)
     $('#speaker-vitals').html(slide)

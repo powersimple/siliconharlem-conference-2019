@@ -1109,6 +1109,8 @@ Hero Slider
 #conference2019 h2 { color: #b3d449; }
 #conference2019 .recap { margin: 70px 0px 140px; }
 
+.download-posters { background: #fff; color: #11233c; padding: 70px; border-top: 3px solid #12133c; border-bottom: 10px solid #12133c; }
+
 .video-wrap { position: relative; padding-bottom: 56.25%; height: 0; background: #f00; }
 .video-wrap iframe { height: 100%; width: 100%; position: absolute; top: 0; left: 0; }
 
@@ -1149,8 +1151,6 @@ Hero Slider
 
 .panel-heading a.collapsed:after { content: "\f107"; }
 
-.session-info { display: table; margin-bottom: 25px; }
-
 .session-listing { font-size: 80%; }
 @media (max-width: 956px) { .session-listing { text-align: center; }
   .session-listing .panel-speakers { font-size: 70%; } }
@@ -1174,7 +1174,7 @@ Hero Slider
 
 .registration-button { font-size: 2em; background: #10432c; }
 
-#session-content { margin: 140px auto; }
+#session-content { margin: 140px auto; border-top: 10px solid #fff; }
 #session-content img { width: 100% !important; }
 #session-content a { color: #b3d449; font-weight: 600; margin-bottom: 3px; display: inline-block; }
 #session-content a:hover { color: #fff; text-decoration: underline; }
@@ -1187,7 +1187,14 @@ Hero Slider
 #session-list ul li a { font-size: 1.2vw; display: block; padding: 10px; line-height: 120%; }
 #session-list ul a:hover { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(61.8%, #005e92), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #005e92 61.8%, #06173b 75%, #12133c 100%); }
 
+.session-info { display: table; margin: 25px 0px; width: 100%; }
+
 #session-info { overflow: hidden; }
+
+#speaker-vitals { background: #aeaaab; border-radius: 10px; color: #11233c; width: 70%; }
+#speaker-vitals div { padding: 15px; }
+#speaker-vitals h5 { font-weight: 700; font-size: 120%; }
+#speaker-vitals a { color: #06173b; margin-right: 5px; }
 
 .speaker-listing { border-top: 1px dashed #ccc; padding-top: 25px; margin-top: 5px; }
 .speaker-listing div { display: inline-block; vertical-align: top; }
@@ -1236,6 +1243,9 @@ a.read-more:hover { color: #40a842; text-decoration: underline; }
 #speakers .speaker-info { width: 100%; background: #f7f7f7; height: 300px; margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #11233c; }
 #speakers .speaker-image { margin: 0px auto; float: none; display: block; }
 #speakers .speaker-vitals { text-align: center; width: 100%; }
+
+.speaker-list ul { padding-left: 0px; }
+.speaker-list ul li { list-style: none; }
 
 .sponsor { margin-bottom: 1em; }
 .sponsor a { display: block; max-width: 50vw; margin: 0px auto; }
