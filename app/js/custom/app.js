@@ -16,13 +16,15 @@ function setDeckWidth() {
     console.log("deck", deck_width, deck_height)
 }
 jQuery(document).ready(function() {
-    setDeckWidth()
+    //setDeckWidth()
 
     setHeroSlides();
+    setSessionList();
+    console.log('loaded');
 
 })
 jQuery(window).resize(function() {
-    setDeckWidth()
+    // setDeckWidth()
     _w = jQuery(window).width(),
         _h = jQuery(window).height()
     setHeroSlides();
@@ -57,5 +59,10 @@ function setHeroSlides() {
         //    console.log("slide-" + s, _w, size, hero_slides[s][size])
     }
 
+
+}
+
+function showVideo(url, id) {
+    $(id).attr("src", url);
 
 }

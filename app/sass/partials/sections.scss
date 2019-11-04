@@ -97,10 +97,24 @@
 
 .section-thumbnail {}
 
-.section-content {
-    width: 90%;
-    margin: 0px auto;
-    img {
-        width: 100% !important;
+.section-content {}
+
+#conference2020 {
+    background: linear-gradient(to bottom, $deep-purple 0%, $deep-purple 25%, $power-purple 45%, $light-purple 50%, $power-purple 55%, $deep-purple 75%, $deep-purple 100%);
+    color: #fff;
+    border-bottom: 6px groove $bright-yellow;
+    h2 {
+        color: $hot-yellow;
+    }
+}
+
+#conference2019 {
+    background: linear-gradient(to bottom, $darkest_blue 0%, $dark_blue 25%, $blue 61.8%, $dark_blue 75%, $darkest_blue 100%);
+    color: #fff;
+    h2 {
+        color: $light-green;
+    }
+    .recap {
+        margin: 70px 0px 140px;
     }
 }

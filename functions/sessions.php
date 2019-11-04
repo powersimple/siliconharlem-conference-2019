@@ -1,35 +1,5 @@
 <?php
-		function getPastSessions($conference){
-			global $wpdb;
-			$q = $wpdb->get_results("
-			select ID, post_name, post_date, post_title, post_content
-			from wp_posts
-			where post_type = 'session'
-			and post_parent = $conference
-			and post_status='publish'
-			
-			order by menu_order
-				");
-			$sessions = array();
-			foreach($q as $key => $value){
-				extract((array) $value);
-				array_push($sessions,
-				array(
-					"id" => $ID,
-					"title" =>$post_title,
-					"content" => $post_content,
-					"slug" => $post_name,
-					"start"=>get_post_meta($ID,"session_start",true),
-					"end"=>get_post_meta($ID,"session_end",true),
-					"video_embed_url" => get_post_meta($ID,"video_embed_url",true),
-					"sponsors" => get_post_meta($ID,"sponsors"),
-					"speakers" => get_post_meta($ID,"mobile"),
-					"thumbnail" => get_post_thumbnail_id($ID),
-				));
 
-			}
-			return $sessions;
-		}
 		function getSessions($parent){
 			global $wpdb;
 			$q = $wpdb->get_results("
@@ -44,11 +14,13 @@
 			$sessions = array();
 			foreach($q as $key => $value){
 				extract((array) $value);
+
+
 				array_push($sessions,
 				array(
 					"id" => $ID,
 					"title" =>$post_title,
-					"content" => $post_content,
+					"content" => urlencode($post_content),
 					"slug" => $post_name,
 					"start"=>get_post_meta($ID,"session_start",true),
 					"end"=>get_post_meta($ID,"session_end",true),

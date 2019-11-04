@@ -13,7 +13,7 @@
     Document Title
     =============================================
     -->
-    <title>Silicon Harlem - 6th Annual Conference, October 18th.</title>
+    <title>Silicon Harlem Annual Conference - 2020 Tech-Enabled Community</title>
 
     <?php 
     wp_head();
@@ -79,6 +79,12 @@
      ?>
     ]
     
+ 
+  var session_data = <?=json_encode(getPastSessions(697))?>;
+  
+
+
+
 
 
 
@@ -88,7 +94,7 @@
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
 
       <div class="page-loader">
-        <div class="loader"><img src="<?php echo get_stylesheet_directory_uri();?>/images/Orb-01.svg" alt="" class="style-svg"></div> 
+        <div class="loader"><img src="<?php echo get_stylesheet_directory_uri();?>/images/SH-Logo-3D-white.svg" alt="" class="style-svg"></div> 
 
       </div>
     
@@ -97,17 +103,17 @@
           <div class="navbar-header">
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a title="Silicon Harlem" class="navbar-brand header-logo" href="/"><?php include "images/SH-Logo-3D-white.svg";?></a>
           </div>
-          <div id="mobile-conf-id">6th Annual Next-Gen Tech Conference:<br><span>World 4.0 Let's Get Ready!</span>
+          <div id="mobile-conf-id">2020 Conference:<br><span>The Tech Enabled Community</span>
           </div>
-           <div id="mobile-registration-button"><a class="registration-button" href="https://www.eventbrite.com/e/sh6-the-silicon-harlem-sixth-annual-next-gen-tech-conference-tickets-68730052437" target="_new">REGISTER NOW</a></div>
+<!--           <div id="mobile-registration-button"><a class="registration-button" href="https://www.eventbrite.com/e/sh6-the-silicon-harlem-sixth-annual-next-gen-tech-conference-tickets-68730052437" target="_new">REGISTER NOW</a></div>-->
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
             <?php dynamic_sidebar( 'header-menu' ); ?>
             </ul>
          
           </div>
-        <div id="orb" title="Silicon Harlem | 6th Annual Next-Gen Tech Conference: World 4.0 Let's Get Ready!"><?php include "images/Orb-01.svg";?>
-        <div id="persistent-register"> <?php echo registrationButton();?></div>
+       <!--<div id="orb" title="Silicon Harlem | 6th Annual Next-Gen Tech Conference: World 4.0 Let's Get Ready!"><?php include "images/Orb-01.svg";?>-->
+        
         </div>
       </nav>
     

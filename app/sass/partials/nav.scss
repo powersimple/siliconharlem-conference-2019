@@ -3,7 +3,7 @@
   --------------------------------------------------------------*/
 
 .navbar-custom {
-    background: linear-gradient(to bottom, $darkest_blue 0%, $dark_blue 25%, $blue 61.8%, $dark_blue 75%, $darkest_blue 100%);
+    background: linear-gradient(to bottom, $deep-purple 0%, $deep-purple 25%, $power-purple 45%, $light-purple 50%, $power-purple 55%, $deep-purple 75%, $deep-purple 100%);
     border: 0;
     border-radius: 0;
     z-index: 1000;
@@ -16,7 +16,7 @@
     }
     #custom-collapse.in ul {
         background-color: #12133c;
-        background: linear-gradient(to bottom, $darkest_blue 0%, $dark_blue 25%, $blue 61.8%, $dark_blue 75%, $darkest_blue 100%);
+        background: linear-gradient(to bottom, $deep-purple 0%, $power-purple 25%, $light-purple 61.8%, $power-purple 75%, $deep-purple 100%);
         li a {
             border-bottom: 1px solid $light_gray !important;
             cursor: pointer;
@@ -109,17 +109,17 @@
     //      padding-bottom:10px;
     .navbar-brand {
         @media(max-width: 767px) {
-            transform: translate(15px, 61vh) scale(1.5);
+            //       transform: translate(15px, 61vh) scale(1.5);
         }
         @media(min-width:768px) {
-            transform: translate(30px, 61vh) scale(2);
+            //       transform: translate(30px, 61vh) scale(2);
         }
     }
     #orb {
-        transform: translateX(0px) scale(1);
+        //   transform: translateX(0px) scale(1);
         opacity: 1;
         @media(max-width: 767px) {
-            transform: translateX(0px) scale(1.2);
+            //     transform: translateX(0px) scale(1.2);
         }
         svg {}
     }
@@ -194,7 +194,7 @@
 .navbar-custom .dropdown-menu>li>a:focus,
 .navbar-custom .dropdown-menu>li>a:hover {
     background: none;
-    color: #fff;
+    color: $bright_yellow;
 }
 
 .navbar-custom .dropdown-menu>li>a:hover {

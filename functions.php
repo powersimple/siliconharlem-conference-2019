@@ -39,6 +39,28 @@ add_theme_support('post-thumbnails', array(
 'sponsor'
 ));
 
+function cleanContent($content){
+	//STRIPS THE CRAP FROM WP- BLOCKS
+	$clean_content = urlencode($content);
+				$clean_content = str_replace("%0A","",$clean_content);
+				$clean_content = str_replace("%3C%2Fp%3E%3C%21--+%2Fwp%3Aparagraph+--%3E","",$clean_content);
+				$clean_content = str_replace("%3C%21--+wp%3Aparagraph+--%3E%3Cp%3E","",$clean_content);
+
+	return urldecode($clean_content);
+}
+
+function getSessionSlides($slides){
+		$session_images = array();
+        foreach($slides as $key=>$value){
+            $img_meta = get_media_data($value);
+	
+            
+            array_push($session_images,$img_meta);
+		}
+		return $session_images;
+		
+}
+
 
 		/* OLD RELIABLE!
         HASN'T CHANGED IN YEARS
@@ -60,20 +82,31 @@ add_theme_support('post-thumbnails', array(
 			order by menu_order
 				");
 			$sessions = array();
+		
+				
 			foreach($q as $key => $value){
 				extract((array) $value);
+				$speaker_list= get_post_meta($ID,"speakers");
+				$speakers_data = array();
+				foreach($speaker_list as $key=>$value){
+					array_push($speakers_data,getSpeaker($value));
+				}
+				
+				$slide_ids = get_post_meta($ID,"top_slider");
+
 				array_push($sessions,
 				array(
 					"id" => $ID,
 					"title" =>$post_title,
-					"content" => $post_content,
+					"content" => cleanContent($post_content),
 					"slug" => $post_name,
 					"start"=>get_post_meta($ID,"session_start",true),
 					"end"=>get_post_meta($ID,"session_end",true),
 					"video_embed_url" => get_post_meta($ID,"video_embed_url",true),
 					"sponsors" => get_post_meta($ID,"sponsors"),
-					"speakers" => get_post_meta($ID,"speakers"),
+					"speakers" => $speakers_data,
 					"thumbnail_data" => get_media_data(get_post_thumbnail_id($ID)),
+					"slides"=> getSessionSlides(get_post_meta($ID,"top_slider"))
 				));
 
 			}

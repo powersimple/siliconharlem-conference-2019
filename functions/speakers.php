@@ -26,7 +26,8 @@
 				"speaker_flickr" => get_post_meta($speaker_id,"speaker_flickr",true),
 				"speaker_instagram" => get_post_meta($speaker_id,"speaker_instagram",true),
 				
-                "thumbnail" => get_post_thumbnail_id(@$ID),
+				"thumbnail" => get_post_thumbnail_id(@$ID),
+				"featured_image" => get_media_data(get_post_thumbnail_id(@$ID)),
                 "permalink" => get_permalink($speaker_id)
 			);
 			

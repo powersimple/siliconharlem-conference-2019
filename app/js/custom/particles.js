@@ -1,5 +1,6 @@
 /* ---- particles.js config ---- */
-
+//backed out
+/*
 particlesJS("particles-js", {
     "particles": {
         "number": {
@@ -106,5 +107,4 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
 });
-
-
+*/

@@ -70,6 +70,7 @@ foreach($pages as $key => $value){
           <div class="container">
             <?php
             if(file_exists (get_stylesheet_directory()."/page-$slug.php") ){
+         //     var_dump($value);
               require_once(get_stylesheet_directory()."/page-$slug.php"); // includes page-slug.php if it exists
             } else {
             ?>

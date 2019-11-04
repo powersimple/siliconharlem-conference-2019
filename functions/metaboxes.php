@@ -2,11 +2,10 @@
 
 function selectScreenImage( $meta_boxes ) {
 	$prefix = '';
-
 	$meta_boxes[] = array(
 		'id' => 'slides',
 		'title' => esc_html__( 'Slider', 'metabox-online-generator' ),
-		'post_types' => array( 'post', 'page','project' ),
+		'post_types' => array( 'post', 'page','session' ),
 		'context' => 'side',
 		'priority' => 'default',
 		'autosave' => false,
@@ -43,7 +42,7 @@ function setSessionDetails( $meta_boxes ) {
 	$prefix = '';
 
 	$meta_boxes[] = array(
-		'id' => 'slides',
+		'id' => 'details',
 		'title' => esc_html__( 'Session Details', 'metabox-online-generator' ),
 		'post_types' => array( 'session' ),
 		'context' => 'side',
@@ -152,7 +151,7 @@ function setSessionSponsors( $meta_boxes ) {
 
 	return $meta_boxes;
 }
-add_filter( 'rwmb_meta_boxes', 'setSessionSponsors' );
+//add_filter( 'rwmb_meta_boxes', 'setSessionSponsors' );
 
 
 

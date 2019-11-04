@@ -43,6 +43,18 @@
 		}
 	}
 
+
+	function get_parent_children($parent_id){
+		$children = get_children( array("post_parent"=>$parent_id,'post_type'=>'page','orderby' => 'menu_order ASC','order' => 'ASC') );
+		$child_list = array();
+		foreach ($children as $key => $value) {
+			array_push($child_list,$value);
+			
+		}
+		return $child_list;
+	}
+
+
     function linkThis($url,$label,$blank_target=true){
         $target = '';  
         $absolute = '';

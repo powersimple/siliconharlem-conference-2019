@@ -30,11 +30,10 @@ DO NOT EDIT IN STYLE.CSS
 #a0cd48
 #b3d449
 */
-/*-------------------------------------------------------------- Preloader
---------------------------------------------------------------*/
-.page-loader { position: fixed; background: #008dc0; background: radial-gradient(circle at top center, #008dc0 0%, #005e92 33%, #06173b 66%, #12133c 100%); bottom: 0; right: 0; left: 0; top: 0; z-index: 9998; }
+/*-------------------------------------------------------------- Preloader --------------------------------------------------------------*/
+.page-loader { position: fixed; background: #008dc0; background: -webkit-gradient(linear, left top, left bottom, from(#1d1649), color-stop(25%, #1d1649), color-stop(45%, #534290), color-stop(50%, #b97cff), color-stop(55%, #534290), color-stop(75%, #1d1649), to(#1d1649)); background: linear-gradient(to bottom, #1d1649 0%, #1d1649 25%, #534290 45%, #b97cff 50%, #534290 55%, #1d1649 75%, #1d1649 100%); bottom: 0; right: 0; left: 0; top: 0; z-index: 9998; }
 
-.loader { position: absolute; top: 50%; left: 50%; opacity: 0.9; z-index: 1000; width: 38vh; margin-left: -19.5vh; z-index: 9999; margin-top: -19vh; }
+.loader { position: absolute; top: 50%; left: 50%; opacity: 0.9; z-index: 1000; width: 38vh; margin-left: -19.5vh; z-index: 9999; margin-top: -12.5vh; }
 .loader svg { width: 100%; }
 
 /*--------------------------------------------------------------
@@ -114,7 +113,7 @@ a, .btn { -webkit-transition: all 0.125s ease-in-out 0s; transition: all 0.125s 
 /* Dark background */
 .bg-dark, .bg-dark-30, .bg-dark-60, .bg-dark-90, .bg-dark .module-title, .bg-dark-30 .module-title, .bg-dark-60 .module-title, .bg-dark-90 .module-title, .bg-dark .module-subtitle, .bg-dark-30 .module-subtitle, .bg-dark-60 .module-subtitle, .bg-dark-90 .module-subtitle, .bg-dark .alt-module-subtitle h5, .bg-dark-30 .alt-module-subtitle h5, .bg-dark-60 .alt-module-subtitle h5, .bg-dark-90 .alt-module-subtitle h5 { color: #fff; }
 
-.bg-dark-30:before { position: absolute; background: rgba(2, 2, 2, 0.4); content: " "; height: 100%; width: 100%; left: 0; top: 0; }
+.bg-dark-30:before { position: absolute; content: " "; height: 100%; width: 100%; left: 0; top: 0; }
 
 .bg-dark-60:before { position: absolute; background: rgba(34, 34, 34, 0.8); content: " "; height: 100%; width: 100%; left: 0; top: 0; }
 
@@ -897,7 +896,7 @@ blockquote { border: 0; font-style: italic; font-size: 15px; padding: 0; }
 .documentation-page a:hover { color: #1C92C9; }
 
 /*-------------------------------------------------------------- Responsive Styles - Media Queries --------------------------------------------------------------*/
-@media (min-width: 768px) { .navbar-transparent { background: transparent; padding-bottom: 15px; padding-top: 15px; }
+@media (min-width: 768px) { .navbar-transparent { background: transparent; padding-bottom: 15px; }
   .navbar-custom .dropdown-menu { position: absolute; display: block; visibility: hidden; opacity: 0; }
   .navbar-custom .open > .dropdown-menu { visibility: visible; opacity: 1; }
   .navbar-custom .dropdown-menu .dropdown-toggle:after { position: absolute; display: block; right: 9px; top: 50%; margin-top: -6px; font: normal normal normal 14px/1 FontAwesome; font-size: 9px; content: "\f105"; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -959,9 +958,9 @@ blockquote { border: 0; font-style: italic; font-size: 15px; padding: 0; }
   .align-left-sm { text-align: left; } }
 @media only screen and (max-width: 480px) { .work-item, .works-grid-3 .work-item, .works-grid-4 .work-item, .works-grid-5 .work-item { width: 100%; } }
 /*-------------------------------------------------------------- Navbar --------------------------------------------------------------*/
-.navbar-custom { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(61.8%, #005e92), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #005e92 61.8%, #06173b 75%, #12133c 100%); border: 0; border-radius: 0; z-index: 1000; font-family: 'Titillium Web', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 1.5vw; height: 70px; }
+.navbar-custom { background: -webkit-gradient(linear, left top, left bottom, from(#1d1649), color-stop(25%, #1d1649), color-stop(45%, #534290), color-stop(50%, #b97cff), color-stop(55%, #534290), color-stop(75%, #1d1649), to(#1d1649)); background: linear-gradient(to bottom, #1d1649 0%, #1d1649 25%, #534290 45%, #b97cff 50%, #534290 55%, #1d1649 75%, #1d1649 100%); border: 0; border-radius: 0; z-index: 1000; font-family: 'Titillium Web', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 1.5vw; height: 70px; }
 @media (min-width: 1680px) { .navbar-custom { font-size: 1.5em; } }
-.navbar-custom #custom-collapse.in ul { background-color: #12133c; background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(61.8%, #005e92), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #005e92 61.8%, #06173b 75%, #12133c 100%); }
+.navbar-custom #custom-collapse.in ul { background-color: #12133c; background: -webkit-gradient(linear, left top, left bottom, from(#1d1649), color-stop(25%, #534290), color-stop(61.8%, #b97cff), color-stop(75%, #534290), to(#1d1649)); background: linear-gradient(to bottom, #1d1649 0%, #534290 25%, #b97cff 61.8%, #534290 75%, #1d1649 100%); }
 .navbar-custom #custom-collapse.in ul li a { border-bottom: 1px solid #aeaaab !important; cursor: pointer; position: relative; z-index: 10000; padding: 15px; }
 .navbar-custom #orb { z-index: 9999; -webkit-transition: all 2s ease-in-out 1s; transition: all 2s ease-in-out 1s; -webkit-transform-origin: center center; transform-origin: center center; position: absolute; }
 @media (orientation: landscape) and (min-width: 1680px) { .navbar-custom #orb { width: 500px; top: 50vh; margin-top: -250px; left: 50vw; margin-left: -250px; -webkit-transform: translateX(-19.4vw) scale(0.5); transform: translateX(-32vw) scale(0.5); }
@@ -982,10 +981,7 @@ blockquote { border: 0; font-style: italic; font-size: 15px; padding: 0; }
 
 .navbar-transparent .nav-bar-right { margin-top: -13px; }
 
-@media (max-width: 767px) { .navbar-transparent .navbar-brand { -webkit-transform: translate(15px, 61vh) scale(1.5); transform: translate(15px, 61vh) scale(1.5); } }
-@media (min-width: 768px) { .navbar-transparent .navbar-brand { -webkit-transform: translate(30px, 61vh) scale(2); transform: translate(30px, 61vh) scale(2); } }
-.navbar-transparent #orb { -webkit-transform: translateX(0px) scale(1); transform: translateX(0px) scale(1); opacity: 1; }
-@media (max-width: 767px) { .navbar-transparent #orb { -webkit-transform: translateX(0px) scale(1.2); transform: translateX(0px) scale(1.2); } }
+.navbar-transparent #orb { opacity: 1; }
 
 .navbar a { -webkit-transition: color 0.125s ease-in-out 0s; transition: color 0.125s ease-in-out 0s; font-weight: bold; }
 
@@ -1005,7 +1001,7 @@ blockquote { border: 0; font-style: italic; font-size: 15px; padding: 0; }
 
 .navbar-custom .dropdown-menu.left-side .dropdown-menu { border: 0; border-right: 1px solid rgba(73, 71, 71, 0.15); right: 100%; left: auto; }
 
-.navbar-custom .nav > li > a:focus, .navbar-custom .nav > li > a:hover, .navbar-custom .nav .open > a, .navbar-custom .nav .open > a:focus, .navbar-custom .nav .open > a:hover, .navbar-custom .dropdown-menu > li > a:focus, .navbar-custom .dropdown-menu > li > a:hover { background: none; color: #fff; }
+.navbar-custom .nav > li > a:focus, .navbar-custom .nav > li > a:hover, .navbar-custom .nav .open > a, .navbar-custom .nav .open > a:focus, .navbar-custom .nav .open > a:hover, .navbar-custom .dropdown-menu > li > a:focus, .navbar-custom .dropdown-menu > li > a:hover { background: none; color: #fbe201; }
 
 .navbar-custom .dropdown-menu > li > a:hover { background: rgba(255, 255, 255, 0.1) !important; }
 
@@ -1106,8 +1102,12 @@ Hero Slider
 
 #widgets { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(61.8%, #005e92), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #005e92 61.8%, #06173b 75%, #12133c 100%); color: #aeaaab; }
 
-.section-content { width: 90%; margin: 0px auto; }
-.section-content img { width: 100% !important; }
+#conference2020 { background: -webkit-gradient(linear, left top, left bottom, from(#1d1649), color-stop(25%, #1d1649), color-stop(45%, #534290), color-stop(50%, #b97cff), color-stop(55%, #534290), color-stop(75%, #1d1649), to(#1d1649)); background: linear-gradient(to bottom, #1d1649 0%, #1d1649 25%, #534290 45%, #b97cff 50%, #534290 55%, #1d1649 75%, #1d1649 100%); color: #fff; border-bottom: 6px groove #fbe201; }
+#conference2020 h2 { color: #e4a203; }
+
+#conference2019 { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(61.8%, #005e92), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #005e92 61.8%, #06173b 75%, #12133c 100%); color: #fff; }
+#conference2019 h2 { color: #b3d449; }
+#conference2019 .recap { margin: 70px 0px 140px; }
 
 .video-wrap { position: relative; padding-bottom: 56.25%; height: 0; background: #f00; }
 .video-wrap iframe { height: 100%; width: 100%; position: absolute; top: 0; left: 0; }
@@ -1173,6 +1173,21 @@ Hero Slider
 .session-sponsor img { border-radius: 50%; }
 
 .registration-button { font-size: 2em; background: #10432c; }
+
+#session-content { margin: 140px auto; }
+#session-content img { width: 100% !important; }
+#session-content a { color: #b3d449; font-weight: 600; margin-bottom: 3px; display: inline-block; }
+#session-content a:hover { color: #fff; text-decoration: underline; }
+#session-content a:active { background: #b3d449; color: #11233c; text-decoration: underline; }
+
+#session-list h3, #session-list h4 { margin-top: 0px; }
+#session-list h4 { color: #fff; font-size: 2vw; text-transform: uppercase; }
+#session-list ul { padding-left: 0px; }
+#session-list ul li { list-style: none; }
+#session-list ul li a { font-size: 1.2vw; display: block; padding: 10px; line-height: 120%; }
+#session-list ul a:hover { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(61.8%, #005e92), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #005e92 61.8%, #06173b 75%, #12133c 100%); }
+
+#session-info { overflow: hidden; }
 
 .speaker-listing { border-top: 1px dashed #ccc; padding-top: 25px; margin-top: 5px; }
 .speaker-listing div { display: inline-block; vertical-align: top; }
@@ -1339,7 +1354,7 @@ canvas { display: block; vertical-align: bottom; }
 
 h2.module-title { font-weight: 700; font-size: 300%; color: #40a842; }
 
-h3, h4 { text-align: center; font-weight: 600; margin-top: 70px; }
+h3, h4 { text-align: center; font-weight: 600; }
 
 h4.panel-title { text-align: left; }
 @media (min-width: 1500px) { h4.panel-title { text-align: center; } }
@@ -1348,7 +1363,7 @@ h4.section-prime { font-weight: bold; border-bottom: 3px dashed #f58669; padding
 
 .module { padding-top: 70px; }
 
-.bg-dark { background: -webkit-gradient(linear, left bottom, left top, from(#12133c), color-stop(51%, #10432c), to(#005e92)); background: linear-gradient(to top, #12133c 0%, #10432c 51%, #005e92 100%); }
+.bg-dark { background: -webkit-gradient(linear, left bottom, left top, from(#1d1649), color-stop(51%, #534290), to(#1d1649)); background: linear-gradient(to top, #1d1649 0%, #534290 51%, #1d1649 100%); }
 
 a.cta { text-align: center; margin: 3em auto 1em; color: #fff; font-weight: 900; display: block; display: block; background-size: cover; line-height: 150%; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
 
