@@ -1088,10 +1088,6 @@ Hero Slider
 
 .panel-speaker { line-height: 120%; }
 
-#speakers { background: #E2DFDF; border-bottom: 10px solid #10432c; }
-#speakers h2.module-title { color: #06173b; }
-#speakers p, #speakers li { color: #12133c; }
-
 #venue { background: #E2DFDF; }
 
 #volunteer input[type=text], #volunteer input[type=submit], #volunteer textarea { color: #06173b; }
@@ -1105,9 +1101,8 @@ Hero Slider
 #conference2020 { background: -webkit-gradient(linear, left top, left bottom, from(#1d1649), color-stop(25%, #1d1649), color-stop(45%, #534290), color-stop(50%, #b97cff), color-stop(55%, #534290), color-stop(75%, #1d1649), to(#1d1649)); background: linear-gradient(to bottom, #1d1649 0%, #1d1649 25%, #534290 45%, #b97cff 50%, #534290 55%, #1d1649 75%, #1d1649 100%); color: #fff; border-bottom: 6px groove #fbe201; }
 #conference2020 h2 { color: #e4a203; }
 
-#conference2019 { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(61.8%, #005e92), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #005e92 61.8%, #06173b 75%, #12133c 100%); color: #fff; }
+#conference2019 { color: #12133c; }
 #conference2019 h2 { color: #b3d449; }
-#conference2019 .recap { margin: 70px 0px 140px; }
 
 .download-posters { background: #fff; color: #11233c; padding: 70px; border-top: 3px solid #12133c; border-bottom: 10px solid #12133c; }
 
@@ -1174,27 +1169,26 @@ Hero Slider
 
 .registration-button { font-size: 2em; background: #10432c; }
 
-#session-content { margin: 140px auto; border-top: 10px solid #fff; }
+#session-content { border-top: 10px solid #fff; }
 #session-content img { width: 100% !important; }
-#session-content a { color: #b3d449; font-weight: 600; margin-bottom: 3px; display: inline-block; }
-#session-content a:hover { color: #fff; text-decoration: underline; }
+#session-content a { color: #06173b; font-weight: 600; margin-bottom: 3px; display: inline-block; }
+#session-content a:hover { color: #005e92; text-decoration: underline; }
 #session-content a:active { background: #b3d449; color: #11233c; text-decoration: underline; }
 
 #session-list h3, #session-list h4 { margin-top: 0px; }
-#session-list h4 { color: #fff; font-size: 2vw; text-transform: uppercase; }
+#session-list h4 { color: #005e92; font-size: 2vw; text-transform: uppercase; border-bottom: 2px solid #005e92; }
 #session-list ul { padding-left: 0px; }
 #session-list ul li { list-style: none; }
-#session-list ul li a { font-size: 1.2vw; display: block; padding: 10px; line-height: 120%; }
-#session-list ul a:hover { background: -webkit-gradient(linear, left top, left bottom, from(#12133c), color-stop(25%, #06173b), color-stop(61.8%, #005e92), color-stop(75%, #06173b), to(#12133c)); background: linear-gradient(to bottom, #12133c 0%, #06173b 25%, #005e92 61.8%, #06173b 75%, #12133c 100%); }
+#session-list ul li a { font-size: 1.2vw; display: block; padding: 5px 0px; line-height: 120%; }
+@media (max-width: 767px) { #session-list ul li a { font-size: 2.2vw; } }
+@media (min-width: 1681px) { #session-list ul li a { font-size: 1.2em; } }
 
-.session-info { display: table; margin: 25px 0px; width: 100%; }
+.session-info { display: table; margin-bottom: 25px; width: 100%; }
+.session-info .context { margin-bottom: 25px; }
 
-#session-info { overflow: hidden; }
-
-#speaker-vitals { background: #aeaaab; border-radius: 10px; color: #11233c; width: 70%; }
-#speaker-vitals div { padding: 15px; }
-#speaker-vitals h5 { font-weight: 700; font-size: 120%; }
-#speaker-vitals a { color: #06173b; margin-right: 5px; }
+#session-info { overflow: hidden; border-radius: 25px; margin: 70px 0px; }
+@media (min-width: 768px) { #session-info { padding: 0px 15%; } }
+#session-info h3 { color: #005e92; }
 
 .speaker-listing { border-top: 1px dashed #ccc; padding-top: 25px; margin-top: 5px; }
 .speaker-listing div { display: inline-block; vertical-align: top; }
@@ -1217,6 +1211,8 @@ Hero Slider
 .speaker-info a.fa:hover { color: #000; }
 .speaker-info p, .speaker-info li { width: 57%; font-size: 120%; }
 
+.speakers { margin-bottom: 25px; }
+
 .speakers-page .speaker-info .social { bottom: 0px; display: table; width: auto; margin: 0px auto; padding: 10px 0px 5px; }
 .speakers-page .speaker-info .social a { display: table-cell; text-align: center; }
 
@@ -1227,9 +1223,9 @@ a.read-more:hover { color: #40a842; text-decoration: underline; }
 .speaker-vitals { line-height: 150%; display: table-cell; height: 125px; padding: 0px; text-align: center; }
 @media (max-width: 1280px) { .speaker-vitals { font-size: 80%; } }
 .speaker-vitals strong { display: block; }
-.speaker-vitals a { margin-right: 8px; color: #12133c; text-decoration: underline; }
-.speaker-vitals a:hover { color: #06173b; }
-.speaker-vitals .social listing a { color: #555; }
+.speaker-vitals x .social listing a { color: #555; }
+
+a:hover { color: #06173b; }
 
 .speaker-long-bio { margin: 70px auto; max-width: 1680px; }
 .speaker-long-bio h2 { margin-top: 70px; margin-bottom: 0px; }
@@ -1240,12 +1236,25 @@ a.read-more:hover { color: #40a842; text-decoration: underline; }
 
 .speaker-name { color: #fff; }
 
-#speakers .speaker-info { width: 100%; background: #f7f7f7; height: 300px; margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #11233c; }
 #speakers .speaker-image { margin: 0px auto; float: none; display: block; }
 #speakers .speaker-vitals { text-align: center; width: 100%; }
+#speakers h2.module-title { color: #06173b; }
+#speakers p, #speakers li { color: #12133c; }
+
+.speaker-info { padding-left: 15px; }
 
 .speaker-list ul { padding-left: 0px; }
 .speaker-list ul li { list-style: none; }
+
+#speaker-vitals { border-radius: 10px; color: #11233c; }
+#speaker-vitals img { display: block; margin: 0px auto; max-width: 300px; border-radius: 25px; width: 100%; }
+#speaker-vitals h4 { font-weight: 700; font-size: 150%; color: #005e92; }
+@media (min-width: 768px) { #speaker-vitals h4 { text-align: left; } }
+#speaker-vitals .social { margin: 5px; }
+#speaker-vitals .social a { color: #06173b !important; font-size: 120% !important; margin-right: 10px; }
+#speaker-vitals .social a:hover { color: #005e92 !important; }
+
+.speaker-listing a { color: #005e92 !important; font-size: 120% !important; }
 
 .sponsor { margin-bottom: 1em; }
 .sponsor a { display: block; max-width: 50vw; margin: 0px auto; }
@@ -1277,6 +1286,8 @@ a.read-more:hover { color: #40a842; text-decoration: underline; }
 .slick-dots li.active { background: #522b1c; }
 
 #home-slideshow .slick-prev, #home-slideshow .slick-next { top: 45%; }
+
+.slick-prev, .slick-next { display: none; }
 
 /* Slider */
 .slick-slider { position: relative; display: block; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }

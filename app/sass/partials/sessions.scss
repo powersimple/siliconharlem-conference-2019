@@ -173,19 +173,18 @@
 }
 
 #session-content {
-    margin: 140px auto;
     border-top: 10px solid #fff;
     img {
         width: 100% !important;
     }
     a {
-        color: $light_green;
+        color: $dark_blue;
         font-weight: 600;
         margin-bottom: 3px;
         display: inline-block;
     }
     a:hover {
-        color: #fff;
+        color: $blue;
         text-decoration: underline;
     }
     a:active {
@@ -201,9 +200,10 @@
         margin-top: 0px;
     }
     h4 {
-        color: #fff;
+        color: $blue;
         font-size: 2vw;
         text-transform: uppercase;
+        border-bottom: 2px solid $blue;
     }
     ul {
         padding-left: 0px;
@@ -212,12 +212,18 @@
             a {
                 font-size: 1.2vw;
                 display: block;
-                padding: 10px;
+                padding: 5px 0px;
                 line-height: 120%;
+                @media(max-width: 767px) {
+                    font-size: 2.2vw;
+                }
+                @media(min-width: 1681px) {
+                    font-size: 1.2em;
+                }
             }
         }
         a:hover {
-            background: linear-gradient(to bottom, $darkest_blue 0%, $dark_blue 25%, $blue 61.8%, $dark_blue 75%, $darkest_blue 100%);
+            //   background: linear-gradient(to bottom, $darkest_blue 0%, $dark_blue 25%, $blue 61.8%, $dark_blue 75%, $darkest_blue 100%);
         }
     }
 }
@@ -225,29 +231,22 @@
 .session-info {
     //don't confuse the class with the id
     display: table;
-    margin: 25px 0px;
+    margin-bottom: 25px;
     width: 100%;
+    .context {
+        margin-bottom: 25px;
+    }
 }
 
 #session-info {
     //don't confuse the id with the class
     overflow: hidden;
-}
-
-#speaker-vitals {
-    background: $light_gray;
-    border-radius: 10px;
-    color: #11233c;
-    width: 70%;
-    div {
-        padding: 15px;
+    border-radius: 25px;
+    margin: 70px 0px;
+    @media(min-width: 768px) {
+        padding: 0px 15%;
     }
-    h5 {
-        font-weight: 700;
-        font-size: 120%;
-    }
-    a {
-        color: $dark_blue;
-        margin-right: 5px;
+    h3 {
+        color: $blue;
     }
 }

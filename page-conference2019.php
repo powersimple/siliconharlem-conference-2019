@@ -1,66 +1,60 @@
-</div><!--break container-->
+
 <div class="row">
-  <div class="col-sm-4"><div class="col-xs-offset-3 col-xs-6"><img  src="<?=$thumbnail?>"></div></div>
+  <div class="col-sm-4">
+    <div class="col-xs-offset-3 col-xs-6"><img  src="<?=$thumbnail?>"></div>
+  </div>
 
   <div class="col-sm-8">
       <div class="col-sm-offset-1 col-sm-10">
 
       <h2 class="font-alt module-title">2019 Conference</h2>
           
-      <?=do_blocks($content);?></div>
+      <?=do_blocks($content);?>
       </div>
-                  
+  </div>
 
-
-
-    </div>
 </div>
+
  
 
 
 
 
 <div class="row recap" id="session-content">
- 
-
-  <div class="col-xs-col-sm-8">
-      <div class="col-sm-offset-1 col-sm-10 col-md-6">
-         <div class="video-wrap">
-    <iframe id="session-video" src="https://www.youtube.com/embed/ujpR_0aNf-g"></iframe></div>
-      <div id="session-info"></diV>
+  <div>
+    <div class="col-sm-4">
+        <div class="col-xs-offset-1 col-xs-10" id="session-list"></div>
+      </div>
+    <div class="col-xs-12 col-sm-8">
         
+          <div class="video-wrap">
+      <iframe id="session-video" src="https://www.youtube.com/embed/ujpR_0aNf-g"></iframe></div>
+      
+          
+
+
+
+    </div>
+    </div>
+
+    <div id="session-info" class="col-xs-12"></diV>
+</div>
+
       <script type="x-template" id="session-info-template">
       
-        <div class="session-info">
+        <div class="session-info" >
           <div class="title"></div>
           <div class="context"></div>
-          <div class="speakers row">
+         
+          
+        </diV>
+         <div class="speakers row" id="speakers">
             <div class="speaker-list"></div>
             
         </div>
-          
-        </diV>
  <div  id="carousel" class="slider slideshow"></div>
 
       </script>
-
-
-
-
-
-
-           
- 
-      </div>
-                  
-
-
-
-    </div>
-    <div class="col-sm-4">
-      <div class="col-xs-offset-1 col-xs-10" id="session-list"></div>
-    </div>
-</div>
 
 <?php
   foreach(get_parent_children($ID) as $key=> $value){

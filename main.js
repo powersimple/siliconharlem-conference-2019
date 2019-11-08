@@ -20,6 +20,7 @@ jQuery(document).ready(function() {
 
     setHeroSlides();
     setSessionList();
+
     console.log('loaded');
 
 })
@@ -195,7 +196,6 @@ function setSessionList() {
 
 }
 
-
 function setSessionSlides(slides) {
     var slide = {}
     var slide_wrap = ''
@@ -211,7 +211,7 @@ function setSessionSlides(slides) {
 }
 
 function getSlidePath(slide) {
-    var slide_path = uploads_path + slide.path + slide.meta.sizes.medium
+    var slide_path = uploads_path + slide.path + slide.meta.sizes.session_slide
     console.log(slide_path)
     var slide_tag = '<img src="' + slide_path + '">'
 
@@ -242,11 +242,11 @@ var current_speakers = []
 
 function speakerList(speakers_list) {
     var speaker = ''
-    var speakers = '<div class="col-sm-3"><h4>Speakers</h4><ul>'
+    var speakers = '<div class="col-sm-3 speaker-listing"><h4>Speakers</h4><ul>'
     current_speakers = []
     for (var s = 0; s < speakers_list.length; s++) {
         speaker = speakers_list[s];
-        speakers += '<li><a  class="section-scroll" href="#session-content" onclick="setSpeaker(' + s + ')">' + speaker.speaker_name + '</a></li>'
+        speakers += '<li><a  class="section-scroll" href="#session-info" onclick="setSpeaker(' + s + ')">' + speaker.speaker_name + '</a></li>'
         current_speakers[s] = speaker
     }
     speakers += '</ul></div>'
@@ -288,10 +288,15 @@ function speakerSocial(speaker) {
 
 function getSpeakerInfo(speaker) {
     console.log(speaker)
-    var speaker_info = '<h5>' + speaker.speaker_name + '</h5>'
+    var speaker_info = '<div class="col-sm-4">' + getSlidePath(speaker.featured_image) + '</div>'
+    speaker_info += '<div class="col-sm-8">'
+    speaker_info += '<h4>' + speaker.speaker_name + '</h4>'
     speaker_info += '<span>' + speaker.speaker_title + ', ' + speaker.speaker_company + '</span>'
     speaker_info += '<div class="social">' + speakerSocial(speaker) + '</div>'
     speaker_info += '<div class="excerpt">' + speaker.excerpt + '</div>'
+    speaker_info += '</div>'
+
+
 
 
 
@@ -302,8 +307,7 @@ function getSpeakerInfo(speaker) {
 
 function setSpeaker(id) {
     var speaker = current_speakers[id]
-    var slide = '<div class="col-xs-3">' + getSlidePath(speaker.featured_image) + '</div>'
-    slide += '<div class="col-xs-9">' + getSpeakerInfo(speaker) + '</div>'
+    var slide = getSpeakerInfo(speaker)
 
 
     console.log(slide)

@@ -20,6 +20,7 @@ jQuery(document).ready(function() {
 
     setHeroSlides();
     setSessionList();
+
     console.log('loaded');
 
 })

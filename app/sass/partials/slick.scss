@@ -96,6 +96,12 @@
     }
 }
 
+.slick-prev,
+.slick-next {
+    //rude hack
+    display: none;
+}
+
 
 /* Slider */
 

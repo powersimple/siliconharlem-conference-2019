@@ -1,5 +1,6 @@
 var localhost = 'http://siliconharlemconf.192.168.1.11.xip.io:8886' // SET local dev url here
-    //var localhost = 'http://siliconharlemconf.192.168.1.14.xip.io:8886' // SET local dev url here
+    //var localhost = 'http://siliconharlemconf.192.168.1.245.xip.io:8886' // SET local dev url here
+var localhost = 'http://siliconharlemconf.192.168.1.14.xip.io:8886' // SET local dev url here
 
 //var localhost = 'http://siliconharlemconf.172.20.10.4.xip.io:8886'
 //var localhost = 'http://siliconharlemconf:8886'
